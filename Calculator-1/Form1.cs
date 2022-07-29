@@ -282,6 +282,11 @@ namespace Calculator_1
             heightBox.Text += calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
+
+            if (heightBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
         }
 
         private void CalWeigthtButtonClicked(object sender, EventArgs e)
@@ -290,6 +295,11 @@ namespace Calculator_1
             weightBox.Text += calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
+
+            if (weightBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
         }
 
         private void SaveItemClicked(object sender, EventArgs e)
@@ -308,6 +318,11 @@ namespace Calculator_1
             annualIncomeBox.Text += calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
+
+            if (annualIncomeBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
         }
 
         private void HourlyWageResultButtonClicked(object sender, EventArgs e)
@@ -325,12 +340,22 @@ namespace Calculator_1
             walkWhatPartFromStationCalBox.Text = calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
+
+            if (walkWhatPartFromStationCalBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
         }
-        private void walkWhatPartFromStationLnverseCalButtonCliked(object sender, EventArgs e)
+        private void walkWhatPartFromStationResultCalButtonCliked(object sender, EventArgs e)
         {
             walkWhatPartFromStationResultBox.Text = calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
+
+            if (walkWhatPartFromStationResultBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
 
         }
 
