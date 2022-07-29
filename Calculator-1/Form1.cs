@@ -47,8 +47,8 @@ namespace Calculator_1
             }
             else if (formuraData.Contains("="))
             {
-                calBox.Text = "";
-                formulaBox.Text = "";
+                calBox.Clear();
+                formulaBox.Clear();
             }
             else if (formuraData == "" && sender.Equals(button00))
             {
@@ -102,14 +102,14 @@ namespace Calculator_1
             #endregion
         }
 
-        private void FormulaBoxClear(object sender, TextBox formulaBox, TextBox calBox, Button answerButton)
-        {
-            if (sender.Equals(answerButton))
-            {
-                formulaBox.Text = "";
-                formulaBox.Text = calBox.Text;
-            }
-        }
+        //private void FormulaBoxClear(object sender, TextBox formulaBox, TextBox calBox, Button answerButton)
+        //{
+        //    if (sender.Equals(answerButton))
+        //    {
+        //        formulaBox.Text = "";
+        //        formulaBox.Text = calBox.Text;
+        //    }
+        //}
 
         #region
         //private void Cal(int cal)
@@ -145,7 +145,7 @@ namespace Calculator_1
                 formulaBox.Text = calBox.Text;
             }
             basicArithmeticOperations = (sender as Button).Text;
-            formulaBox.Text += basicArithmeticOperations.ToString();
+            formulaBox.Text += basicArithmeticOperations;
             once = false;
         }
         #region
@@ -275,27 +275,27 @@ namespace Calculator_1
 
         private void CalHeigthtButtonClicked(object sender, EventArgs e)
         {
-            heightBox.Text = calBox.Text;
-            calBox.Clear();
-            formulaBox.Clear();
-
-            if (heightBox.Text == "")
+            if (calBox.Text == "")
             {
                 tabControl1.SelectedIndex = 0;
             }
+
+            heightBox.Text = calBox.Text;
+            calBox.Clear();
+            formulaBox.Clear();
         }
 
         private void CalWeigthtButtonClicked(object sender, EventArgs e)
         {
+            if(calBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
+
             weightBox.Text = "";
             weightBox.Text += calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
-
-            if (weightBox.Text == "")
-            {
-                tabControl1.SelectedIndex = 0;
-            }
         }
 
         private void SaveItemClicked(object sender, EventArgs e)
@@ -310,15 +310,14 @@ namespace Calculator_1
 
         private void AnnualIncomeCalButtonClicked(object sender, EventArgs e)
         {
+            if (calBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
             annualIncomeBox.Text = "";
             annualIncomeBox.Text += calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
-
-            if (annualIncomeBox.Text == "")
-            {
-                tabControl1.SelectedIndex = 0;
-            }
         }
 
         private void HourlyWageResultButtonClicked(object sender, EventArgs e)
@@ -333,10 +332,11 @@ namespace Calculator_1
 
         private void WalkWhatPartFromStationCalButtonClicked(object sender, EventArgs e)
         {
-            if (walkWhatPartFromStationCalBox.Text == "")
+            if (calBox.Text == "")
             {
                 tabControl1.SelectedIndex = 0;
             }
+
             walkWhatPartFromStationCalBox.Text = calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
@@ -365,6 +365,19 @@ namespace Calculator_1
         private void ClearTextButtonChecked(object sender, EventArgs e)
         {
             allCalBox.Clear();
+        }
+
+        private void BackSpaceButtonClicked(object sender, EventArgs e)
+        {
+            if (formulaBox.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length -1);
+            }
+            
         }
     }
 }
