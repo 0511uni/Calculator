@@ -805,7 +805,7 @@
             this.walkWhatPartFromStationLnverseResultButton.TabIndex = 38;
             this.walkWhatPartFromStationLnverseResultButton.Text = "▲";
             this.walkWhatPartFromStationLnverseResultButton.UseVisualStyleBackColor = false;
-            this.walkWhatPartFromStationLnverseResultButton.Click += new System.EventHandler(this.WalkWhatPartFromStationLnverseResultButtonClicked);
+            this.walkWhatPartFromStationLnverseResultButton.Click += new System.EventHandler(this.WalkWhatPartFromStationReverseResultButtonClicked);
             // 
             // minutesLabel1
             // 

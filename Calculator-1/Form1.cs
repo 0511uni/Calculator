@@ -268,12 +268,12 @@ namespace Calculator_1
 
         private void BmiResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.BmiCreate(allCalBox, heightBox, weightBox, bmiBox);
+            Factory.BmiCreate(tabControl1,allCalBox, heightBox, weightBox, bmiBox);
         }
 
         private void BaseWeightButtonClicked(object sender, EventArgs e)
         {
-            Factory.BaseWeightCreata(allCalBox, heightBox, weightBox, baseWeightBox);
+            Factory.BaseWeightCreata(tabControl1,allCalBox, heightBox, weightBox, baseWeightBox);
         }
 
         private void CalHeigthtButtonClicked(object sender, EventArgs e)
@@ -327,46 +327,43 @@ namespace Calculator_1
 
         private void HourlyWageResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.HourlyWageCal(hourlyWageResultButton, hourlyWageReverseResultButton, annualIncomeBox, hourlyWageResultBox, allCalBox, sender);
+            Factory.HourlyWageCal(tabControl1,hourlyWageResultButton, hourlyWageReverseResultButton, annualIncomeBox, hourlyWageResultBox, allCalBox, sender);
         }
 
         private void HourlyWageReverseResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.HourlyWageCal(hourlyWageResultButton, hourlyWageReverseResultButton, annualIncomeBox, hourlyWageResultBox, allCalBox, sender);
+            Factory.HourlyWageCal(tabControl1,hourlyWageResultButton, hourlyWageReverseResultButton, annualIncomeBox, hourlyWageResultBox, allCalBox, sender);
         }
 
         private void WalkWhatPartFromStationCalButtonClicked(object sender, EventArgs e)
         {
-            walkWhatPartFromStationCalBox.Text = calBox.Text;
-            calBox.Clear();
-            formulaBox.Clear();
-
             if (walkWhatPartFromStationCalBox.Text == "")
             {
                 tabControl1.SelectedIndex = 0;
             }
+            walkWhatPartFromStationCalBox.Text = calBox.Text;
+            calBox.Clear();
+            formulaBox.Clear();
         }
         private void walkWhatPartFromStationResultCalButtonCliked(object sender, EventArgs e)
         {
-            walkWhatPartFromStationResultBox.Text = calBox.Text;
-            calBox.Clear();
-            formulaBox.Clear();
-
             if (walkWhatPartFromStationResultBox.Text == "")
             {
                 tabControl1.SelectedIndex = 0;
             }
-
+            walkWhatPartFromStationResultBox.Text = calBox.Text;
+            calBox.Clear();
+            formulaBox.Clear();
         }
 
         private void WalkWhatPartFromStationResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.WalkWhatPartFromStationCal(walkWhatPartFromStationResultButton, walkWhatPartFromStationLnverseResultButton, walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
+            Factory.WalkWhatPartFromStationCal(tabControl1, walkWhatPartFromStationResultButton, walkWhatPartFromStationLnverseResultButton, walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
         }
 
-        private void WalkWhatPartFromStationLnverseResultButtonClicked(object sender, EventArgs e)
+        private void WalkWhatPartFromStationReverseResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.WalkWhatPartFromStationCal(walkWhatPartFromStationResultButton, walkWhatPartFromStationLnverseResultButton, walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
+            Factory.WalkWhatPartFromStationCal(tabControl1, walkWhatPartFromStationResultButton, walkWhatPartFromStationLnverseResultButton, walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
         }
 
         private void ClearTextButtonChecked(object sender, EventArgs e)

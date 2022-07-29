@@ -57,15 +57,15 @@ namespace Calculator_1
             }
         }
 
-        internal static void BmiCreate(TextBox allCalBox, TextBox heightBox, TextBox weightBox, TextBox bmiBox)
+        internal static void BmiCreate(TabControl tabControl1, TextBox allCalBox, TextBox heightBox, TextBox weightBox, TextBox bmiBox)
         {
 
-            WeightCreateFactory.BmiCalCreate(allCalBox, heightBox, weightBox, bmiBox);
+            WeightCreateFactory.BmiCalCreate(tabControl1,allCalBox, heightBox, weightBox, bmiBox);
         }
 
-        internal static void BaseWeightCreata(TextBox allCalBox, TextBox heightBox, TextBox weightBox, TextBox baseWeightBox)
+        internal static void BaseWeightCreata(TabControl tabControl1, TextBox allCalBox, TextBox heightBox, TextBox weightBox, TextBox baseWeightBox)
         {
-            WeightCreateFactory.BaseWeightCalCreate(allCalBox, heightBox, weightBox, baseWeightBox);
+            WeightCreateFactory.BaseWeightCalCreate(tabControl1,allCalBox, heightBox, weightBox, baseWeightBox);
         }
 
         internal static void DataLoad(TextBox allCalBox)
@@ -78,14 +78,14 @@ namespace Calculator_1
             DataCreateFactory.DataSave(allCalBox);
         }
 
-        internal static void HourlyWageCal(Button hourlyWageResultButton, Button hourlyWageReverseResultButton, TextBox annualIncomeBox, TextBox hourlyWageResultBox, TextBox allCalBox, object sender)
+        internal static void HourlyWageCal(TabControl tabControl1, Button hourlyWageResultButton, Button hourlyWageReverseResultButton, TextBox annualIncomeBox, TextBox hourlyWageResultBox, TextBox allCalBox, object sender)
         {
-            ToolCreateCalFactory.HourlyWageCal(hourlyWageResultButton, hourlyWageReverseResultButton, allCalBox, annualIncomeBox, hourlyWageResultBox, sender);
+            ToolCreateCalFactory.HourlyWageCal(tabControl1,hourlyWageResultButton, hourlyWageReverseResultButton, allCalBox, annualIncomeBox, hourlyWageResultBox, sender);
         }
 
-        internal static void WalkWhatPartFromStationCal(Button walkWhatPartFromStationResultButton, Button walkWhatPartFromStationLnverseResultButton, TextBox walkWhatPartFromStationCalBox, TextBox walkWhatPartFromStationResultBox, TextBox allCalBox, object sender)
+        internal static void WalkWhatPartFromStationCal(TabControl tabControl1, Button walkWhatPartFromStationResultButton, Button walkWhatPartFromStationLnverseResultButton, TextBox walkWhatPartFromStationCalBox, TextBox walkWhatPartFromStationResultBox, TextBox allCalBox, object sender)
         {
-            ToolCreateCalFactory.WalkWhatPartFromStationCal(walkWhatPartFromStationResultButton,walkWhatPartFromStationLnverseResultButton,walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
+            ToolCreateCalFactory.WalkWhatPartFromStationCal(tabControl1,walkWhatPartFromStationResultButton,walkWhatPartFromStationLnverseResultButton,walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
         }
     }
 }
