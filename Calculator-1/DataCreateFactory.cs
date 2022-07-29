@@ -14,7 +14,7 @@ namespace Calculator_1
             {
                 string fileName = "計算式";
                 string dataPrograms = File.ReadAllText($@"{fileName}.txt");
-                temps.Text = dataPrograms.ToString();
+                temps.Text = dataPrograms;
             }
         }
 

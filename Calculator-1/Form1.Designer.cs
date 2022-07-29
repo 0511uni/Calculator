@@ -108,6 +108,7 @@
             this.annualIncomeLabel = new System.Windows.Forms.Label();
             this.annualIncomeBox = new System.Windows.Forms.TextBox();
             this.clearTextButton = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -121,6 +122,7 @@
             this.calBox.Location = new System.Drawing.Point(4, 2);
             this.calBox.Margin = new System.Windows.Forms.Padding(2);
             this.calBox.Name = "calBox";
+            this.calBox.ReadOnly = true;
             this.calBox.Size = new System.Drawing.Size(135, 25);
             this.calBox.TabIndex = 0;
             // 
@@ -420,6 +422,7 @@
             this.formulaBox.Location = new System.Drawing.Point(4, 32);
             this.formulaBox.Margin = new System.Windows.Forms.Padding(2);
             this.formulaBox.Name = "formulaBox";
+            this.formulaBox.ReadOnly = true;
             this.formulaBox.Size = new System.Drawing.Size(177, 25);
             this.formulaBox.TabIndex = 19;
             // 
@@ -430,6 +433,7 @@
             this.allCalBox.Margin = new System.Windows.Forms.Padding(2);
             this.allCalBox.Multiline = true;
             this.allCalBox.Name = "allCalBox";
+            this.allCalBox.ReadOnly = true;
             this.allCalBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.allCalBox.Size = new System.Drawing.Size(204, 332);
             this.allCalBox.TabIndex = 20;
@@ -669,6 +673,7 @@
             this.baseWeightBox.Location = new System.Drawing.Point(63, 258);
             this.baseWeightBox.Margin = new System.Windows.Forms.Padding(2);
             this.baseWeightBox.Name = "baseWeightBox";
+            this.baseWeightBox.ReadOnly = true;
             this.baseWeightBox.Size = new System.Drawing.Size(70, 25);
             this.baseWeightBox.TabIndex = 8;
             // 
@@ -688,6 +693,7 @@
             this.bmiBox.Location = new System.Drawing.Point(63, 195);
             this.bmiBox.Margin = new System.Windows.Forms.Padding(2);
             this.bmiBox.Name = "bmiBox";
+            this.bmiBox.ReadOnly = true;
             this.bmiBox.Size = new System.Drawing.Size(70, 25);
             this.bmiBox.TabIndex = 6;
             // 
@@ -727,6 +733,7 @@
             this.weightBox.Location = new System.Drawing.Point(63, 115);
             this.weightBox.Margin = new System.Windows.Forms.Padding(2);
             this.weightBox.Name = "weightBox";
+            this.weightBox.ReadOnly = true;
             this.weightBox.Size = new System.Drawing.Size(70, 25);
             this.weightBox.TabIndex = 2;
             // 
@@ -736,6 +743,7 @@
             this.heightBox.Location = new System.Drawing.Point(63, 58);
             this.heightBox.Margin = new System.Windows.Forms.Padding(2);
             this.heightBox.Name = "heightBox";
+            this.heightBox.ReadOnly = true;
             this.heightBox.Size = new System.Drawing.Size(70, 25);
             this.heightBox.TabIndex = 1;
             // 
@@ -743,6 +751,7 @@
             // 
             this.toolTag.AutoScroll = true;
             this.toolTag.BackColor = System.Drawing.Color.RoyalBlue;
+            this.toolTag.Controls.Add(this.button11);
             this.toolTag.Controls.Add(this.hourlyWageReverseResultButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseCalButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseResultButton);
@@ -833,6 +842,7 @@
             this.walkWhatPartFromStationResultBox.Location = new System.Drawing.Point(62, 275);
             this.walkWhatPartFromStationResultBox.Margin = new System.Windows.Forms.Padding(2);
             this.walkWhatPartFromStationResultBox.Name = "walkWhatPartFromStationResultBox";
+            this.walkWhatPartFromStationResultBox.ReadOnly = true;
             this.walkWhatPartFromStationResultBox.Size = new System.Drawing.Size(59, 25);
             this.walkWhatPartFromStationResultBox.TabIndex = 35;
             // 
@@ -896,6 +906,7 @@
             this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(62, 213);
             this.walkWhatPartFromStationCalBox.Margin = new System.Windows.Forms.Padding(2);
             this.walkWhatPartFromStationCalBox.Name = "walkWhatPartFromStationCalBox";
+            this.walkWhatPartFromStationCalBox.ReadOnly = true;
             this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(59, 25);
             this.walkWhatPartFromStationCalBox.TabIndex = 28;
             // 
@@ -944,6 +955,7 @@
             this.hourlyWageResultBox.Location = new System.Drawing.Point(58, 143);
             this.hourlyWageResultBox.Margin = new System.Windows.Forms.Padding(2);
             this.hourlyWageResultBox.Name = "hourlyWageResultBox";
+            this.hourlyWageResultBox.ReadOnly = true;
             this.hourlyWageResultBox.Size = new System.Drawing.Size(59, 25);
             this.hourlyWageResultBox.TabIndex = 22;
             // 
@@ -1008,6 +1020,7 @@
             this.annualIncomeBox.Location = new System.Drawing.Point(58, 56);
             this.annualIncomeBox.Margin = new System.Windows.Forms.Padding(2);
             this.annualIncomeBox.Name = "annualIncomeBox";
+            this.annualIncomeBox.ReadOnly = true;
             this.annualIncomeBox.Size = new System.Drawing.Size(44, 25);
             this.annualIncomeBox.TabIndex = 15;
             // 
@@ -1021,6 +1034,15 @@
             this.clearTextButton.Text = "Clear Text";
             this.clearTextButton.UseVisualStyleBackColor = true;
             this.clearTextButton.Click += new System.EventHandler(this.ClearTextButtonChecked);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(12, 143);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(41, 25);
+            this.button11.TabIndex = 41;
+            this.button11.Text = "in";
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // Calculator
             // 
@@ -1134,6 +1156,7 @@
         private System.Windows.Forms.Button walkWhatPartFromStationLnverseResultButton;
         private System.Windows.Forms.Button walkWhatPartFromStationLnverseCalButton;
         private System.Windows.Forms.Button hourlyWageReverseResultButton;
+        private System.Windows.Forms.Button button11;
     }
 }
 

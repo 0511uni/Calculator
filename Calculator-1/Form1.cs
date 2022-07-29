@@ -13,7 +13,6 @@ namespace Calculator_1
     //ぼやけるやサイズ変わる問題→http://www.ams.eng.osaka-u.ac.jp/user/ishihara/?p=1550
     public partial class Calculator : Form
     {
-        string number = "";
         string basicArithmeticOperations = "＋－";
 
         public Calculator()
@@ -49,16 +48,16 @@ namespace Calculator_1
             else if (formuraData.Contains("="))
             {
                 calBox.Text = "";
-                formulaBox.Text = calBox.Text;
+                formulaBox.Text = "";
             }
             else if (formuraData == "" && sender.Equals(button00))
             {
                 return;
             }
 
-            number = (sender as Button).Text;
-            calBox.Text += number.ToString();
-            formulaBox.Text += number.ToString();
+            string number = (sender as Button).Text;
+            calBox.Text += number;
+            formulaBox.Text += number;
         }
 
         private void AnswerButton_Clicked(object sender, EventArgs e)
@@ -240,8 +239,7 @@ namespace Calculator_1
         {
             if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
             {
-                var number = ".";
-                calBox.Text += number.ToString();
+                calBox.Text += ".";
                 formulaBox.Text = calBox.Text;
             }
             else if (formulaBox.Text == "")
@@ -250,9 +248,8 @@ namespace Calculator_1
             }
             else
             {
-                var number = ".";
-                calBox.Text += number.ToString();
-                formulaBox.Text += number.ToString();
+                calBox.Text += ".";
+                formulaBox.Text += calBox.Text;
             }
         }
 
@@ -278,8 +275,7 @@ namespace Calculator_1
 
         private void CalHeigthtButtonClicked(object sender, EventArgs e)
         {
-            heightBox.Text = "";
-            heightBox.Text += calBox.Text;
+            heightBox.Text = calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
 

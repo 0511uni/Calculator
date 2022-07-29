@@ -83,7 +83,7 @@ namespace Calculator_1
             //string directoryName = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
             //string fileName = "計算式";
             //string dataPrograms = File.ReadAllText($@"{directoryName}\{fileName}.txt");
-            //temps.Text = dataPrograms.ToString();
+            //temps.Text = dataPrograms;
             #endregion
         }
     }
