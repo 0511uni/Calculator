@@ -376,8 +376,7 @@ namespace Calculator_1
             else
             {
                 formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length -1);
-            }
-            
+            }   
         }
     }
 }
