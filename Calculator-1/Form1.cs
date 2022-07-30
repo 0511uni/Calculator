@@ -249,7 +249,7 @@ namespace Calculator_1
             else
             {
                 calBox.Text += ".";
-                formulaBox.Text += calBox.Text;
+                formulaBox.Text = calBox.Text;
             }
         }
 
@@ -377,6 +377,41 @@ namespace Calculator_1
             {
                 formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length -1).Trim();
             }   
+        }
+
+        private void YearsOldResultButtonClicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void YearsOldCaiBoxButtonClieked(object sender, EventArgs e)
+        {
+            if (calBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
+            else if (yearBox.Text == "")
+            {
+                yearBox.Text = calBox.Text;
+                calBox.Clear();
+                formulaBox.Clear();
+            }
+            else if (manthBox.Text == "")
+            {
+                manthBox.Text = calBox.Text;
+                calBox.Clear();
+                formulaBox.Clear();
+            }
+            else if (dayBox.Text == "")
+            {
+                dayBox.Text = calBox.Text;
+                calBox.Clear();
+                formulaBox.Clear();
+            }
+
+            //yearBox.Text = calBox.Text;
+            //calBox.Clear();
+            //formulaBox.Clear();
         }
     }
 }

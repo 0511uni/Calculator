@@ -54,7 +54,7 @@ namespace Calculator_1
                         $"　↓ \r\n" +
                         $"年収:" + result.ToString().Replace("0000", "") + "万円 \r\n";
                 }
-            }              
+            }
         }
 
         internal static void WalkWhatPartFromStationCal(TabControl tabControl1, Button walkWhatPartFromStationResultButton, Button walkWhatPartFromStationReverseResultButton, TextBox walkWhatPartFromStationCalBox, TextBox walkWhatPartFromStationResultBox, TextBox allCalBox, object sender)
@@ -74,17 +74,19 @@ namespace Calculator_1
                     string walkWhatPartFromStationResult = walkWhatPartFromStation + " / 80";
 
                     DataTable dt = new DataTable();
-                    var result = dt.Compute(walkWhatPartFromStationResult, "");
+                    var result = dt.Compute(walkWhatPartFromStationResult, "").ToString();
 
-                    walkWhatPartFromStationResultBox.Text = result.ToString();
+                    var answer = Math.Floor(decimal.Parse(result));
+                 
+                    walkWhatPartFromStationResultBox.Text = answer.ToString();
                     allCalBox.Text += $"-------------------\r\n" +
                         $"♦ 駅からの距離 ♦\r\n" +
                         $"距離 :{walkWhatPartFromStationCalBox.Text}ｍ \r\n" +
                         $"　↓ \r\n" +
-                        $"徒歩 :" + result.ToString() + "分\r\n";
+                        $"徒歩 :" + Math.Floor(float.Parse(result.ToString())) + "分\r\n";
                 }
             }
-            else if(sender.Equals(walkWhatPartFromStationReverseResultButton))
+            else if (sender.Equals(walkWhatPartFromStationReverseResultButton))
             {
                 if (walkWhatPartFromStationResultBox.Text == "")
                 {
@@ -99,15 +101,27 @@ namespace Calculator_1
                     DataTable dt = new DataTable();
                     var result = dt.Compute(walkWhatPartFromStationResult, "");
 
-                    walkWhatPartFromStationCalBox.Text = result.ToString();
-                    allCalBox.Text += $"-------------------\r\n" +
-                        $"♦ 駅からの距離 ♦\r\n" +
-                        $"徒歩 :{walkWhatPartFromStationResultBox.Text}分 \r\n" +
-                        $"　↓ \r\n" +
-                        $"距離 :" + result.ToString() + "ｍ\r\n";
+                    if (walkWhatPartFromStationResult.Contains("."))
+                    {
+                        walkWhatPartFromStationCalBox.Text = Math.Floor((decimal)result).ToString();
+                        allCalBox.Text += $"-------------------\r\n" +
+                            $"♦ 駅からの距離 ♦\r\n" +
+                            $"徒歩 :{walkWhatPartFromStationResultBox.Text}分 \r\n" +
+                            $"　↓ \r\n" +
+                            $"距離 :" + Math.Floor((decimal)result).ToString() + "ｍ\r\n";
+                    }
+                    else
+                    {
+                        walkWhatPartFromStationCalBox.Text = result.ToString();
+                        allCalBox.Text += $"-------------------\r\n" +
+                            $"♦ 駅からの距離 ♦\r\n" +
+                            $"徒歩 :{walkWhatPartFromStationResultBox.Text}分 \r\n" +
+                            $"　↓ \r\n" +
+                            $"距離 :" + result.ToString() + "ｍ\r\n";
+                    }
                 }
             }
-            
+
         }
     }
 }
