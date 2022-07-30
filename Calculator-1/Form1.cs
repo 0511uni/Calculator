@@ -265,12 +265,12 @@ namespace Calculator_1
 
         private void BmiResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.BmiCreate(tabControl1,allCalBox, heightBox, weightBox, bmiBox);
+            Factory.BmiCreate(tabControl1, allCalBox, heightBox, weightBox, bmiBox);
         }
 
         private void BaseWeightButtonClicked(object sender, EventArgs e)
         {
-            Factory.BaseWeightCreata(tabControl1,allCalBox, heightBox, weightBox, baseWeightBox);
+            Factory.BaseWeightCreata(tabControl1, allCalBox, heightBox, weightBox, baseWeightBox);
         }
 
         private void CalHeigthtButtonClicked(object sender, EventArgs e)
@@ -287,7 +287,7 @@ namespace Calculator_1
 
         private void CalWeigthtButtonClicked(object sender, EventArgs e)
         {
-            if(calBox.Text == "")
+            if (calBox.Text == "")
             {
                 tabControl1.SelectedIndex = 0;
             }
@@ -322,12 +322,12 @@ namespace Calculator_1
 
         private void HourlyWageResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.HourlyWageCal(tabControl1,hourlyWageResultButton, hourlyWageReverseResultButton, annualIncomeBox, hourlyWageResultBox, allCalBox, sender);
+            Factory.HourlyWageCal(tabControl1, hourlyWageResultButton, hourlyWageReverseResultButton, annualIncomeBox, hourlyWageResultBox, allCalBox, sender);
         }
 
         private void HourlyWageReverseResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.HourlyWageCal(tabControl1,hourlyWageResultButton, hourlyWageReverseResultButton, annualIncomeBox, hourlyWageResultBox, allCalBox, sender);
+            Factory.HourlyWageCal(tabControl1, hourlyWageResultButton, hourlyWageReverseResultButton, annualIncomeBox, hourlyWageResultBox, allCalBox, sender);
         }
 
         private void WalkWhatPartFromStationCalButtonClicked(object sender, EventArgs e)
@@ -375,13 +375,29 @@ namespace Calculator_1
             }
             else
             {
-                formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length -1).Trim();
-            }   
+                formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length - 1).Trim();
+            }
         }
 
         private void YearsOldResultButtonClicked(object sender, EventArgs e)
         {
+            var year = int.Parse(yearBox.Text);
+            var manth = int.Parse(manthBox.Text);
+            var day = int.Parse(dayBox.Text);
+            var birthday = new DateTime(year, manth,day);
+            var today = DateTime.Today;
+            var age = GetAge(birthday, today);
+            yearsOldBox.Text = age.ToString();
+        }
 
+        static int GetAge(DateTime birthday, DateTime targetDay)
+        {
+            var age = targetDay.Year - birthday.Year;
+            if (targetDay < birthday.AddYears(age))
+            {
+                age--;
+            }
+            return age;
         }
 
         private void YearsOldCaiBoxButtonClieked(object sender, EventArgs e)
@@ -412,6 +428,11 @@ namespace Calculator_1
             //yearBox.Text = calBox.Text;
             //calBox.Clear();
             //formulaBox.Clear();
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
