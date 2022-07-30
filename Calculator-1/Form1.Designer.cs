@@ -109,10 +109,12 @@
             this.annualIncomeLabel = new System.Windows.Forms.Label();
             this.annualIncomeBox = new System.Windows.Forms.TextBox();
             this.dateTime = new System.Windows.Forms.TabPage();
+            this.yearsOldCaiBoxButton = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.yearsOldBox = new System.Windows.Forms.TextBox();
             this.dayBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.yearsOldBox = new System.Windows.Forms.TextBox();
             this.yearsOldResultButton = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -122,11 +124,9 @@
             this.yearBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.yearsOldCaiBoxButton = new System.Windows.Forms.Button();
             this.ageCalculatingFromBirthdateLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.clearTextButton = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -330,7 +330,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(653, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(653, 33);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -343,7 +343,7 @@
             this.saveAndLoadToolStripMenuItem});
             this.ファイルToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.CornflowerBlue;
             this.ファイルToolStripMenuItem.Name = "ファイルToolStripMenuItem";
-            this.ファイルToolStripMenuItem.Size = new System.Drawing.Size(79, 32);
+            this.ファイルToolStripMenuItem.Size = new System.Drawing.Size(79, 29);
             this.ファイルToolStripMenuItem.Text = "ファイル";
             // 
             // endItem
@@ -815,7 +815,7 @@
             this.walkWhatPartFromStationLnverseCalButton.TabIndex = 39;
             this.walkWhatPartFromStationLnverseCalButton.Text = "in";
             this.walkWhatPartFromStationLnverseCalButton.UseVisualStyleBackColor = true;
-            this.walkWhatPartFromStationLnverseCalButton.Click += new System.EventHandler(this.walkWhatPartFromStationResultCalButtonCliked);
+            this.walkWhatPartFromStationLnverseCalButton.Click += new System.EventHandler(this.WalkWhatPartFromStationResultCalButtonCliked);
             // 
             // walkWhatPartFromStationLnverseResultButton
             // 
@@ -1070,6 +1070,36 @@
             this.dateTime.TabIndex = 3;
             this.dateTime.Text = "DateTime";
             // 
+            // yearsOldCaiBoxButton
+            // 
+            this.yearsOldCaiBoxButton.Location = new System.Drawing.Point(7, 75);
+            this.yearsOldCaiBoxButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.yearsOldCaiBoxButton.Name = "yearsOldCaiBoxButton";
+            this.yearsOldCaiBoxButton.Size = new System.Drawing.Size(68, 38);
+            this.yearsOldCaiBoxButton.TabIndex = 28;
+            this.yearsOldCaiBoxButton.Text = "in";
+            this.yearsOldCaiBoxButton.UseVisualStyleBackColor = true;
+            this.yearsOldCaiBoxButton.Click += new System.EventHandler(this.YearsOldCaiBoxButtonClieked);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("MV Boli", 9.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label9.Location = new System.Drawing.Point(73, 61);
+            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(234, 25);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "(生年月日から年齢計算)";
+            // 
+            // yearsOldBox
+            // 
+            this.yearsOldBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.yearsOldBox.Location = new System.Drawing.Point(111, 173);
+            this.yearsOldBox.Name = "yearsOldBox";
+            this.yearsOldBox.Size = new System.Drawing.Size(48, 33);
+            this.yearsOldBox.TabIndex = 38;
+            // 
             // dayBox
             // 
             this.dayBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -1081,7 +1111,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(115, 156);
+            this.label14.Location = new System.Drawing.Point(160, 156);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(83, 23);
@@ -1092,26 +1122,17 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(113, 175);
+            this.label15.Location = new System.Drawing.Point(158, 175);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 31);
             this.label15.TabIndex = 39;
             this.label15.Text = "歳";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
-            // yearsOldBox
-            // 
-            this.yearsOldBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.yearsOldBox.Location = new System.Drawing.Point(66, 173);
-            this.yearsOldBox.Name = "yearsOldBox";
-            this.yearsOldBox.Size = new System.Drawing.Size(48, 33);
-            this.yearsOldBox.TabIndex = 38;
             // 
             // yearsOldResultButton
             // 
             this.yearsOldResultButton.BackColor = System.Drawing.Color.RoyalBlue;
             this.yearsOldResultButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.yearsOldResultButton.Location = new System.Drawing.Point(7, 163);
+            this.yearsOldResultButton.Location = new System.Drawing.Point(41, 163);
             this.yearsOldResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.yearsOldResultButton.Name = "yearsOldResultButton";
             this.yearsOldResultButton.Size = new System.Drawing.Size(53, 46);
@@ -1196,17 +1217,6 @@
             this.label8.TabIndex = 29;
             this.label8.Text = "年";
             // 
-            // yearsOldCaiBoxButton
-            // 
-            this.yearsOldCaiBoxButton.Location = new System.Drawing.Point(7, 75);
-            this.yearsOldCaiBoxButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.yearsOldCaiBoxButton.Name = "yearsOldCaiBoxButton";
-            this.yearsOldCaiBoxButton.Size = new System.Drawing.Size(68, 38);
-            this.yearsOldCaiBoxButton.TabIndex = 28;
-            this.yearsOldCaiBoxButton.Text = "in";
-            this.yearsOldCaiBoxButton.UseVisualStyleBackColor = true;
-            this.yearsOldCaiBoxButton.Click += new System.EventHandler(this.YearsOldCaiBoxButtonClieked);
-            // 
             // ageCalculatingFromBirthdateLabel
             // 
             this.ageCalculatingFromBirthdateLabel.AutoSize = true;
@@ -1242,17 +1252,6 @@
             this.clearTextButton.Text = "Clear Text";
             this.clearTextButton.UseVisualStyleBackColor = true;
             this.clearTextButton.Click += new System.EventHandler(this.ClearTextButtonChecked);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("MV Boli", 9.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label9.Location = new System.Drawing.Point(73, 61);
-            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(234, 25);
-            this.label9.TabIndex = 41;
-            this.label9.Text = "(生年月日から年齢計算)";
             // 
             // Calculator
             // 
