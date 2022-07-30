@@ -249,7 +249,7 @@ namespace Calculator_1
             else
             {
                 calBox.Text += ".";
-                formulaBox.Text = calBox.Text;
+                formulaBox.Text += ".";
             }
         }
 
@@ -341,7 +341,7 @@ namespace Calculator_1
             calBox.Clear();
             formulaBox.Clear();
         }
-        private void walkWhatPartFromStationResultCalButtonCliked(object sender, EventArgs e)
+        private void WalkWhatPartFromStationResultCalButtonCliked(object sender, EventArgs e)
         {
             if (walkWhatPartFromStationResultBox.Text == "")
             {
@@ -388,6 +388,11 @@ namespace Calculator_1
             var today = DateTime.Today;
             var age = GetAge(birthday, today);
             yearsOldBox.Text = age.ToString();
+            allCalBox.Text += $"-------------------\r\n" +
+                $"{yearBox.Text}年{manthBox.Text}月{dayBox.Text}日" +
+                $" 生まれ\r\n" +
+                $"　　↓\r\n" +
+                $"　　{yearsOldBox.Text}歳";
         }
 
         static int GetAge(DateTime birthday, DateTime targetDay)
@@ -428,11 +433,6 @@ namespace Calculator_1
             //yearBox.Text = calBox.Text;
             //calBox.Clear();
             //formulaBox.Clear();
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
