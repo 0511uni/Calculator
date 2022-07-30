@@ -108,24 +108,24 @@
             this.annualIncomeCalButton = new System.Windows.Forms.Button();
             this.annualIncomeLabel = new System.Windows.Forms.Label();
             this.annualIncomeBox = new System.Windows.Forms.TextBox();
-            this.clearTextButton = new System.Windows.Forms.Button();
             this.dateTime = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.yearsOldBox = new System.Windows.Forms.TextBox();
+            this.yearsOldResultButton = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.manthBox = new System.Windows.Forms.TextBox();
+            this.dayBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.yearBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.yearsOldCaiBoxButton = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.yearBox = new System.Windows.Forms.TextBox();
-            this.manthBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dayBox = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.yearsOldResultButton = new System.Windows.Forms.Button();
-            this.yearsOldBox = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.clearTextButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -138,7 +138,7 @@
             // 
             this.calBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.calBox.Location = new System.Drawing.Point(4, 2);
-            this.calBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.calBox.Margin = new System.Windows.Forms.Padding(2);
             this.calBox.Name = "calBox";
             this.calBox.ReadOnly = true;
             this.calBox.Size = new System.Drawing.Size(135, 25);
@@ -148,7 +148,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button1.Location = new System.Drawing.Point(2, 62);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(42, 45);
             this.button1.TabIndex = 1;
@@ -160,7 +160,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button2.Location = new System.Drawing.Point(47, 62);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(42, 45);
             this.button2.TabIndex = 2;
@@ -172,7 +172,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button3.Location = new System.Drawing.Point(94, 62);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(42, 45);
             this.button3.TabIndex = 3;
@@ -184,7 +184,7 @@
             // 
             this.button4.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button4.Location = new System.Drawing.Point(2, 111);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(42, 45);
             this.button4.TabIndex = 4;
@@ -196,7 +196,7 @@
             // 
             this.button5.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button5.Location = new System.Drawing.Point(47, 111);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(42, 45);
             this.button5.TabIndex = 5;
@@ -208,7 +208,7 @@
             // 
             this.button6.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button6.Location = new System.Drawing.Point(94, 111);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(42, 45);
             this.button6.TabIndex = 6;
@@ -220,7 +220,7 @@
             // 
             this.button7.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button7.Location = new System.Drawing.Point(2, 160);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(42, 45);
             this.button7.TabIndex = 7;
@@ -232,7 +232,7 @@
             // 
             this.button8.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button8.Location = new System.Drawing.Point(47, 160);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(42, 45);
             this.button8.TabIndex = 8;
@@ -244,7 +244,7 @@
             // 
             this.button9.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button9.Location = new System.Drawing.Point(94, 160);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(42, 45);
             this.button9.TabIndex = 9;
@@ -256,7 +256,7 @@
             // 
             this.button0.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button0.Location = new System.Drawing.Point(2, 210);
-            this.button0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button0.Margin = new System.Windows.Forms.Padding(2);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(42, 45);
             this.button0.TabIndex = 10;
@@ -268,7 +268,7 @@
             // 
             this.button00.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button00.Location = new System.Drawing.Point(47, 210);
-            this.button00.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button00.Margin = new System.Windows.Forms.Padding(2);
             this.button00.Name = "button00";
             this.button00.Size = new System.Drawing.Size(42, 45);
             this.button00.TabIndex = 11;
@@ -280,7 +280,7 @@
             // 
             this.answerButton.Font = new System.Drawing.Font("MS UI Gothic", 15F);
             this.answerButton.Location = new System.Drawing.Point(94, 210);
-            this.answerButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.answerButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerButton.Name = "answerButton";
             this.answerButton.Size = new System.Drawing.Size(42, 45);
             this.answerButton.TabIndex = 12;
@@ -292,7 +292,7 @@
             // 
             this.addButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.addButton.Location = new System.Drawing.Point(140, 62);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(42, 45);
             this.addButton.TabIndex = 13;
@@ -304,7 +304,7 @@
             // 
             this.subtractButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.subtractButton.Location = new System.Drawing.Point(140, 111);
-            this.subtractButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.subtractButton.Margin = new System.Windows.Forms.Padding(2);
             this.subtractButton.Name = "subtractButton";
             this.subtractButton.Size = new System.Drawing.Size(42, 45);
             this.subtractButton.TabIndex = 14;
@@ -316,7 +316,7 @@
             // 
             this.divideButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.divideButton.Location = new System.Drawing.Point(140, 210);
-            this.divideButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.divideButton.Margin = new System.Windows.Forms.Padding(2);
             this.divideButton.Name = "divideButton";
             this.divideButton.Size = new System.Drawing.Size(42, 45);
             this.divideButton.TabIndex = 15;
@@ -328,7 +328,7 @@
             // 
             this.multiplyButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplyButton.Location = new System.Drawing.Point(140, 160);
-            this.multiplyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.multiplyButton.Margin = new System.Windows.Forms.Padding(2);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(42, 45);
             this.multiplyButton.TabIndex = 16;
@@ -426,7 +426,7 @@
             // 
             this.clearButton.Font = new System.Drawing.Font("MS UI Gothic", 13F);
             this.clearButton.Location = new System.Drawing.Point(140, 2);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(2);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(42, 26);
             this.clearButton.TabIndex = 18;
@@ -438,7 +438,7 @@
             // 
             this.formulaBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.formulaBox.Location = new System.Drawing.Point(4, 32);
-            this.formulaBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.formulaBox.Margin = new System.Windows.Forms.Padding(2);
             this.formulaBox.Name = "formulaBox";
             this.formulaBox.ReadOnly = true;
             this.formulaBox.Size = new System.Drawing.Size(177, 25);
@@ -448,7 +448,7 @@
             // 
             this.allCalBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold);
             this.allCalBox.Location = new System.Drawing.Point(190, 22);
-            this.allCalBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.allCalBox.Margin = new System.Windows.Forms.Padding(2);
             this.allCalBox.Multiline = true;
             this.allCalBox.Name = "allCalBox";
             this.allCalBox.ReadOnly = true;
@@ -460,7 +460,7 @@
             // 
             this.backSpaceButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backSpaceButton.Location = new System.Drawing.Point(140, 259);
-            this.backSpaceButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.backSpaceButton.Margin = new System.Windows.Forms.Padding(2);
             this.backSpaceButton.Name = "backSpaceButton";
             this.backSpaceButton.Size = new System.Drawing.Size(42, 45);
             this.backSpaceButton.TabIndex = 24;
@@ -472,7 +472,7 @@
             // 
             this.decimalPointButton.Font = new System.Drawing.Font("MS UI Gothic", 15F);
             this.decimalPointButton.Location = new System.Drawing.Point(94, 259);
-            this.decimalPointButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.decimalPointButton.Margin = new System.Windows.Forms.Padding(2);
             this.decimalPointButton.Name = "decimalPointButton";
             this.decimalPointButton.Size = new System.Drawing.Size(42, 45);
             this.decimalPointButton.TabIndex = 23;
@@ -484,7 +484,7 @@
             // 
             this.noTaxButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.noTaxButton.Location = new System.Drawing.Point(47, 259);
-            this.noTaxButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.noTaxButton.Margin = new System.Windows.Forms.Padding(2);
             this.noTaxButton.Name = "noTaxButton";
             this.noTaxButton.Size = new System.Drawing.Size(42, 45);
             this.noTaxButton.TabIndex = 22;
@@ -496,7 +496,7 @@
             // 
             this.taxButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.taxButton.Location = new System.Drawing.Point(2, 259);
-            this.taxButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.taxButton.Margin = new System.Windows.Forms.Padding(2);
             this.taxButton.Name = "taxButton";
             this.taxButton.Size = new System.Drawing.Size(42, 45);
             this.taxButton.TabIndex = 21;
@@ -692,7 +692,7 @@
             // 
             this.baseWeightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.baseWeightBox.Location = new System.Drawing.Point(63, 258);
-            this.baseWeightBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.baseWeightBox.Margin = new System.Windows.Forms.Padding(2);
             this.baseWeightBox.Name = "baseWeightBox";
             this.baseWeightBox.ReadOnly = true;
             this.baseWeightBox.Size = new System.Drawing.Size(70, 25);
@@ -712,7 +712,7 @@
             // 
             this.bmiBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.bmiBox.Location = new System.Drawing.Point(63, 195);
-            this.bmiBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bmiBox.Margin = new System.Windows.Forms.Padding(2);
             this.bmiBox.Name = "bmiBox";
             this.bmiBox.ReadOnly = true;
             this.bmiBox.Size = new System.Drawing.Size(70, 25);
@@ -752,7 +752,7 @@
             // 
             this.weightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.weightBox.Location = new System.Drawing.Point(63, 115);
-            this.weightBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.weightBox.Margin = new System.Windows.Forms.Padding(2);
             this.weightBox.Name = "weightBox";
             this.weightBox.ReadOnly = true;
             this.weightBox.Size = new System.Drawing.Size(70, 25);
@@ -762,7 +762,7 @@
             // 
             this.heightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.heightBox.Location = new System.Drawing.Point(63, 58);
-            this.heightBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.heightBox.Margin = new System.Windows.Forms.Padding(2);
             this.heightBox.Name = "heightBox";
             this.heightBox.ReadOnly = true;
             this.heightBox.Size = new System.Drawing.Size(70, 25);
@@ -798,7 +798,7 @@
             this.toolTag.Controls.Add(this.annualIncomeBox);
             this.toolTag.Location = new System.Drawing.Point(4, 4);
             this.toolTag.Name = "toolTag";
-            this.toolTag.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.toolTag.Padding = new System.Windows.Forms.Padding(3);
             this.toolTag.Size = new System.Drawing.Size(184, 301);
             this.toolTag.TabIndex = 2;
             this.toolTag.Text = "Tool";
@@ -870,7 +870,7 @@
             // 
             this.walkWhatPartFromStationResultBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.walkWhatPartFromStationResultBox.Location = new System.Drawing.Point(62, 275);
-            this.walkWhatPartFromStationResultBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.walkWhatPartFromStationResultBox.Margin = new System.Windows.Forms.Padding(2);
             this.walkWhatPartFromStationResultBox.Name = "walkWhatPartFromStationResultBox";
             this.walkWhatPartFromStationResultBox.ReadOnly = true;
             this.walkWhatPartFromStationResultBox.Size = new System.Drawing.Size(59, 25);
@@ -934,7 +934,7 @@
             // 
             this.walkWhatPartFromStationCalBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(62, 213);
-            this.walkWhatPartFromStationCalBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.walkWhatPartFromStationCalBox.Margin = new System.Windows.Forms.Padding(2);
             this.walkWhatPartFromStationCalBox.Name = "walkWhatPartFromStationCalBox";
             this.walkWhatPartFromStationCalBox.ReadOnly = true;
             this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(59, 25);
@@ -983,7 +983,7 @@
             // 
             this.hourlyWageResultBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.hourlyWageResultBox.Location = new System.Drawing.Point(58, 143);
-            this.hourlyWageResultBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hourlyWageResultBox.Margin = new System.Windows.Forms.Padding(2);
             this.hourlyWageResultBox.Name = "hourlyWageResultBox";
             this.hourlyWageResultBox.ReadOnly = true;
             this.hourlyWageResultBox.Size = new System.Drawing.Size(59, 25);
@@ -1048,26 +1048,16 @@
             // 
             this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.annualIncomeBox.Location = new System.Drawing.Point(58, 56);
-            this.annualIncomeBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.annualIncomeBox.Margin = new System.Windows.Forms.Padding(2);
             this.annualIncomeBox.Name = "annualIncomeBox";
             this.annualIncomeBox.ReadOnly = true;
             this.annualIncomeBox.Size = new System.Drawing.Size(44, 25);
             this.annualIncomeBox.TabIndex = 15;
             // 
-            // clearTextButton
-            // 
-            this.clearTextButton.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearTextButton.Location = new System.Drawing.Point(242, 0);
-            this.clearTextButton.Name = "clearTextButton";
-            this.clearTextButton.Size = new System.Drawing.Size(93, 23);
-            this.clearTextButton.TabIndex = 26;
-            this.clearTextButton.Text = "Clear Text";
-            this.clearTextButton.UseVisualStyleBackColor = true;
-            this.clearTextButton.Click += new System.EventHandler(this.ClearTextButtonChecked);
-            // 
             // dateTime
             // 
             this.dateTime.BackColor = System.Drawing.Color.RoyalBlue;
+            this.dateTime.Controls.Add(this.dayBox);
             this.dateTime.Controls.Add(this.label14);
             this.dateTime.Controls.Add(this.label15);
             this.dateTime.Controls.Add(this.yearsOldBox);
@@ -1075,7 +1065,6 @@
             this.dateTime.Controls.Add(this.label12);
             this.dateTime.Controls.Add(this.label13);
             this.dateTime.Controls.Add(this.manthBox);
-            this.dateTime.Controls.Add(this.dayBox);
             this.dateTime.Controls.Add(this.label10);
             this.dateTime.Controls.Add(this.label11);
             this.dateTime.Controls.Add(this.yearBox);
@@ -1091,17 +1080,113 @@
             this.dateTime.TabIndex = 3;
             this.dateTime.Text = "DateTime";
             // 
-            // label4
+            // label14
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(-4, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 21);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "DateTime";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(108, 131);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(57, 17);
+            this.label14.TabIndex = 40;
+            this.label14.Text = "YearsOld";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(110, 150);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(27, 21);
+            this.label15.TabIndex = 39;
+            this.label15.Text = "歳";
+            // 
+            // yearsOldBox
+            // 
+            this.yearsOldBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.yearsOldBox.Location = new System.Drawing.Point(56, 146);
+            this.yearsOldBox.Margin = new System.Windows.Forms.Padding(2);
+            this.yearsOldBox.Name = "yearsOldBox";
+            this.yearsOldBox.Size = new System.Drawing.Size(50, 25);
+            this.yearsOldBox.TabIndex = 38;
+            // 
+            // yearsOldResultButton
+            // 
+            this.yearsOldResultButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.yearsOldResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yearsOldResultButton.Location = new System.Drawing.Point(72, 110);
+            this.yearsOldResultButton.Name = "yearsOldResultButton";
+            this.yearsOldResultButton.Size = new System.Drawing.Size(32, 31);
+            this.yearsOldResultButton.TabIndex = 37;
+            this.yearsOldResultButton.Text = "▼";
+            this.yearsOldResultButton.UseVisualStyleBackColor = false;
+            this.yearsOldResultButton.Click += new System.EventHandler(this.YearsOldResultButtonClicked);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(149, 65);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(28, 17);
+            this.label12.TabIndex = 36;
+            this.label12.Text = "Day";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(152, 84);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(27, 21);
+            this.label13.TabIndex = 35;
+            this.label13.Text = "日";
+            // 
+            // manthBox
+            // 
+            this.manthBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.manthBox.Location = new System.Drawing.Point(76, 80);
+            this.manthBox.Margin = new System.Windows.Forms.Padding(2);
+            this.manthBox.Name = "manthBox";
+            this.manthBox.Size = new System.Drawing.Size(28, 25);
+            this.manthBox.TabIndex = 31;
+            // 
+            // dayBox
+            // 
+            this.dayBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dayBox.Location = new System.Drawing.Point(126, 80);
+            this.dayBox.Margin = new System.Windows.Forms.Padding(2);
+            this.dayBox.Name = "dayBox";
+            this.dayBox.Size = new System.Drawing.Size(28, 25);
+            this.dayBox.TabIndex = 34;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(96, 65);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(45, 17);
+            this.label10.TabIndex = 33;
+            this.label10.Text = "Month";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(99, 84);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(27, 21);
+            this.label11.TabIndex = 32;
+            this.label11.Text = "月";
+            // 
+            // yearBox
+            // 
+            this.yearBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.yearBox.Location = new System.Drawing.Point(4, 80);
+            this.yearBox.Margin = new System.Windows.Forms.Padding(2);
+            this.yearBox.Name = "yearBox";
+            this.yearBox.Size = new System.Drawing.Size(50, 25);
+            this.yearBox.TabIndex = 26;
             // 
             // label5
             // 
@@ -1143,113 +1228,28 @@
             this.label9.TabIndex = 27;
             this.label9.Text = "AnnualIncome(年収)";
             // 
-            // yearBox
+            // label4
             // 
-            this.yearBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.yearBox.Location = new System.Drawing.Point(4, 80);
-            this.yearBox.Margin = new System.Windows.Forms.Padding(2);
-            this.yearBox.Name = "yearBox";
-            this.yearBox.Size = new System.Drawing.Size(50, 25);
-            this.yearBox.TabIndex = 26;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(-4, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 21);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "DateTime";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // manthBox
+            // clearTextButton
             // 
-            this.manthBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.manthBox.Location = new System.Drawing.Point(76, 80);
-            this.manthBox.Margin = new System.Windows.Forms.Padding(2);
-            this.manthBox.Name = "manthBox";
-            this.manthBox.Size = new System.Drawing.Size(28, 25);
-            this.manthBox.TabIndex = 31;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(96, 65);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(45, 17);
-            this.label10.TabIndex = 33;
-            this.label10.Text = "Month";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(99, 84);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(27, 21);
-            this.label11.TabIndex = 32;
-            this.label11.Text = "月";
-            // 
-            // dayBox
-            // 
-            this.dayBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dayBox.Location = new System.Drawing.Point(126, 80);
-            this.dayBox.Margin = new System.Windows.Forms.Padding(2);
-            this.dayBox.Name = "dayBox";
-            this.dayBox.Size = new System.Drawing.Size(28, 25);
-            this.dayBox.TabIndex = 34;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(149, 65);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(28, 17);
-            this.label12.TabIndex = 36;
-            this.label12.Text = "Day";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(152, 84);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(27, 21);
-            this.label13.TabIndex = 35;
-            this.label13.Text = "日";
-            // 
-            // yearsOldResultButton
-            // 
-            this.yearsOldResultButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.yearsOldResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearsOldResultButton.Location = new System.Drawing.Point(72, 110);
-            this.yearsOldResultButton.Name = "yearsOldResultButton";
-            this.yearsOldResultButton.Size = new System.Drawing.Size(32, 31);
-            this.yearsOldResultButton.TabIndex = 37;
-            this.yearsOldResultButton.Text = "▼";
-            this.yearsOldResultButton.UseVisualStyleBackColor = false;
-            this.yearsOldResultButton.Click += new System.EventHandler(this.YearsOldResultButtonClicked);
-            // 
-            // yearsOldBox
-            // 
-            this.yearsOldBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.yearsOldBox.Location = new System.Drawing.Point(56, 146);
-            this.yearsOldBox.Margin = new System.Windows.Forms.Padding(2);
-            this.yearsOldBox.Name = "yearsOldBox";
-            this.yearsOldBox.Size = new System.Drawing.Size(50, 25);
-            this.yearsOldBox.TabIndex = 38;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(108, 131);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(57, 17);
-            this.label14.TabIndex = 40;
-            this.label14.Text = "YearsOld";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(110, 150);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(27, 21);
-            this.label15.TabIndex = 39;
-            this.label15.Text = "歳";
+            this.clearTextButton.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearTextButton.Location = new System.Drawing.Point(242, 0);
+            this.clearTextButton.Name = "clearTextButton";
+            this.clearTextButton.Size = new System.Drawing.Size(93, 23);
+            this.clearTextButton.TabIndex = 26;
+            this.clearTextButton.Text = "Clear Text";
+            this.clearTextButton.UseVisualStyleBackColor = true;
+            this.clearTextButton.Click += new System.EventHandler(this.ClearTextButtonChecked);
             // 
             // Calculator
             // 
@@ -1262,7 +1262,7 @@
             this.Controls.Add(this.allCalBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
