@@ -66,6 +66,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bmiAndBaseWeightResultButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.kgLabel = new System.Windows.Forms.Label();
             this.cmLabel = new System.Windows.Forms.Label();
@@ -126,7 +127,6 @@
             this.ageCalculatingFromBirthdateLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.clearTextButton = new System.Windows.Forms.Button();
-            this.bmiAndBaseWeightResultButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -377,7 +377,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(653, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(653, 36);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -633,6 +633,22 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Weight";
             // 
+            // bmiAndBaseWeightResultButton
+            // 
+            this.bmiAndBaseWeightResultButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.bmiAndBaseWeightResultButton.FlatAppearance.BorderSize = 0;
+            this.bmiAndBaseWeightResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bmiAndBaseWeightResultButton.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bmiAndBaseWeightResultButton.Location = new System.Drawing.Point(122, 212);
+            this.bmiAndBaseWeightResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bmiAndBaseWeightResultButton.Name = "bmiAndBaseWeightResultButton";
+            this.bmiAndBaseWeightResultButton.Size = new System.Drawing.Size(54, 52);
+            this.bmiAndBaseWeightResultButton.TabIndex = 35;
+            this.bmiAndBaseWeightResultButton.TabStop = false;
+            this.bmiAndBaseWeightResultButton.Text = "▼";
+            this.bmiAndBaseWeightResultButton.UseVisualStyleBackColor = false;
+            this.bmiAndBaseWeightResultButton.Click += new System.EventHandler(this.BmiAndBaseWeightResultButtonClicked);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -814,7 +830,6 @@
             // 
             // toolTag
             // 
-            this.toolTag.AutoScroll = true;
             this.toolTag.BackColor = System.Drawing.Color.RoyalBlue;
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseResultButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationCalBox);
@@ -1351,22 +1366,6 @@
             this.clearTextButton.UseVisualStyleBackColor = false;
             this.clearTextButton.Click += new System.EventHandler(this.ClearTextButtonChecked);
             // 
-            // bmiAndBaseWeightResultButton
-            // 
-            this.bmiAndBaseWeightResultButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.bmiAndBaseWeightResultButton.FlatAppearance.BorderSize = 0;
-            this.bmiAndBaseWeightResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bmiAndBaseWeightResultButton.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmiAndBaseWeightResultButton.Location = new System.Drawing.Point(122, 212);
-            this.bmiAndBaseWeightResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bmiAndBaseWeightResultButton.Name = "bmiAndBaseWeightResultButton";
-            this.bmiAndBaseWeightResultButton.Size = new System.Drawing.Size(54, 52);
-            this.bmiAndBaseWeightResultButton.TabIndex = 35;
-            this.bmiAndBaseWeightResultButton.TabStop = false;
-            this.bmiAndBaseWeightResultButton.Text = "▼";
-            this.bmiAndBaseWeightResultButton.UseVisualStyleBackColor = false;
-            this.bmiAndBaseWeightResultButton.Click += new System.EventHandler(this.BmiAndBaseWeightResultButtonClicked);
-            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -1433,7 +1432,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox heightBox;
         private System.Windows.Forms.Label weightLabel;
@@ -1499,6 +1497,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button walkWhatPartFromStationResultButton;
         private System.Windows.Forms.Button bmiAndBaseWeightResultButton;
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 
