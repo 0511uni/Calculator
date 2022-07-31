@@ -390,18 +390,25 @@ namespace Calculator_1
 
         private void YearsOldResultButtonClicked(object sender, EventArgs e)
         {
-            var year = int.Parse(yearBox.Text);
-            var manth = int.Parse(manthBox.Text);
-            var day = int.Parse(dayBox.Text);
-            var birthday = new DateTime(year, manth,day);
-            var today = DateTime.Today;
-            var age = GetAge(birthday, today);
-            yearsOldBox.Text = age.ToString();
-            allCalBox.Text += $"-------------------\r\n" +
-                $"{yearBox.Text}年{manthBox.Text}月{dayBox.Text}日" +
-                $" 生まれ\r\n" +
-                $"　　↓\r\n" +
-                $"　　{yearsOldBox.Text}歳\r\n";
+            if (yearBox.Text == "" || manthBox.Text == "" || dayBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
+            else
+            {
+                var year = int.Parse(yearBox.Text);
+                var manth = int.Parse(manthBox.Text);
+                var day = int.Parse(dayBox.Text);
+                var birthday = new DateTime(year, manth, day);
+                var today = DateTime.Today;
+                var age = GetAge(birthday, today);
+                yearsOldBox.Text = age.ToString();
+                allCalBox.Text += $"-------------------\r\n" +
+                    $"{yearBox.Text}年{manthBox.Text}月{dayBox.Text}日" +
+                    $" 生まれ\r\n" +
+                    $"　　↓\r\n" +
+                    $"　　{yearsOldBox.Text}歳\r\n";
+            }
         }
 
         static int GetAge(DateTime birthday, DateTime targetDay)
@@ -435,14 +442,20 @@ namespace Calculator_1
             else if (dayBox.Text == "")
             {
                 dayBox.Text = calBox.Text;
-                calBox.Clear();
                 formulaBox.Clear();
+            }
+            else if (yearsOldBox.Text == "")
+            {
+                return;
             }
             else
             {
+                tabControl1.SelectedIndex = 0;
+                calBox.Clear();
                 yearBox.Clear();
                 manthBox.Clear();
                 dayBox.Clear();
+                yearsOldBox.Clear();
             }
 
             //yearBox.Text = calBox.Text;

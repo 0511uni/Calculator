@@ -751,6 +751,8 @@
             // 
             this.toolTag.AutoScroll = true;
             this.toolTag.BackColor = System.Drawing.Color.RoyalBlue;
+            this.toolTag.Controls.Add(this.walkWhatPartFromStationCalBox);
+            this.toolTag.Controls.Add(this.annualIncomeBox);
             this.toolTag.Controls.Add(this.hourlyWageCalButton);
             this.toolTag.Controls.Add(this.hourlyWageReverseResultButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseCalButton);
@@ -763,7 +765,6 @@
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLabel2);
             this.toolTag.Controls.Add(this.label7);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLabel1);
-            this.toolTag.Controls.Add(this.walkWhatPartFromStationCalBox);
             this.toolTag.Controls.Add(this.yenLabel);
             this.toolTag.Controls.Add(this.thousandYenLabel);
             this.toolTag.Controls.Add(this.label6);
@@ -774,7 +775,6 @@
             this.toolTag.Controls.Add(this.label3);
             this.toolTag.Controls.Add(this.annualIncomeCalButton);
             this.toolTag.Controls.Add(this.annualIncomeLabel);
-            this.toolTag.Controls.Add(this.annualIncomeBox);
             this.toolTag.Location = new System.Drawing.Point(4, 4);
             this.toolTag.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.toolTag.Name = "toolTag";
@@ -798,7 +798,7 @@
             // 
             this.hourlyWageReverseResultButton.BackColor = System.Drawing.Color.RoyalBlue;
             this.hourlyWageReverseResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourlyWageReverseResultButton.Location = new System.Drawing.Point(148, 130);
+            this.hourlyWageReverseResultButton.Location = new System.Drawing.Point(148, 126);
             this.hourlyWageReverseResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.hourlyWageReverseResultButton.Name = "hourlyWageReverseResultButton";
             this.hourlyWageReverseResultButton.Size = new System.Drawing.Size(57, 46);
@@ -900,7 +900,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(203, 322);
+            this.label7.Location = new System.Drawing.Point(197, 322);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 31);
             this.label7.TabIndex = 30;
@@ -939,7 +939,7 @@
             // thousandYenLabel
             // 
             this.thousandYenLabel.AutoSize = true;
-            this.thousandYenLabel.Location = new System.Drawing.Point(168, 81);
+            this.thousandYenLabel.Location = new System.Drawing.Point(176, 70);
             this.thousandYenLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.thousandYenLabel.Name = "thousandYenLabel";
             this.thousandYenLabel.Size = new System.Drawing.Size(119, 23);
@@ -950,7 +950,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(193, 226);
+            this.label6.Location = new System.Drawing.Point(197, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 31);
             this.label6.TabIndex = 24;
@@ -980,7 +980,7 @@
             // 
             this.hourlyWageResultButton.BackColor = System.Drawing.Color.RoyalBlue;
             this.hourlyWageResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourlyWageResultButton.Location = new System.Drawing.Point(97, 130);
+            this.hourlyWageResultButton.Location = new System.Drawing.Point(97, 126);
             this.hourlyWageResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.hourlyWageResultButton.Name = "hourlyWageResultButton";
             this.hourlyWageResultButton.Size = new System.Drawing.Size(53, 46);
@@ -993,7 +993,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(172, 102);
+            this.label2.Location = new System.Drawing.Point(170, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 31);
             this.label2.TabIndex = 19;
@@ -1037,7 +1037,7 @@
             // annualIncomeBox
             // 
             this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.annualIncomeBox.Location = new System.Drawing.Point(97, 84);
+            this.annualIncomeBox.Location = new System.Drawing.Point(103, 84);
             this.annualIncomeBox.Name = "annualIncomeBox";
             this.annualIncomeBox.ReadOnly = true;
             this.annualIncomeBox.Size = new System.Drawing.Size(71, 33);
