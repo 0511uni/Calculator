@@ -29,6 +29,7 @@ namespace Calculator_1
 
         private void NumberButtonClicked(object sender, EventArgs e)
         {
+            
             // 計算式表示ウィンドウの文字
             string formuraData = formulaBox.Text;
 
@@ -58,6 +59,10 @@ namespace Calculator_1
             string number = (sender as Button).Text;
             calBox.Text += number;
             formulaBox.Text += number;
+            addButton.Enabled = true;
+            subtractButton.Enabled = true;
+            multiplyButton.Enabled = true;
+            divideButton.Enabled = true;
         }
 
         private void AnswerButton_Clicked(object sender, EventArgs e)
@@ -79,8 +84,10 @@ namespace Calculator_1
             calBox.Text = result.ToString();
             allCalBox.Text += result.ToString() + "\r\n";
 
-            //FormulaBoxClear(sender, formulaBox, calBox, answerButton);
+
             #region
+
+            //FormulaBoxClear(sender, formulaBox, calBox, answerButton);
             //var add = Eval(allCalBox.Text);
             //allCalBox.Text = add.ToString();
 
@@ -102,6 +109,10 @@ namespace Calculator_1
             #endregion
         }
 
+
+        #region
+
+
         //private void FormulaBoxClear(object sender, TextBox formulaBox, TextBox calBox, Button answerButton)
         //{
         //    if (sender.Equals(answerButton))
@@ -110,8 +121,6 @@ namespace Calculator_1
         //        formulaBox.Text = calBox.Text;
         //    }
         //}
-
-        #region
         //private void Cal(int cal)
         //{
         //    //var cal = 0;
@@ -140,13 +149,39 @@ namespace Calculator_1
 
         private void ArithmeticOperationSymbolClicked(object sender, EventArgs e)
         {
-            if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
+            if (formulaBox.Text == "")
+            {
+                return;
+            }
+            else if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
             {
                 formulaBox.Text = calBox.Text;
             }
+            
             basicArithmeticOperations = (sender as Button).Text;
             formulaBox.Text += basicArithmeticOperations;
             once = false;
+            addButton.Enabled = false;
+            addButton.BackColor = Color.WhiteSmoke;
+            addButton.ForeColor = SystemColors.ControlText;
+            subtractButton.Enabled = false;
+            subtractButton.BackColor = Color.WhiteSmoke;
+            subtractButton.ForeColor = SystemColors.ControlText;
+            multiplyButton.Enabled = false;
+            multiplyButton.BackColor = Color.WhiteSmoke;
+            multiplyButton.ForeColor = Color.Black;
+            divideButton.Enabled = false;
+            divideButton.BackColor = Color.WhiteSmoke;
+            divideButton.ForeColor = Color.Black;
+
+
+            //if (sender.Equals(addButton) ||
+            //    sender.Equals(subtractButton) ||
+            //    sender.Equals(multiplyButton) ||
+            //    sender.Equals(divideButton))
+            //{
+            //    return;
+            //}
         }
         #region
         //private void AddButton_Clicked(object sender, EventArgs e)
@@ -208,6 +243,10 @@ namespace Calculator_1
 
         private void TaxButtonClicked(object sender, EventArgs e)
         {
+            if (calBox.Text == "")
+            {
+                return;
+            }
 
             string a = calBox.Text;
 
@@ -223,6 +262,10 @@ namespace Calculator_1
 
         private void NoTaxButtonClicked(object sender, EventArgs e)
         {
+            if (calBox.Text == "")
+            {
+                return;
+            }
             string a = calBox.Text;
 
             string tax = a + "/ 1.1 + 0.1";

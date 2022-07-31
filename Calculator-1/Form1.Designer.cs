@@ -84,10 +84,12 @@
             this.weightBox = new System.Windows.Forms.TextBox();
             this.heightBox = new System.Windows.Forms.TextBox();
             this.toolTag = new System.Windows.Forms.TabPage();
+            this.walkWhatPartFromStationLnverseResultButton = new System.Windows.Forms.Button();
+            this.walkWhatPartFromStationCalBox = new System.Windows.Forms.TextBox();
+            this.annualIncomeBox = new System.Windows.Forms.TextBox();
             this.hourlyWageCalButton = new System.Windows.Forms.Button();
             this.hourlyWageReverseResultButton = new System.Windows.Forms.Button();
             this.walkWhatPartFromStationLnverseCalButton = new System.Windows.Forms.Button();
-            this.walkWhatPartFromStationLnverseResultButton = new System.Windows.Forms.Button();
             this.minutesLabel1 = new System.Windows.Forms.Label();
             this.minutesLabel2 = new System.Windows.Forms.Label();
             this.walkWhatPartFromStationResultBox = new System.Windows.Forms.TextBox();
@@ -96,7 +98,6 @@
             this.walkWhatPartFromStationLabel2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.walkWhatPartFromStationLabel1 = new System.Windows.Forms.Label();
-            this.walkWhatPartFromStationCalBox = new System.Windows.Forms.TextBox();
             this.yenLabel = new System.Windows.Forms.Label();
             this.thousandYenLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -107,7 +108,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.annualIncomeCalButton = new System.Windows.Forms.Button();
             this.annualIncomeLabel = new System.Windows.Forms.Label();
-            this.annualIncomeBox = new System.Windows.Forms.TextBox();
             this.dateTime = new System.Windows.Forms.TabPage();
             this.yearsOldCaiBoxButton = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -146,178 +146,225 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button1.Location = new System.Drawing.Point(3, 93);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 68);
             this.button1.TabIndex = 1;
+            this.button1.TabStop = false;
             this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button2.Location = new System.Drawing.Point(78, 93);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 68);
             this.button2.TabIndex = 2;
+            this.button2.TabStop = false;
             this.button2.Text = "2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button3.Location = new System.Drawing.Point(157, 93);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 68);
             this.button3.TabIndex = 3;
+            this.button3.TabStop = false;
             this.button3.Text = "3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button4.Location = new System.Drawing.Point(3, 166);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(70, 68);
             this.button4.TabIndex = 4;
+            this.button4.TabStop = false;
             this.button4.Text = "4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button5.Location = new System.Drawing.Point(78, 166);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(70, 68);
             this.button5.TabIndex = 5;
+            this.button5.TabStop = false;
             this.button5.Text = "5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button6.Location = new System.Drawing.Point(157, 166);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(70, 68);
             this.button6.TabIndex = 6;
+            this.button6.TabStop = false;
             this.button6.Text = "6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button7.Location = new System.Drawing.Point(3, 240);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(70, 68);
             this.button7.TabIndex = 7;
+            this.button7.TabStop = false;
             this.button7.Text = "7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button8
             // 
+            this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button8.Location = new System.Drawing.Point(78, 240);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(70, 68);
             this.button8.TabIndex = 8;
+            this.button8.TabStop = false;
             this.button8.Text = "8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button9
             // 
+            this.button9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button9.Location = new System.Drawing.Point(157, 240);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(70, 68);
             this.button9.TabIndex = 9;
+            this.button9.TabStop = false;
             this.button9.Text = "9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button0
             // 
+            this.button0.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button0.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button0.Location = new System.Drawing.Point(3, 315);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(70, 68);
             this.button0.TabIndex = 10;
+            this.button0.TabStop = false;
             this.button0.Text = "0";
-            this.button0.UseVisualStyleBackColor = true;
+            this.button0.UseVisualStyleBackColor = false;
             this.button0.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // button00
             // 
+            this.button00.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button00.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button00.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button00.Location = new System.Drawing.Point(78, 315);
             this.button00.Name = "button00";
             this.button00.Size = new System.Drawing.Size(70, 68);
             this.button00.TabIndex = 11;
+            this.button00.TabStop = false;
             this.button00.Text = "00";
-            this.button00.UseVisualStyleBackColor = true;
+            this.button00.UseVisualStyleBackColor = false;
             this.button00.Click += new System.EventHandler(this.NumberButtonClicked);
             // 
             // answerButton
             // 
+            this.answerButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.answerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.answerButton.Font = new System.Drawing.Font("MS UI Gothic", 15F);
             this.answerButton.Location = new System.Drawing.Point(157, 315);
             this.answerButton.Name = "answerButton";
             this.answerButton.Size = new System.Drawing.Size(70, 68);
             this.answerButton.TabIndex = 12;
+            this.answerButton.TabStop = false;
             this.answerButton.Text = "=";
-            this.answerButton.UseVisualStyleBackColor = true;
+            this.answerButton.UseVisualStyleBackColor = false;
             this.answerButton.Click += new System.EventHandler(this.AnswerButton_Clicked);
             // 
             // addButton
             // 
+            this.addButton.AutoSize = true;
+            this.addButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.addButton.Location = new System.Drawing.Point(233, 93);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(70, 68);
-            this.addButton.TabIndex = 13;
+            this.addButton.Size = new System.Drawing.Size(71, 68);
+            this.addButton.TabIndex = 14;
             this.addButton.Text = " + ";
-            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.ArithmeticOperationSymbolClicked);
             // 
             // subtractButton
             // 
+            this.subtractButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.subtractButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.subtractButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.subtractButton.Location = new System.Drawing.Point(233, 166);
             this.subtractButton.Name = "subtractButton";
             this.subtractButton.Size = new System.Drawing.Size(70, 68);
             this.subtractButton.TabIndex = 14;
             this.subtractButton.Text = " - ";
-            this.subtractButton.UseVisualStyleBackColor = true;
+            this.subtractButton.UseVisualStyleBackColor = false;
             this.subtractButton.Click += new System.EventHandler(this.ArithmeticOperationSymbolClicked);
             // 
             // divideButton
             // 
+            this.divideButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.divideButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.divideButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.divideButton.Location = new System.Drawing.Point(233, 315);
             this.divideButton.Name = "divideButton";
             this.divideButton.Size = new System.Drawing.Size(70, 68);
             this.divideButton.TabIndex = 15;
+            this.divideButton.TabStop = false;
             this.divideButton.Text = "÷";
-            this.divideButton.UseVisualStyleBackColor = true;
+            this.divideButton.UseVisualStyleBackColor = false;
             this.divideButton.Click += new System.EventHandler(this.ArithmeticOperationSymbolClicked);
             // 
             // multiplyButton
             // 
+            this.multiplyButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.multiplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.multiplyButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiplyButton.Location = new System.Drawing.Point(233, 240);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(70, 68);
             this.multiplyButton.TabIndex = 16;
+            this.multiplyButton.TabStop = false;
             this.multiplyButton.Text = "×";
-            this.multiplyButton.UseVisualStyleBackColor = true;
+            this.multiplyButton.UseVisualStyleBackColor = false;
             this.multiplyButton.Click += new System.EventHandler(this.ArithmeticOperationSymbolClicked);
             // 
             // menuStrip1
@@ -409,21 +456,24 @@
             // 
             // clearButton
             // 
+            this.clearButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearButton.Font = new System.Drawing.Font("MS UI Gothic", 13F);
             this.clearButton.Location = new System.Drawing.Point(233, 3);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(70, 39);
             this.clearButton.TabIndex = 18;
+            this.clearButton.TabStop = false;
             this.clearButton.Text = "AC";
-            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.ClearButtonClicked);
             // 
             // formulaBox
             // 
+            this.formulaBox.Enabled = false;
             this.formulaBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.formulaBox.Location = new System.Drawing.Point(7, 48);
             this.formulaBox.Name = "formulaBox";
-            this.formulaBox.ReadOnly = true;
             this.formulaBox.Size = new System.Drawing.Size(292, 33);
             this.formulaBox.TabIndex = 19;
             // 
@@ -440,46 +490,58 @@
             // 
             // backSpaceButton
             // 
+            this.backSpaceButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.backSpaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.backSpaceButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backSpaceButton.Location = new System.Drawing.Point(233, 388);
             this.backSpaceButton.Name = "backSpaceButton";
             this.backSpaceButton.Size = new System.Drawing.Size(70, 68);
             this.backSpaceButton.TabIndex = 24;
+            this.backSpaceButton.TabStop = false;
             this.backSpaceButton.Text = "C";
-            this.backSpaceButton.UseVisualStyleBackColor = true;
+            this.backSpaceButton.UseVisualStyleBackColor = false;
             this.backSpaceButton.Click += new System.EventHandler(this.BackSpaceButtonClicked);
             // 
             // decimalPointButton
             // 
+            this.decimalPointButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.decimalPointButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.decimalPointButton.Font = new System.Drawing.Font("MS UI Gothic", 15F);
             this.decimalPointButton.Location = new System.Drawing.Point(157, 388);
             this.decimalPointButton.Name = "decimalPointButton";
             this.decimalPointButton.Size = new System.Drawing.Size(70, 68);
             this.decimalPointButton.TabIndex = 23;
+            this.decimalPointButton.TabStop = false;
             this.decimalPointButton.Text = ".";
-            this.decimalPointButton.UseVisualStyleBackColor = true;
+            this.decimalPointButton.UseVisualStyleBackColor = false;
             this.decimalPointButton.Click += new System.EventHandler(this.DecimalPointButtonClicked);
             // 
             // noTaxButton
             // 
+            this.noTaxButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.noTaxButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.noTaxButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.noTaxButton.Location = new System.Drawing.Point(78, 388);
             this.noTaxButton.Name = "noTaxButton";
             this.noTaxButton.Size = new System.Drawing.Size(70, 68);
             this.noTaxButton.TabIndex = 22;
+            this.noTaxButton.TabStop = false;
             this.noTaxButton.Text = "No Tax";
-            this.noTaxButton.UseVisualStyleBackColor = true;
+            this.noTaxButton.UseVisualStyleBackColor = false;
             this.noTaxButton.Click += new System.EventHandler(this.NoTaxButtonClicked);
             // 
             // taxButton
             // 
+            this.taxButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.taxButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.taxButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.taxButton.Location = new System.Drawing.Point(3, 388);
             this.taxButton.Name = "taxButton";
             this.taxButton.Size = new System.Drawing.Size(70, 68);
             this.taxButton.TabIndex = 21;
+            this.taxButton.TabStop = false;
             this.taxButton.Text = "Tax";
-            this.taxButton.UseVisualStyleBackColor = true;
+            this.taxButton.UseVisualStyleBackColor = false;
             this.taxButton.Click += new System.EventHandler(this.TaxButtonClicked);
             // 
             // openFileDialog
@@ -625,35 +687,44 @@
             // 
             // calWeigthtButton
             // 
+            this.calWeigthtButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.calWeigthtButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.calWeigthtButton.Location = new System.Drawing.Point(28, 171);
             this.calWeigthtButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.calWeigthtButton.Name = "calWeigthtButton";
             this.calWeigthtButton.Size = new System.Drawing.Size(68, 39);
             this.calWeigthtButton.TabIndex = 12;
+            this.calWeigthtButton.TabStop = false;
             this.calWeigthtButton.Text = "in";
-            this.calWeigthtButton.UseVisualStyleBackColor = true;
+            this.calWeigthtButton.UseVisualStyleBackColor = false;
             this.calWeigthtButton.Click += new System.EventHandler(this.CalWeigthtButtonClicked);
             // 
             // calHeigthtButton
             // 
+            this.calHeigthtButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.calHeigthtButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.calHeigthtButton.Location = new System.Drawing.Point(28, 87);
             this.calHeigthtButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.calHeigthtButton.Name = "calHeigthtButton";
             this.calHeigthtButton.Size = new System.Drawing.Size(68, 39);
             this.calHeigthtButton.TabIndex = 11;
+            this.calHeigthtButton.TabStop = false;
             this.calHeigthtButton.Text = "in";
-            this.calHeigthtButton.UseVisualStyleBackColor = true;
+            this.calHeigthtButton.UseVisualStyleBackColor = false;
             this.calHeigthtButton.Click += new System.EventHandler(this.CalHeigthtButtonClicked);
             // 
             // baseWeightButton
             // 
+            this.baseWeightButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.baseWeightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.baseWeightButton.Location = new System.Drawing.Point(28, 387);
             this.baseWeightButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.baseWeightButton.Name = "baseWeightButton";
             this.baseWeightButton.Size = new System.Drawing.Size(68, 38);
             this.baseWeightButton.TabIndex = 10;
-            this.baseWeightButton.Text = "⇒";
-            this.baseWeightButton.UseVisualStyleBackColor = true;
+            this.baseWeightButton.TabStop = false;
+            this.baseWeightButton.Text = "▶";
+            this.baseWeightButton.UseVisualStyleBackColor = false;
             this.baseWeightButton.Click += new System.EventHandler(this.BaseWeightButtonClicked);
             // 
             // baseWeightLabel
@@ -698,13 +769,16 @@
             // 
             // bmiResultButton
             // 
+            this.bmiResultButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bmiResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bmiResultButton.Location = new System.Drawing.Point(28, 292);
             this.bmiResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bmiResultButton.Name = "bmiResultButton";
             this.bmiResultButton.Size = new System.Drawing.Size(68, 38);
             this.bmiResultButton.TabIndex = 5;
-            this.bmiResultButton.Text = "⇒";
-            this.bmiResultButton.UseVisualStyleBackColor = true;
+            this.bmiResultButton.TabStop = false;
+            this.bmiResultButton.Text = "▶";
+            this.bmiResultButton.UseVisualStyleBackColor = false;
             this.bmiResultButton.Click += new System.EventHandler(this.BmiResultButtonClicked);
             // 
             // weightLabel
@@ -751,12 +825,12 @@
             // 
             this.toolTag.AutoScroll = true;
             this.toolTag.BackColor = System.Drawing.Color.RoyalBlue;
+            this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseResultButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationCalBox);
             this.toolTag.Controls.Add(this.annualIncomeBox);
             this.toolTag.Controls.Add(this.hourlyWageCalButton);
             this.toolTag.Controls.Add(this.hourlyWageReverseResultButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseCalButton);
-            this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseResultButton);
             this.toolTag.Controls.Add(this.minutesLabel1);
             this.toolTag.Controls.Add(this.minutesLabel2);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationResultBox);
@@ -783,53 +857,83 @@
             this.toolTag.TabIndex = 2;
             this.toolTag.Text = "Tool";
             // 
-            // hourlyWageCalButton
-            // 
-            this.hourlyWageCalButton.Location = new System.Drawing.Point(20, 214);
-            this.hourlyWageCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.hourlyWageCalButton.Name = "hourlyWageCalButton";
-            this.hourlyWageCalButton.Size = new System.Drawing.Size(68, 38);
-            this.hourlyWageCalButton.TabIndex = 41;
-            this.hourlyWageCalButton.Text = "in";
-            this.hourlyWageCalButton.UseVisualStyleBackColor = true;
-            this.hourlyWageCalButton.Click += new System.EventHandler(this.HourlyWageCalButtonClicked);
-            // 
-            // hourlyWageReverseResultButton
-            // 
-            this.hourlyWageReverseResultButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.hourlyWageReverseResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourlyWageReverseResultButton.Location = new System.Drawing.Point(148, 126);
-            this.hourlyWageReverseResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.hourlyWageReverseResultButton.Name = "hourlyWageReverseResultButton";
-            this.hourlyWageReverseResultButton.Size = new System.Drawing.Size(57, 46);
-            this.hourlyWageReverseResultButton.TabIndex = 40;
-            this.hourlyWageReverseResultButton.Text = "▲";
-            this.hourlyWageReverseResultButton.UseVisualStyleBackColor = false;
-            this.hourlyWageReverseResultButton.Click += new System.EventHandler(this.HourlyWageReverseResultButtonClicked);
-            // 
-            // walkWhatPartFromStationLnverseCalButton
-            // 
-            this.walkWhatPartFromStationLnverseCalButton.Location = new System.Drawing.Point(20, 414);
-            this.walkWhatPartFromStationLnverseCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.walkWhatPartFromStationLnverseCalButton.Name = "walkWhatPartFromStationLnverseCalButton";
-            this.walkWhatPartFromStationLnverseCalButton.Size = new System.Drawing.Size(68, 38);
-            this.walkWhatPartFromStationLnverseCalButton.TabIndex = 39;
-            this.walkWhatPartFromStationLnverseCalButton.Text = "in";
-            this.walkWhatPartFromStationLnverseCalButton.UseVisualStyleBackColor = true;
-            this.walkWhatPartFromStationLnverseCalButton.Click += new System.EventHandler(this.WalkWhatPartFromStationResultCalButtonCliked);
-            // 
             // walkWhatPartFromStationLnverseResultButton
             // 
             this.walkWhatPartFromStationLnverseResultButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.walkWhatPartFromStationLnverseResultButton.FlatAppearance.BorderSize = 0;
+            this.walkWhatPartFromStationLnverseResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.walkWhatPartFromStationLnverseResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.walkWhatPartFromStationLnverseResultButton.Location = new System.Drawing.Point(148, 358);
             this.walkWhatPartFromStationLnverseResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.walkWhatPartFromStationLnverseResultButton.Name = "walkWhatPartFromStationLnverseResultButton";
             this.walkWhatPartFromStationLnverseResultButton.Size = new System.Drawing.Size(57, 46);
             this.walkWhatPartFromStationLnverseResultButton.TabIndex = 38;
+            this.walkWhatPartFromStationLnverseResultButton.TabStop = false;
             this.walkWhatPartFromStationLnverseResultButton.Text = "▲";
             this.walkWhatPartFromStationLnverseResultButton.UseVisualStyleBackColor = false;
             this.walkWhatPartFromStationLnverseResultButton.Click += new System.EventHandler(this.WalkWhatPartFromStationReverseResultButtonClicked);
+            // 
+            // walkWhatPartFromStationCalBox
+            // 
+            this.walkWhatPartFromStationCalBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(103, 320);
+            this.walkWhatPartFromStationCalBox.Name = "walkWhatPartFromStationCalBox";
+            this.walkWhatPartFromStationCalBox.ReadOnly = true;
+            this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(96, 33);
+            this.walkWhatPartFromStationCalBox.TabIndex = 28;
+            // 
+            // annualIncomeBox
+            // 
+            this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.annualIncomeBox.Location = new System.Drawing.Point(103, 84);
+            this.annualIncomeBox.Name = "annualIncomeBox";
+            this.annualIncomeBox.ReadOnly = true;
+            this.annualIncomeBox.Size = new System.Drawing.Size(71, 33);
+            this.annualIncomeBox.TabIndex = 15;
+            // 
+            // hourlyWageCalButton
+            // 
+            this.hourlyWageCalButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.hourlyWageCalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hourlyWageCalButton.Location = new System.Drawing.Point(20, 214);
+            this.hourlyWageCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.hourlyWageCalButton.Name = "hourlyWageCalButton";
+            this.hourlyWageCalButton.Size = new System.Drawing.Size(68, 38);
+            this.hourlyWageCalButton.TabIndex = 41;
+            this.hourlyWageCalButton.TabStop = false;
+            this.hourlyWageCalButton.Text = "in";
+            this.hourlyWageCalButton.UseVisualStyleBackColor = false;
+            this.hourlyWageCalButton.Click += new System.EventHandler(this.HourlyWageCalButtonClicked);
+            // 
+            // hourlyWageReverseResultButton
+            // 
+            this.hourlyWageReverseResultButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.hourlyWageReverseResultButton.FlatAppearance.BorderSize = 0;
+            this.hourlyWageReverseResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hourlyWageReverseResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hourlyWageReverseResultButton.Location = new System.Drawing.Point(136, 126);
+            this.hourlyWageReverseResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.hourlyWageReverseResultButton.Name = "hourlyWageReverseResultButton";
+            this.hourlyWageReverseResultButton.Size = new System.Drawing.Size(57, 46);
+            this.hourlyWageReverseResultButton.TabIndex = 40;
+            this.hourlyWageReverseResultButton.TabStop = false;
+            this.hourlyWageReverseResultButton.Text = "▲";
+            this.hourlyWageReverseResultButton.UseVisualStyleBackColor = false;
+            this.hourlyWageReverseResultButton.Click += new System.EventHandler(this.HourlyWageReverseResultButtonClicked);
+            // 
+            // walkWhatPartFromStationLnverseCalButton
+            // 
+            this.walkWhatPartFromStationLnverseCalButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.walkWhatPartFromStationLnverseCalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.walkWhatPartFromStationLnverseCalButton.Location = new System.Drawing.Point(20, 414);
+            this.walkWhatPartFromStationLnverseCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.walkWhatPartFromStationLnverseCalButton.Name = "walkWhatPartFromStationLnverseCalButton";
+            this.walkWhatPartFromStationLnverseCalButton.Size = new System.Drawing.Size(68, 38);
+            this.walkWhatPartFromStationLnverseCalButton.TabIndex = 39;
+            this.walkWhatPartFromStationLnverseCalButton.TabStop = false;
+            this.walkWhatPartFromStationLnverseCalButton.Text = "in";
+            this.walkWhatPartFromStationLnverseCalButton.UseVisualStyleBackColor = false;
+            this.walkWhatPartFromStationLnverseCalButton.Click += new System.EventHandler(this.WalkWhatPartFromStationResultCalButtonCliked);
             // 
             // minutesLabel1
             // 
@@ -864,25 +968,30 @@
             // 
             this.walkWhatPartFromStationResultButton.BackColor = System.Drawing.Color.RoyalBlue;
             this.walkWhatPartFromStationResultButton.FlatAppearance.BorderSize = 0;
+            this.walkWhatPartFromStationResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.walkWhatPartFromStationResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.walkWhatPartFromStationResultButton.Location = new System.Drawing.Point(97, 358);
             this.walkWhatPartFromStationResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.walkWhatPartFromStationResultButton.Name = "walkWhatPartFromStationResultButton";
             this.walkWhatPartFromStationResultButton.Size = new System.Drawing.Size(53, 46);
             this.walkWhatPartFromStationResultButton.TabIndex = 34;
+            this.walkWhatPartFromStationResultButton.TabStop = false;
             this.walkWhatPartFromStationResultButton.Text = "▼";
             this.walkWhatPartFromStationResultButton.UseVisualStyleBackColor = false;
             this.walkWhatPartFromStationResultButton.Click += new System.EventHandler(this.WalkWhatPartFromStationResultButtonClicked);
             // 
             // walkWhatPartFromStationCalButton
             // 
+            this.walkWhatPartFromStationCalButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.walkWhatPartFromStationCalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.walkWhatPartFromStationCalButton.Location = new System.Drawing.Point(20, 321);
             this.walkWhatPartFromStationCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.walkWhatPartFromStationCalButton.Name = "walkWhatPartFromStationCalButton";
             this.walkWhatPartFromStationCalButton.Size = new System.Drawing.Size(68, 38);
             this.walkWhatPartFromStationCalButton.TabIndex = 32;
+            this.walkWhatPartFromStationCalButton.TabStop = false;
             this.walkWhatPartFromStationCalButton.Text = "in";
-            this.walkWhatPartFromStationCalButton.UseVisualStyleBackColor = true;
+            this.walkWhatPartFromStationCalButton.UseVisualStyleBackColor = false;
             this.walkWhatPartFromStationCalButton.Click += new System.EventHandler(this.WalkWhatPartFromStationCalButtonClicked);
             // 
             // walkWhatPartFromStationLabel2
@@ -916,15 +1025,6 @@
             this.walkWhatPartFromStationLabel1.Size = new System.Drawing.Size(162, 26);
             this.walkWhatPartFromStationLabel1.TabIndex = 29;
             this.walkWhatPartFromStationLabel1.Text = "WalkWhatPart";
-            // 
-            // walkWhatPartFromStationCalBox
-            // 
-            this.walkWhatPartFromStationCalBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(103, 320);
-            this.walkWhatPartFromStationCalBox.Name = "walkWhatPartFromStationCalBox";
-            this.walkWhatPartFromStationCalBox.ReadOnly = true;
-            this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(96, 33);
-            this.walkWhatPartFromStationCalBox.TabIndex = 28;
             // 
             // yenLabel
             // 
@@ -979,12 +1079,15 @@
             // hourlyWageResultButton
             // 
             this.hourlyWageResultButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.hourlyWageResultButton.FlatAppearance.BorderSize = 0;
+            this.hourlyWageResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hourlyWageResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourlyWageResultButton.Location = new System.Drawing.Point(97, 126);
+            this.hourlyWageResultButton.Location = new System.Drawing.Point(85, 126);
             this.hourlyWageResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.hourlyWageResultButton.Name = "hourlyWageResultButton";
             this.hourlyWageResultButton.Size = new System.Drawing.Size(53, 46);
             this.hourlyWageResultButton.TabIndex = 21;
+            this.hourlyWageResultButton.TabStop = false;
             this.hourlyWageResultButton.Text = "▼";
             this.hourlyWageResultButton.UseVisualStyleBackColor = false;
             this.hourlyWageResultButton.Click += new System.EventHandler(this.HourlyWageResultButtonClicked);
@@ -1014,13 +1117,16 @@
             // 
             // annualIncomeCalButton
             // 
+            this.annualIncomeCalButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.annualIncomeCalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.annualIncomeCalButton.Location = new System.Drawing.Point(20, 84);
             this.annualIncomeCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.annualIncomeCalButton.Name = "annualIncomeCalButton";
             this.annualIncomeCalButton.Size = new System.Drawing.Size(68, 38);
             this.annualIncomeCalButton.TabIndex = 17;
+            this.annualIncomeCalButton.TabStop = false;
             this.annualIncomeCalButton.Text = "in";
-            this.annualIncomeCalButton.UseVisualStyleBackColor = true;
+            this.annualIncomeCalButton.UseVisualStyleBackColor = false;
             this.annualIncomeCalButton.Click += new System.EventHandler(this.AnnualIncomeCalButtonClicked);
             // 
             // annualIncomeLabel
@@ -1033,15 +1139,6 @@
             this.annualIncomeLabel.Size = new System.Drawing.Size(220, 26);
             this.annualIncomeLabel.TabIndex = 16;
             this.annualIncomeLabel.Text = "AnnualIncome(年収)";
-            // 
-            // annualIncomeBox
-            // 
-            this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.annualIncomeBox.Location = new System.Drawing.Point(103, 84);
-            this.annualIncomeBox.Name = "annualIncomeBox";
-            this.annualIncomeBox.ReadOnly = true;
-            this.annualIncomeBox.Size = new System.Drawing.Size(71, 33);
-            this.annualIncomeBox.TabIndex = 15;
             // 
             // dateTime
             // 
@@ -1073,13 +1170,16 @@
             // 
             // yearsOldCaiBoxButton
             // 
+            this.yearsOldCaiBoxButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.yearsOldCaiBoxButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.yearsOldCaiBoxButton.Location = new System.Drawing.Point(7, 75);
             this.yearsOldCaiBoxButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.yearsOldCaiBoxButton.Name = "yearsOldCaiBoxButton";
             this.yearsOldCaiBoxButton.Size = new System.Drawing.Size(68, 38);
             this.yearsOldCaiBoxButton.TabIndex = 28;
+            this.yearsOldCaiBoxButton.TabStop = false;
             this.yearsOldCaiBoxButton.Text = "in";
-            this.yearsOldCaiBoxButton.UseVisualStyleBackColor = true;
+            this.yearsOldCaiBoxButton.UseVisualStyleBackColor = false;
             this.yearsOldCaiBoxButton.Click += new System.EventHandler(this.YearsOldCaiBoxButtonClieked);
             // 
             // label9
@@ -1132,12 +1232,15 @@
             // yearsOldResultButton
             // 
             this.yearsOldResultButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.yearsOldResultButton.FlatAppearance.BorderSize = 0;
+            this.yearsOldResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.yearsOldResultButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.yearsOldResultButton.Location = new System.Drawing.Point(41, 163);
+            this.yearsOldResultButton.Location = new System.Drawing.Point(61, 163);
             this.yearsOldResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.yearsOldResultButton.Name = "yearsOldResultButton";
             this.yearsOldResultButton.Size = new System.Drawing.Size(53, 46);
             this.yearsOldResultButton.TabIndex = 37;
+            this.yearsOldResultButton.TabStop = false;
             this.yearsOldResultButton.Text = "▶";
             this.yearsOldResultButton.UseVisualStyleBackColor = false;
             this.yearsOldResultButton.Click += new System.EventHandler(this.YearsOldResultButtonClicked);
@@ -1244,14 +1347,17 @@
             // 
             // clearTextButton
             // 
+            this.clearTextButton.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clearTextButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearTextButton.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearTextButton.Location = new System.Drawing.Point(403, 0);
             this.clearTextButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.clearTextButton.Name = "clearTextButton";
             this.clearTextButton.Size = new System.Drawing.Size(155, 34);
             this.clearTextButton.TabIndex = 26;
+            this.clearTextButton.TabStop = false;
             this.clearTextButton.Text = "Clear Text";
-            this.clearTextButton.UseVisualStyleBackColor = true;
+            this.clearTextButton.UseVisualStyleBackColor = false;
             this.clearTextButton.Click += new System.EventHandler(this.ClearTextButtonChecked);
             // 
             // Calculator
@@ -1357,7 +1463,6 @@
         private System.Windows.Forms.Label minutesLabel1;
         private System.Windows.Forms.Label minutesLabel2;
         private System.Windows.Forms.TextBox walkWhatPartFromStationResultBox;
-        private System.Windows.Forms.Button walkWhatPartFromStationResultButton;
         private System.Windows.Forms.Button walkWhatPartFromStationCalButton;
         private System.Windows.Forms.Label walkWhatPartFromStationLabel2;
         private System.Windows.Forms.Label label7;
@@ -1386,6 +1491,7 @@
         private System.Windows.Forms.TextBox yearsOldBox;
         private System.Windows.Forms.Button yearsOldResultButton;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button walkWhatPartFromStationResultButton;
     }
 }
 
