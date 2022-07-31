@@ -340,6 +340,11 @@ namespace Calculator_1
             formulaBox.Clear();
         }
 
+        private void BmiAndBaseWeightResultButtonClicked(object sender, EventArgs e)
+        {
+            Factory.BmiAndBaseWeightCreata(tabControl1, allCalBox, heightBox, weightBox, baseWeightBox, bmiBox);
+        }
+
         private void SaveItemClicked(object sender, EventArgs e)
         {
             Factory.DataSave(allCalBox);

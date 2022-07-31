@@ -66,7 +66,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.arrayLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.kgLabel = new System.Windows.Forms.Label();
             this.cmLabel = new System.Windows.Forms.Label();
@@ -127,6 +126,7 @@
             this.ageCalculatingFromBirthdateLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.clearTextButton = new System.Windows.Forms.Button();
+            this.bmiAndBaseWeightResultButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -607,7 +607,7 @@
             this.tabPage2.BackColor = System.Drawing.Color.RoyalBlue;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage2.Controls.Add(this.arrayLabel);
+            this.tabPage2.Controls.Add(this.bmiAndBaseWeightResultButton);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.kgLabel);
             this.tabPage2.Controls.Add(this.cmLabel);
@@ -631,16 +631,6 @@
             this.tabPage2.Size = new System.Drawing.Size(312, 460);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Weight";
-            // 
-            // arrayLabel
-            // 
-            this.arrayLabel.AutoSize = true;
-            this.arrayLabel.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.arrayLabel.Location = new System.Drawing.Point(117, 208);
-            this.arrayLabel.Name = "arrayLabel";
-            this.arrayLabel.Size = new System.Drawing.Size(54, 52);
-            this.arrayLabel.TabIndex = 17;
-            this.arrayLabel.Text = "▼";
             // 
             // label1
             // 
@@ -1360,6 +1350,22 @@
             this.clearTextButton.UseVisualStyleBackColor = false;
             this.clearTextButton.Click += new System.EventHandler(this.ClearTextButtonChecked);
             // 
+            // bmiAndBaseWeightResultButton
+            // 
+            this.bmiAndBaseWeightResultButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.bmiAndBaseWeightResultButton.FlatAppearance.BorderSize = 0;
+            this.bmiAndBaseWeightResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bmiAndBaseWeightResultButton.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bmiAndBaseWeightResultButton.Location = new System.Drawing.Point(122, 212);
+            this.bmiAndBaseWeightResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bmiAndBaseWeightResultButton.Name = "bmiAndBaseWeightResultButton";
+            this.bmiAndBaseWeightResultButton.Size = new System.Drawing.Size(54, 52);
+            this.bmiAndBaseWeightResultButton.TabIndex = 35;
+            this.bmiAndBaseWeightResultButton.TabStop = false;
+            this.bmiAndBaseWeightResultButton.Text = "▼";
+            this.bmiAndBaseWeightResultButton.UseVisualStyleBackColor = false;
+            this.bmiAndBaseWeightResultButton.Click += new System.EventHandler(this.BmiAndBaseWeightResultButtonClicked);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -1444,7 +1450,6 @@
         private System.Windows.Forms.Label cmLabel;
         private System.Windows.Forms.Label kgLabel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label arrayLabel;
         private System.Windows.Forms.ToolStripMenuItem saveAndLoadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadItem;
         private System.Windows.Forms.ToolStripMenuItem saveItem;
@@ -1492,6 +1497,7 @@
         private System.Windows.Forms.Button yearsOldResultButton;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button walkWhatPartFromStationResultButton;
+        private System.Windows.Forms.Button bmiAndBaseWeightResultButton;
     }
 }
 

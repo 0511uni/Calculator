@@ -68,6 +68,23 @@ namespace Calculator_1
             WeightCreateFactory.BaseWeightCalCreate(tabControl1,allCalBox, heightBox, weightBox, baseWeightBox);
         }
 
+        internal static void BmiAndBaseWeightCreata(TabControl tabControl1, TextBox allCalBox, TextBox heightBox, TextBox weightBox, TextBox baseWeightBox, TextBox bmiBox)
+        {
+            if (heightBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
+            else if (weightBox.Text == "")
+            {
+                WeightCreateFactory.BaseWeightCalCreate(tabControl1, allCalBox, heightBox, weightBox, baseWeightBox);
+            }
+            else
+            {
+                WeightCreateFactory.BmiCalCreate(tabControl1, allCalBox, heightBox, weightBox, bmiBox);
+                WeightCreateFactory.BaseWeightCalCreate(tabControl1, allCalBox, heightBox, weightBox, baseWeightBox);
+            }
+        }
+
         internal static void DataLoad(TextBox allCalBox)
         {
             DataCreateFactory.DataLoad(allCalBox);
