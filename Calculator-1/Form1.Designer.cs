@@ -470,7 +470,6 @@
             // 
             // formulaBox
             // 
-            this.formulaBox.Enabled = false;
             this.formulaBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.formulaBox.Location = new System.Drawing.Point(7, 48);
             this.formulaBox.Name = "formulaBox";

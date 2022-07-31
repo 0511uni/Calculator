@@ -26,10 +26,11 @@ namespace Calculator_1
         }
 
         bool once;
+        bool oncek;
 
         private void NumberButtonClicked(object sender, EventArgs e)
         {
-            
+            oncek = false;
             // 計算式表示ウィンドウの文字
             string formuraData = formulaBox.Text;
 
@@ -59,14 +60,18 @@ namespace Calculator_1
             string number = (sender as Button).Text;
             calBox.Text += number;
             formulaBox.Text += number;
-            addButton.Enabled = true;
-            subtractButton.Enabled = true;
-            multiplyButton.Enabled = true;
-            divideButton.Enabled = true;
+            //addButton.Enabled = true;
+            //subtractButton.Enabled = true;
+            //multiplyButton.Enabled = true;
+            //divideButton.Enabled = true;
         }
 
         private void AnswerButton_Clicked(object sender, EventArgs e)
         {
+            if (formulaBox.Text.Contains("="))
+            {
+                return;
+            }
             //formulaBox.Text += calBox.Text;
             allCalBox.Text += formulaBox.Text + " = ";
             string a = formulaBox.Text
@@ -149,6 +154,13 @@ namespace Calculator_1
 
         private void ArithmeticOperationSymbolClicked(object sender, EventArgs e)
         {
+            //// 計算式表示ウィンドウの文字
+            //string formuraData = formulaBox.Text;
+
+            //// inputDataに記号が含まれているか
+            //// 含まれていなければ -1
+            //int contain = formuraData.IndexOf(basicArithmeticOperations);
+
             if (formulaBox.Text == "")
             {
                 return;
@@ -156,23 +168,37 @@ namespace Calculator_1
             else if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
             {
                 formulaBox.Text = calBox.Text;
+                basicArithmeticOperations = (sender as Button).Text;
+                formulaBox.Text += basicArithmeticOperations;
+                oncek = true;
+                once = false;
+            }
+            else if (!oncek)
+            {              
+                basicArithmeticOperations = (sender as Button).Text;
+                formulaBox.Text += basicArithmeticOperations;
+                oncek = true;
+                once = false;
             }
             
-            basicArithmeticOperations = (sender as Button).Text;
-            formulaBox.Text += basicArithmeticOperations;
-            once = false;
-            addButton.Enabled = false;
-            addButton.BackColor = Color.WhiteSmoke;
-            addButton.ForeColor = SystemColors.ControlText;
-            subtractButton.Enabled = false;
-            subtractButton.BackColor = Color.WhiteSmoke;
-            subtractButton.ForeColor = SystemColors.ControlText;
-            multiplyButton.Enabled = false;
-            multiplyButton.BackColor = Color.WhiteSmoke;
-            multiplyButton.ForeColor = Color.Black;
-            divideButton.Enabled = false;
-            divideButton.BackColor = Color.WhiteSmoke;
-            divideButton.ForeColor = Color.Black;
+                
+            
+            
+
+            
+            //once = false;
+            //addButton.Enabled = false;
+            //addButton.BackColor = Color.WhiteSmoke;
+            //addButton.ForeColor = SystemColors.ControlText;
+            //subtractButton.Enabled = false;
+            //subtractButton.BackColor = Color.WhiteSmoke;
+            //subtractButton.ForeColor = SystemColors.ControlText;
+            //multiplyButton.Enabled = false;
+            //multiplyButton.BackColor = Color.WhiteSmoke;
+            //multiplyButton.ForeColor = Color.Black;
+            //divideButton.Enabled = false;
+            //divideButton.BackColor = Color.WhiteSmoke;
+            //divideButton.ForeColor = Color.Black;
 
 
             //if (sender.Equals(addButton) ||
