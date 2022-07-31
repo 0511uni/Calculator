@@ -392,7 +392,7 @@ namespace Calculator_1
                 $"{yearBox.Text}年{manthBox.Text}月{dayBox.Text}日" +
                 $" 生まれ\r\n" +
                 $"　　↓\r\n" +
-                $"　　{yearsOldBox.Text}歳";
+                $"　　{yearsOldBox.Text}歳\r\n";
         }
 
         static int GetAge(DateTime birthday, DateTime targetDay)
@@ -428,6 +428,12 @@ namespace Calculator_1
                 dayBox.Text = calBox.Text;
                 calBox.Clear();
                 formulaBox.Clear();
+            }
+            else
+            {
+                yearBox.Clear();
+                manthBox.Clear();
+                dayBox.Clear();
             }
 
             //yearBox.Text = calBox.Text;
