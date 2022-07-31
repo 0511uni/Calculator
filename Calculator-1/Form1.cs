@@ -292,8 +292,7 @@ namespace Calculator_1
                 tabControl1.SelectedIndex = 0;
             }
 
-            weightBox.Text = "";
-            weightBox.Text += calBox.Text;
+            weightBox.Text = calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
         }
@@ -314,8 +313,18 @@ namespace Calculator_1
             {
                 tabControl1.SelectedIndex = 0;
             }
-            annualIncomeBox.Text = "";
-            annualIncomeBox.Text += calBox.Text;
+            annualIncomeBox.Text = calBox.Text;
+            calBox.Clear();
+            formulaBox.Clear();
+        }
+
+        private void HourlyWageCalButtonClicked(object sender, EventArgs e)
+        {
+            if (calBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
+            hourlyWageResultBox.Text = calBox.Text;
             calBox.Clear();
             formulaBox.Clear();
         }
@@ -343,7 +352,7 @@ namespace Calculator_1
         }
         private void WalkWhatPartFromStationResultCalButtonCliked(object sender, EventArgs e)
         {
-            if (walkWhatPartFromStationResultBox.Text == "")
+            if (calBox.Text == "")
             {
                 tabControl1.SelectedIndex = 0;
             }

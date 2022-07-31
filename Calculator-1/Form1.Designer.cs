@@ -84,7 +84,7 @@
             this.weightBox = new System.Windows.Forms.TextBox();
             this.heightBox = new System.Windows.Forms.TextBox();
             this.toolTag = new System.Windows.Forms.TabPage();
-            this.button11 = new System.Windows.Forms.Button();
+            this.hourlyWageCalButton = new System.Windows.Forms.Button();
             this.hourlyWageReverseResultButton = new System.Windows.Forms.Button();
             this.walkWhatPartFromStationLnverseCalButton = new System.Windows.Forms.Button();
             this.walkWhatPartFromStationLnverseResultButton = new System.Windows.Forms.Button();
@@ -751,7 +751,7 @@
             // 
             this.toolTag.AutoScroll = true;
             this.toolTag.BackColor = System.Drawing.Color.RoyalBlue;
-            this.toolTag.Controls.Add(this.button11);
+            this.toolTag.Controls.Add(this.hourlyWageCalButton);
             this.toolTag.Controls.Add(this.hourlyWageReverseResultButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseCalButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseResultButton);
@@ -783,15 +783,16 @@
             this.toolTag.TabIndex = 2;
             this.toolTag.Text = "Tool";
             // 
-            // button11
+            // hourlyWageCalButton
             // 
-            this.button11.Location = new System.Drawing.Point(20, 214);
-            this.button11.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(68, 38);
-            this.button11.TabIndex = 41;
-            this.button11.Text = "in";
-            this.button11.UseVisualStyleBackColor = true;
+            this.hourlyWageCalButton.Location = new System.Drawing.Point(20, 214);
+            this.hourlyWageCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.hourlyWageCalButton.Name = "hourlyWageCalButton";
+            this.hourlyWageCalButton.Size = new System.Drawing.Size(68, 38);
+            this.hourlyWageCalButton.TabIndex = 41;
+            this.hourlyWageCalButton.Text = "in";
+            this.hourlyWageCalButton.UseVisualStyleBackColor = true;
+            this.hourlyWageCalButton.Click += new System.EventHandler(this.HourlyWageCalButtonClicked);
             // 
             // hourlyWageReverseResultButton
             // 
@@ -1366,7 +1367,7 @@
         private System.Windows.Forms.Button walkWhatPartFromStationLnverseResultButton;
         private System.Windows.Forms.Button walkWhatPartFromStationLnverseCalButton;
         private System.Windows.Forms.Button hourlyWageReverseResultButton;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button hourlyWageCalButton;
         private System.Windows.Forms.TabPage dateTime;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox yearBox;
