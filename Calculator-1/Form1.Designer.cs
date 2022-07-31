@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.calBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -138,10 +139,11 @@
             // calBox
             // 
             this.calBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.calBox.Location = new System.Drawing.Point(7, 3);
+            this.calBox.Location = new System.Drawing.Point(10, 5);
+            this.calBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.calBox.Name = "calBox";
             this.calBox.ReadOnly = true;
-            this.calBox.Size = new System.Drawing.Size(222, 33);
+            this.calBox.Size = new System.Drawing.Size(331, 33);
             this.calBox.TabIndex = 0;
             // 
             // button1
@@ -149,9 +151,10 @@
             this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(3, 93);
+            this.button1.Location = new System.Drawing.Point(4, 160);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 68);
+            this.button1.Size = new System.Drawing.Size(105, 117);
             this.button1.TabIndex = 1;
             this.button1.TabStop = false;
             this.button1.Text = "1";
@@ -163,9 +166,10 @@
             this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(78, 93);
+            this.button2.Location = new System.Drawing.Point(117, 160);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 68);
+            this.button2.Size = new System.Drawing.Size(105, 117);
             this.button2.TabIndex = 2;
             this.button2.TabStop = false;
             this.button2.Text = "2";
@@ -177,9 +181,10 @@
             this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(157, 93);
+            this.button3.Location = new System.Drawing.Point(236, 160);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 68);
+            this.button3.Size = new System.Drawing.Size(105, 117);
             this.button3.TabIndex = 3;
             this.button3.TabStop = false;
             this.button3.Text = "3";
@@ -191,9 +196,10 @@
             this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(3, 166);
+            this.button4.Location = new System.Drawing.Point(4, 286);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(70, 68);
+            this.button4.Size = new System.Drawing.Size(105, 117);
             this.button4.TabIndex = 4;
             this.button4.TabStop = false;
             this.button4.Text = "4";
@@ -205,9 +211,10 @@
             this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5.Location = new System.Drawing.Point(78, 166);
+            this.button5.Location = new System.Drawing.Point(117, 286);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(70, 68);
+            this.button5.Size = new System.Drawing.Size(105, 117);
             this.button5.TabIndex = 5;
             this.button5.TabStop = false;
             this.button5.Text = "5";
@@ -219,9 +226,10 @@
             this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button6.Location = new System.Drawing.Point(157, 166);
+            this.button6.Location = new System.Drawing.Point(236, 286);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(70, 68);
+            this.button6.Size = new System.Drawing.Size(105, 117);
             this.button6.TabIndex = 6;
             this.button6.TabStop = false;
             this.button6.Text = "6";
@@ -233,9 +241,10 @@
             this.button7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button7.Location = new System.Drawing.Point(3, 240);
+            this.button7.Location = new System.Drawing.Point(4, 413);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(70, 68);
+            this.button7.Size = new System.Drawing.Size(105, 117);
             this.button7.TabIndex = 7;
             this.button7.TabStop = false;
             this.button7.Text = "7";
@@ -247,9 +256,10 @@
             this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button8.Location = new System.Drawing.Point(78, 240);
+            this.button8.Location = new System.Drawing.Point(117, 413);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(70, 68);
+            this.button8.Size = new System.Drawing.Size(105, 117);
             this.button8.TabIndex = 8;
             this.button8.TabStop = false;
             this.button8.Text = "8";
@@ -261,9 +271,10 @@
             this.button9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button9.Location = new System.Drawing.Point(157, 240);
+            this.button9.Location = new System.Drawing.Point(236, 413);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(70, 68);
+            this.button9.Size = new System.Drawing.Size(105, 117);
             this.button9.TabIndex = 9;
             this.button9.TabStop = false;
             this.button9.Text = "9";
@@ -275,9 +286,10 @@
             this.button0.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button0.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button0.Location = new System.Drawing.Point(3, 315);
+            this.button0.Location = new System.Drawing.Point(4, 542);
+            this.button0.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button0.Name = "button0";
-            this.button0.Size = new System.Drawing.Size(70, 68);
+            this.button0.Size = new System.Drawing.Size(105, 117);
             this.button0.TabIndex = 10;
             this.button0.TabStop = false;
             this.button0.Text = "0";
@@ -289,9 +301,10 @@
             this.button00.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button00.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button00.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button00.Location = new System.Drawing.Point(78, 315);
+            this.button00.Location = new System.Drawing.Point(117, 542);
+            this.button00.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button00.Name = "button00";
-            this.button00.Size = new System.Drawing.Size(70, 68);
+            this.button00.Size = new System.Drawing.Size(105, 117);
             this.button00.TabIndex = 11;
             this.button00.TabStop = false;
             this.button00.Text = "00";
@@ -303,9 +316,10 @@
             this.answerButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.answerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.answerButton.Font = new System.Drawing.Font("MS UI Gothic", 15F);
-            this.answerButton.Location = new System.Drawing.Point(157, 315);
+            this.answerButton.Location = new System.Drawing.Point(236, 542);
+            this.answerButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.answerButton.Name = "answerButton";
-            this.answerButton.Size = new System.Drawing.Size(70, 68);
+            this.answerButton.Size = new System.Drawing.Size(105, 117);
             this.answerButton.TabIndex = 12;
             this.answerButton.TabStop = false;
             this.answerButton.Text = "=";
@@ -318,9 +332,10 @@
             this.addButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.addButton.Location = new System.Drawing.Point(233, 93);
+            this.addButton.Location = new System.Drawing.Point(350, 160);
+            this.addButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(71, 68);
+            this.addButton.Size = new System.Drawing.Size(106, 117);
             this.addButton.TabIndex = 14;
             this.addButton.Text = " + ";
             this.addButton.UseVisualStyleBackColor = false;
@@ -331,9 +346,10 @@
             this.subtractButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.subtractButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.subtractButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.subtractButton.Location = new System.Drawing.Point(233, 166);
+            this.subtractButton.Location = new System.Drawing.Point(350, 286);
+            this.subtractButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.subtractButton.Name = "subtractButton";
-            this.subtractButton.Size = new System.Drawing.Size(70, 68);
+            this.subtractButton.Size = new System.Drawing.Size(105, 117);
             this.subtractButton.TabIndex = 14;
             this.subtractButton.Text = " - ";
             this.subtractButton.UseVisualStyleBackColor = false;
@@ -344,9 +360,10 @@
             this.divideButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.divideButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.divideButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.divideButton.Location = new System.Drawing.Point(233, 315);
+            this.divideButton.Location = new System.Drawing.Point(350, 542);
+            this.divideButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.divideButton.Name = "divideButton";
-            this.divideButton.Size = new System.Drawing.Size(70, 68);
+            this.divideButton.Size = new System.Drawing.Size(105, 117);
             this.divideButton.TabIndex = 15;
             this.divideButton.TabStop = false;
             this.divideButton.Text = "÷";
@@ -358,9 +375,10 @@
             this.multiplyButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.multiplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.multiplyButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiplyButton.Location = new System.Drawing.Point(233, 240);
+            this.multiplyButton.Location = new System.Drawing.Point(350, 413);
+            this.multiplyButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.multiplyButton.Name = "multiplyButton";
-            this.multiplyButton.Size = new System.Drawing.Size(70, 68);
+            this.multiplyButton.Size = new System.Drawing.Size(105, 117);
             this.multiplyButton.TabIndex = 16;
             this.multiplyButton.TabStop = false;
             this.multiplyButton.Text = "×";
@@ -376,8 +394,8 @@
             this.ファイルToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(653, 36);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(10, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(980, 36);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -390,7 +408,7 @@
             this.saveAndLoadToolStripMenuItem});
             this.ファイルToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.CornflowerBlue;
             this.ファイルToolStripMenuItem.Name = "ファイルToolStripMenuItem";
-            this.ファイルToolStripMenuItem.Size = new System.Drawing.Size(79, 29);
+            this.ファイルToolStripMenuItem.Size = new System.Drawing.Size(79, 30);
             this.ファイルToolStripMenuItem.Text = "ファイル";
             // 
             // endItem
@@ -459,9 +477,10 @@
             this.clearButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearButton.Font = new System.Drawing.Font("MS UI Gothic", 13F);
-            this.clearButton.Location = new System.Drawing.Point(233, 3);
+            this.clearButton.Location = new System.Drawing.Point(350, 5);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(70, 39);
+            this.clearButton.Size = new System.Drawing.Size(105, 67);
             this.clearButton.TabIndex = 18;
             this.clearButton.TabStop = false;
             this.clearButton.Text = "AC";
@@ -471,20 +490,22 @@
             // formulaBox
             // 
             this.formulaBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.formulaBox.Location = new System.Drawing.Point(7, 48);
+            this.formulaBox.Location = new System.Drawing.Point(10, 83);
+            this.formulaBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.formulaBox.Name = "formulaBox";
-            this.formulaBox.Size = new System.Drawing.Size(292, 33);
+            this.formulaBox.Size = new System.Drawing.Size(436, 33);
             this.formulaBox.TabIndex = 19;
             // 
             // allCalBox
             // 
             this.allCalBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold);
-            this.allCalBox.Location = new System.Drawing.Point(317, 33);
+            this.allCalBox.Location = new System.Drawing.Point(476, 57);
+            this.allCalBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.allCalBox.Multiline = true;
             this.allCalBox.Name = "allCalBox";
             this.allCalBox.ReadOnly = true;
             this.allCalBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.allCalBox.Size = new System.Drawing.Size(337, 496);
+            this.allCalBox.Size = new System.Drawing.Size(504, 851);
             this.allCalBox.TabIndex = 20;
             // 
             // backSpaceButton
@@ -492,9 +513,10 @@
             this.backSpaceButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.backSpaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.backSpaceButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backSpaceButton.Location = new System.Drawing.Point(233, 388);
+            this.backSpaceButton.Location = new System.Drawing.Point(350, 668);
+            this.backSpaceButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.backSpaceButton.Name = "backSpaceButton";
-            this.backSpaceButton.Size = new System.Drawing.Size(70, 68);
+            this.backSpaceButton.Size = new System.Drawing.Size(105, 117);
             this.backSpaceButton.TabIndex = 24;
             this.backSpaceButton.TabStop = false;
             this.backSpaceButton.Text = "C";
@@ -506,9 +528,10 @@
             this.decimalPointButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.decimalPointButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.decimalPointButton.Font = new System.Drawing.Font("MS UI Gothic", 15F);
-            this.decimalPointButton.Location = new System.Drawing.Point(157, 388);
+            this.decimalPointButton.Location = new System.Drawing.Point(236, 668);
+            this.decimalPointButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.decimalPointButton.Name = "decimalPointButton";
-            this.decimalPointButton.Size = new System.Drawing.Size(70, 68);
+            this.decimalPointButton.Size = new System.Drawing.Size(105, 117);
             this.decimalPointButton.TabIndex = 23;
             this.decimalPointButton.TabStop = false;
             this.decimalPointButton.Text = ".";
@@ -520,9 +543,10 @@
             this.noTaxButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.noTaxButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.noTaxButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.noTaxButton.Location = new System.Drawing.Point(78, 388);
+            this.noTaxButton.Location = new System.Drawing.Point(117, 668);
+            this.noTaxButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.noTaxButton.Name = "noTaxButton";
-            this.noTaxButton.Size = new System.Drawing.Size(70, 68);
+            this.noTaxButton.Size = new System.Drawing.Size(105, 117);
             this.noTaxButton.TabIndex = 22;
             this.noTaxButton.TabStop = false;
             this.noTaxButton.Text = "No Tax";
@@ -534,9 +558,10 @@
             this.taxButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.taxButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.taxButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.taxButton.Location = new System.Drawing.Point(3, 388);
+            this.taxButton.Location = new System.Drawing.Point(4, 668);
+            this.taxButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.taxButton.Name = "taxButton";
-            this.taxButton.Size = new System.Drawing.Size(70, 68);
+            this.taxButton.Size = new System.Drawing.Size(105, 117);
             this.taxButton.TabIndex = 21;
             this.taxButton.TabStop = false;
             this.taxButton.Text = "Tax";
@@ -555,11 +580,11 @@
             this.tabControl1.Controls.Add(this.toolTag);
             this.tabControl1.Controls.Add(this.dateTime);
             this.tabControl1.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 33);
+            this.tabControl1.Location = new System.Drawing.Point(0, 57);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(320, 496);
+            this.tabControl1.Size = new System.Drawing.Size(480, 854);
             this.tabControl1.TabIndex = 25;
             this.tabControl1.TabStop = false;
             // 
@@ -593,12 +618,13 @@
             this.tabPage1.Controls.Add(this.addButton);
             this.tabPage1.Controls.Add(this.button00);
             this.tabPage1.Controls.Add(this.answerButton);
+            this.tabPage1.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(312, 460);
+            this.tabPage1.Size = new System.Drawing.Size(472, 818);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Default";
             // 
@@ -628,7 +654,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(312, 460);
+            this.tabPage2.Size = new System.Drawing.Size(472, 818);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Weight";
             // 
@@ -638,10 +664,10 @@
             this.bmiAndBaseWeightResultButton.FlatAppearance.BorderSize = 0;
             this.bmiAndBaseWeightResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bmiAndBaseWeightResultButton.Font = new System.Drawing.Font("MV Boli", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmiAndBaseWeightResultButton.Location = new System.Drawing.Point(122, 212);
-            this.bmiAndBaseWeightResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bmiAndBaseWeightResultButton.Location = new System.Drawing.Point(183, 365);
+            this.bmiAndBaseWeightResultButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.bmiAndBaseWeightResultButton.Name = "bmiAndBaseWeightResultButton";
-            this.bmiAndBaseWeightResultButton.Size = new System.Drawing.Size(54, 52);
+            this.bmiAndBaseWeightResultButton.Size = new System.Drawing.Size(81, 90);
             this.bmiAndBaseWeightResultButton.TabIndex = 35;
             this.bmiAndBaseWeightResultButton.TabStop = false;
             this.bmiAndBaseWeightResultButton.Text = "▼";
@@ -652,7 +678,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(228, 387);
+            this.label1.Location = new System.Drawing.Point(342, 666);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 37);
             this.label1.TabIndex = 16;
@@ -662,7 +689,8 @@
             // 
             this.kgLabel.AutoSize = true;
             this.kgLabel.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kgLabel.Location = new System.Drawing.Point(228, 172);
+            this.kgLabel.Location = new System.Drawing.Point(342, 296);
+            this.kgLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.kgLabel.Name = "kgLabel";
             this.kgLabel.Size = new System.Drawing.Size(44, 37);
             this.kgLabel.TabIndex = 15;
@@ -672,7 +700,8 @@
             // 
             this.cmLabel.AutoSize = true;
             this.cmLabel.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmLabel.Location = new System.Drawing.Point(227, 88);
+            this.cmLabel.Location = new System.Drawing.Point(340, 152);
+            this.cmLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cmLabel.Name = "cmLabel";
             this.cmLabel.Size = new System.Drawing.Size(53, 37);
             this.cmLabel.TabIndex = 14;
@@ -683,8 +712,8 @@
             this.bmiBWLabel.AutoSize = true;
             this.bmiBWLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bmiBWLabel.ForeColor = System.Drawing.Color.White;
-            this.bmiBWLabel.Location = new System.Drawing.Point(-7, 10);
-            this.bmiBWLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.bmiBWLabel.Location = new System.Drawing.Point(-10, 17);
+            this.bmiBWLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.bmiBWLabel.Name = "bmiBWLabel";
             this.bmiBWLabel.Size = new System.Drawing.Size(264, 31);
             this.bmiBWLabel.TabIndex = 13;
@@ -695,10 +724,10 @@
             // 
             this.calWeigthtButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.calWeigthtButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calWeigthtButton.Location = new System.Drawing.Point(28, 171);
-            this.calWeigthtButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.calWeigthtButton.Location = new System.Drawing.Point(42, 294);
+            this.calWeigthtButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.calWeigthtButton.Name = "calWeigthtButton";
-            this.calWeigthtButton.Size = new System.Drawing.Size(68, 39);
+            this.calWeigthtButton.Size = new System.Drawing.Size(102, 67);
             this.calWeigthtButton.TabIndex = 12;
             this.calWeigthtButton.TabStop = false;
             this.calWeigthtButton.Text = "in";
@@ -709,10 +738,10 @@
             // 
             this.calHeigthtButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.calHeigthtButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calHeigthtButton.Location = new System.Drawing.Point(28, 87);
-            this.calHeigthtButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.calHeigthtButton.Location = new System.Drawing.Point(42, 150);
+            this.calHeigthtButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.calHeigthtButton.Name = "calHeigthtButton";
-            this.calHeigthtButton.Size = new System.Drawing.Size(68, 39);
+            this.calHeigthtButton.Size = new System.Drawing.Size(102, 67);
             this.calHeigthtButton.TabIndex = 11;
             this.calHeigthtButton.TabStop = false;
             this.calHeigthtButton.Text = "in";
@@ -723,10 +752,10 @@
             // 
             this.baseWeightButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.baseWeightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.baseWeightButton.Location = new System.Drawing.Point(28, 387);
-            this.baseWeightButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.baseWeightButton.Location = new System.Drawing.Point(42, 666);
+            this.baseWeightButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.baseWeightButton.Name = "baseWeightButton";
-            this.baseWeightButton.Size = new System.Drawing.Size(68, 38);
+            this.baseWeightButton.Size = new System.Drawing.Size(102, 65);
             this.baseWeightButton.TabIndex = 10;
             this.baseWeightButton.TabStop = false;
             this.baseWeightButton.Text = "▶";
@@ -737,8 +766,8 @@
             // 
             this.baseWeightLabel.AutoSize = true;
             this.baseWeightLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.baseWeightLabel.Location = new System.Drawing.Point(2, 350);
-            this.baseWeightLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.baseWeightLabel.Location = new System.Drawing.Point(3, 603);
+            this.baseWeightLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.baseWeightLabel.Name = "baseWeightLabel";
             this.baseWeightLabel.Size = new System.Drawing.Size(150, 31);
             this.baseWeightLabel.TabIndex = 9;
@@ -747,18 +776,19 @@
             // baseWeightBox
             // 
             this.baseWeightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.baseWeightBox.Location = new System.Drawing.Point(105, 387);
+            this.baseWeightBox.Location = new System.Drawing.Point(158, 666);
+            this.baseWeightBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.baseWeightBox.Name = "baseWeightBox";
             this.baseWeightBox.ReadOnly = true;
-            this.baseWeightBox.Size = new System.Drawing.Size(114, 33);
+            this.baseWeightBox.Size = new System.Drawing.Size(169, 33);
             this.baseWeightBox.TabIndex = 8;
             // 
             // bmiLabel
             // 
             this.bmiLabel.AutoSize = true;
             this.bmiLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bmiLabel.Location = new System.Drawing.Point(3, 254);
-            this.bmiLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.bmiLabel.Location = new System.Drawing.Point(4, 437);
+            this.bmiLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.bmiLabel.Name = "bmiLabel";
             this.bmiLabel.Size = new System.Drawing.Size(61, 31);
             this.bmiLabel.TabIndex = 7;
@@ -767,20 +797,21 @@
             // bmiBox
             // 
             this.bmiBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.bmiBox.Location = new System.Drawing.Point(105, 292);
+            this.bmiBox.Location = new System.Drawing.Point(158, 503);
+            this.bmiBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bmiBox.Name = "bmiBox";
             this.bmiBox.ReadOnly = true;
-            this.bmiBox.Size = new System.Drawing.Size(114, 33);
+            this.bmiBox.Size = new System.Drawing.Size(169, 33);
             this.bmiBox.TabIndex = 6;
             // 
             // bmiResultButton
             // 
             this.bmiResultButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.bmiResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bmiResultButton.Location = new System.Drawing.Point(28, 292);
-            this.bmiResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.bmiResultButton.Location = new System.Drawing.Point(42, 503);
+            this.bmiResultButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.bmiResultButton.Name = "bmiResultButton";
-            this.bmiResultButton.Size = new System.Drawing.Size(68, 38);
+            this.bmiResultButton.Size = new System.Drawing.Size(102, 65);
             this.bmiResultButton.TabIndex = 5;
             this.bmiResultButton.TabStop = false;
             this.bmiResultButton.Text = "▶";
@@ -791,8 +822,8 @@
             // 
             this.weightLabel.AutoSize = true;
             this.weightLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightLabel.Location = new System.Drawing.Point(3, 135);
-            this.weightLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.weightLabel.Location = new System.Drawing.Point(4, 232);
+            this.weightLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.weightLabel.Name = "weightLabel";
             this.weightLabel.Size = new System.Drawing.Size(97, 31);
             this.weightLabel.TabIndex = 4;
@@ -802,8 +833,8 @@
             // 
             this.heightLabel.AutoSize = true;
             this.heightLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heightLabel.Location = new System.Drawing.Point(2, 51);
-            this.heightLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.heightLabel.Location = new System.Drawing.Point(3, 88);
+            this.heightLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.heightLabel.Name = "heightLabel";
             this.heightLabel.Size = new System.Drawing.Size(92, 31);
             this.heightLabel.TabIndex = 3;
@@ -812,19 +843,21 @@
             // weightBox
             // 
             this.weightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.weightBox.Location = new System.Drawing.Point(105, 172);
+            this.weightBox.Location = new System.Drawing.Point(158, 296);
+            this.weightBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.weightBox.Name = "weightBox";
             this.weightBox.ReadOnly = true;
-            this.weightBox.Size = new System.Drawing.Size(114, 33);
+            this.weightBox.Size = new System.Drawing.Size(169, 33);
             this.weightBox.TabIndex = 2;
             // 
             // heightBox
             // 
             this.heightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.heightBox.Location = new System.Drawing.Point(105, 87);
+            this.heightBox.Location = new System.Drawing.Point(158, 150);
+            this.heightBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.heightBox.Name = "heightBox";
             this.heightBox.ReadOnly = true;
-            this.heightBox.Size = new System.Drawing.Size(114, 33);
+            this.heightBox.Size = new System.Drawing.Size(169, 33);
             this.heightBox.TabIndex = 1;
             // 
             // toolTag
@@ -855,10 +888,10 @@
             this.toolTag.Controls.Add(this.annualIncomeCalButton);
             this.toolTag.Controls.Add(this.annualIncomeLabel);
             this.toolTag.Location = new System.Drawing.Point(4, 4);
-            this.toolTag.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.toolTag.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.toolTag.Name = "toolTag";
-            this.toolTag.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.toolTag.Size = new System.Drawing.Size(312, 460);
+            this.toolTag.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.toolTag.Size = new System.Drawing.Size(472, 818);
             this.toolTag.TabIndex = 2;
             this.toolTag.Text = "Tool";
             // 
@@ -868,10 +901,10 @@
             this.walkWhatPartFromStationLnverseResultButton.FlatAppearance.BorderSize = 0;
             this.walkWhatPartFromStationLnverseResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.walkWhatPartFromStationLnverseResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walkWhatPartFromStationLnverseResultButton.Location = new System.Drawing.Point(148, 358);
-            this.walkWhatPartFromStationLnverseResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.walkWhatPartFromStationLnverseResultButton.Location = new System.Drawing.Point(222, 617);
+            this.walkWhatPartFromStationLnverseResultButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.walkWhatPartFromStationLnverseResultButton.Name = "walkWhatPartFromStationLnverseResultButton";
-            this.walkWhatPartFromStationLnverseResultButton.Size = new System.Drawing.Size(57, 46);
+            this.walkWhatPartFromStationLnverseResultButton.Size = new System.Drawing.Size(86, 79);
             this.walkWhatPartFromStationLnverseResultButton.TabIndex = 38;
             this.walkWhatPartFromStationLnverseResultButton.TabStop = false;
             this.walkWhatPartFromStationLnverseResultButton.Text = "▲";
@@ -881,29 +914,31 @@
             // walkWhatPartFromStationCalBox
             // 
             this.walkWhatPartFromStationCalBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(103, 320);
+            this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(154, 551);
+            this.walkWhatPartFromStationCalBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.walkWhatPartFromStationCalBox.Name = "walkWhatPartFromStationCalBox";
             this.walkWhatPartFromStationCalBox.ReadOnly = true;
-            this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(96, 33);
+            this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(142, 33);
             this.walkWhatPartFromStationCalBox.TabIndex = 28;
             // 
             // annualIncomeBox
             // 
             this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.annualIncomeBox.Location = new System.Drawing.Point(103, 84);
+            this.annualIncomeBox.Location = new System.Drawing.Point(154, 145);
+            this.annualIncomeBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.annualIncomeBox.Name = "annualIncomeBox";
             this.annualIncomeBox.ReadOnly = true;
-            this.annualIncomeBox.Size = new System.Drawing.Size(71, 33);
+            this.annualIncomeBox.Size = new System.Drawing.Size(104, 33);
             this.annualIncomeBox.TabIndex = 15;
             // 
             // hourlyWageCalButton
             // 
             this.hourlyWageCalButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.hourlyWageCalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hourlyWageCalButton.Location = new System.Drawing.Point(20, 214);
-            this.hourlyWageCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.hourlyWageCalButton.Location = new System.Drawing.Point(30, 369);
+            this.hourlyWageCalButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.hourlyWageCalButton.Name = "hourlyWageCalButton";
-            this.hourlyWageCalButton.Size = new System.Drawing.Size(68, 38);
+            this.hourlyWageCalButton.Size = new System.Drawing.Size(102, 65);
             this.hourlyWageCalButton.TabIndex = 41;
             this.hourlyWageCalButton.TabStop = false;
             this.hourlyWageCalButton.Text = "in";
@@ -916,10 +951,10 @@
             this.hourlyWageReverseResultButton.FlatAppearance.BorderSize = 0;
             this.hourlyWageReverseResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hourlyWageReverseResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourlyWageReverseResultButton.Location = new System.Drawing.Point(136, 126);
-            this.hourlyWageReverseResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.hourlyWageReverseResultButton.Location = new System.Drawing.Point(204, 217);
+            this.hourlyWageReverseResultButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.hourlyWageReverseResultButton.Name = "hourlyWageReverseResultButton";
-            this.hourlyWageReverseResultButton.Size = new System.Drawing.Size(57, 46);
+            this.hourlyWageReverseResultButton.Size = new System.Drawing.Size(86, 79);
             this.hourlyWageReverseResultButton.TabIndex = 40;
             this.hourlyWageReverseResultButton.TabStop = false;
             this.hourlyWageReverseResultButton.Text = "▲";
@@ -930,10 +965,10 @@
             // 
             this.walkWhatPartFromStationLnverseCalButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.walkWhatPartFromStationLnverseCalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.walkWhatPartFromStationLnverseCalButton.Location = new System.Drawing.Point(20, 414);
-            this.walkWhatPartFromStationLnverseCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.walkWhatPartFromStationLnverseCalButton.Location = new System.Drawing.Point(30, 713);
+            this.walkWhatPartFromStationLnverseCalButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.walkWhatPartFromStationLnverseCalButton.Name = "walkWhatPartFromStationLnverseCalButton";
-            this.walkWhatPartFromStationLnverseCalButton.Size = new System.Drawing.Size(68, 38);
+            this.walkWhatPartFromStationLnverseCalButton.Size = new System.Drawing.Size(102, 65);
             this.walkWhatPartFromStationLnverseCalButton.TabIndex = 39;
             this.walkWhatPartFromStationLnverseCalButton.TabStop = false;
             this.walkWhatPartFromStationLnverseCalButton.Text = "in";
@@ -943,8 +978,8 @@
             // minutesLabel1
             // 
             this.minutesLabel1.AutoSize = true;
-            this.minutesLabel1.Location = new System.Drawing.Point(202, 398);
-            this.minutesLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.minutesLabel1.Location = new System.Drawing.Point(303, 685);
+            this.minutesLabel1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.minutesLabel1.Name = "minutesLabel1";
             this.minutesLabel1.Size = new System.Drawing.Size(78, 23);
             this.minutesLabel1.TabIndex = 37;
@@ -954,7 +989,8 @@
             // 
             this.minutesLabel2.AutoSize = true;
             this.minutesLabel2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minutesLabel2.Location = new System.Drawing.Point(202, 416);
+            this.minutesLabel2.Location = new System.Drawing.Point(303, 716);
+            this.minutesLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.minutesLabel2.Name = "minutesLabel2";
             this.minutesLabel2.Size = new System.Drawing.Size(41, 31);
             this.minutesLabel2.TabIndex = 36;
@@ -963,10 +999,11 @@
             // walkWhatPartFromStationResultBox
             // 
             this.walkWhatPartFromStationResultBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.walkWhatPartFromStationResultBox.Location = new System.Drawing.Point(103, 412);
+            this.walkWhatPartFromStationResultBox.Location = new System.Drawing.Point(154, 710);
+            this.walkWhatPartFromStationResultBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.walkWhatPartFromStationResultBox.Name = "walkWhatPartFromStationResultBox";
             this.walkWhatPartFromStationResultBox.ReadOnly = true;
-            this.walkWhatPartFromStationResultBox.Size = new System.Drawing.Size(96, 33);
+            this.walkWhatPartFromStationResultBox.Size = new System.Drawing.Size(142, 33);
             this.walkWhatPartFromStationResultBox.TabIndex = 35;
             // 
             // walkWhatPartFromStationResultButton
@@ -975,10 +1012,10 @@
             this.walkWhatPartFromStationResultButton.FlatAppearance.BorderSize = 0;
             this.walkWhatPartFromStationResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.walkWhatPartFromStationResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walkWhatPartFromStationResultButton.Location = new System.Drawing.Point(97, 358);
-            this.walkWhatPartFromStationResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.walkWhatPartFromStationResultButton.Location = new System.Drawing.Point(146, 617);
+            this.walkWhatPartFromStationResultButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.walkWhatPartFromStationResultButton.Name = "walkWhatPartFromStationResultButton";
-            this.walkWhatPartFromStationResultButton.Size = new System.Drawing.Size(53, 46);
+            this.walkWhatPartFromStationResultButton.Size = new System.Drawing.Size(80, 79);
             this.walkWhatPartFromStationResultButton.TabIndex = 34;
             this.walkWhatPartFromStationResultButton.TabStop = false;
             this.walkWhatPartFromStationResultButton.Text = "▼";
@@ -989,10 +1026,10 @@
             // 
             this.walkWhatPartFromStationCalButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.walkWhatPartFromStationCalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.walkWhatPartFromStationCalButton.Location = new System.Drawing.Point(20, 321);
-            this.walkWhatPartFromStationCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.walkWhatPartFromStationCalButton.Location = new System.Drawing.Point(30, 553);
+            this.walkWhatPartFromStationCalButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.walkWhatPartFromStationCalButton.Name = "walkWhatPartFromStationCalButton";
-            this.walkWhatPartFromStationCalButton.Size = new System.Drawing.Size(68, 38);
+            this.walkWhatPartFromStationCalButton.Size = new System.Drawing.Size(102, 65);
             this.walkWhatPartFromStationCalButton.TabIndex = 32;
             this.walkWhatPartFromStationCalButton.TabStop = false;
             this.walkWhatPartFromStationCalButton.Text = "in";
@@ -1003,8 +1040,8 @@
             // 
             this.walkWhatPartFromStationLabel2.AutoSize = true;
             this.walkWhatPartFromStationLabel2.Font = new System.Drawing.Font("MV Boli", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walkWhatPartFromStationLabel2.Location = new System.Drawing.Point(3, 291);
-            this.walkWhatPartFromStationLabel2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.walkWhatPartFromStationLabel2.Location = new System.Drawing.Point(4, 501);
+            this.walkWhatPartFromStationLabel2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.walkWhatPartFromStationLabel2.Name = "walkWhatPartFromStationLabel2";
             this.walkWhatPartFromStationLabel2.Size = new System.Drawing.Size(270, 26);
             this.walkWhatPartFromStationLabel2.TabIndex = 31;
@@ -1014,7 +1051,8 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(197, 322);
+            this.label7.Location = new System.Drawing.Point(296, 555);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 31);
             this.label7.TabIndex = 30;
@@ -1024,8 +1062,8 @@
             // 
             this.walkWhatPartFromStationLabel1.AutoSize = true;
             this.walkWhatPartFromStationLabel1.Font = new System.Drawing.Font("MV Boli", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walkWhatPartFromStationLabel1.Location = new System.Drawing.Point(3, 266);
-            this.walkWhatPartFromStationLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.walkWhatPartFromStationLabel1.Location = new System.Drawing.Point(4, 458);
+            this.walkWhatPartFromStationLabel1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.walkWhatPartFromStationLabel1.Name = "walkWhatPartFromStationLabel1";
             this.walkWhatPartFromStationLabel1.Size = new System.Drawing.Size(162, 26);
             this.walkWhatPartFromStationLabel1.TabIndex = 29;
@@ -1034,8 +1072,8 @@
             // yenLabel
             // 
             this.yenLabel.AutoSize = true;
-            this.yenLabel.Location = new System.Drawing.Point(202, 204);
-            this.yenLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.yenLabel.Location = new System.Drawing.Point(303, 351);
+            this.yenLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.yenLabel.Name = "yenLabel";
             this.yenLabel.Size = new System.Drawing.Size(41, 23);
             this.yenLabel.TabIndex = 26;
@@ -1044,8 +1082,8 @@
             // thousandYenLabel
             // 
             this.thousandYenLabel.AutoSize = true;
-            this.thousandYenLabel.Location = new System.Drawing.Point(176, 70);
-            this.thousandYenLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.thousandYenLabel.Location = new System.Drawing.Point(264, 121);
+            this.thousandYenLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.thousandYenLabel.Name = "thousandYenLabel";
             this.thousandYenLabel.Size = new System.Drawing.Size(119, 23);
             this.thousandYenLabel.TabIndex = 25;
@@ -1055,7 +1093,8 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(197, 221);
+            this.label6.Location = new System.Drawing.Point(296, 381);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 31);
             this.label6.TabIndex = 24;
@@ -1065,8 +1104,8 @@
             // 
             this.hourlyWageLabel.AutoSize = true;
             this.hourlyWageLabel.Font = new System.Drawing.Font("MV Boli", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourlyWageLabel.Location = new System.Drawing.Point(3, 176);
-            this.hourlyWageLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.hourlyWageLabel.Location = new System.Drawing.Point(4, 303);
+            this.hourlyWageLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.hourlyWageLabel.Name = "hourlyWageLabel";
             this.hourlyWageLabel.Size = new System.Drawing.Size(202, 26);
             this.hourlyWageLabel.TabIndex = 23;
@@ -1075,10 +1114,11 @@
             // hourlyWageResultBox
             // 
             this.hourlyWageResultBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.hourlyWageResultBox.Location = new System.Drawing.Point(97, 214);
+            this.hourlyWageResultBox.Location = new System.Drawing.Point(146, 369);
+            this.hourlyWageResultBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.hourlyWageResultBox.Name = "hourlyWageResultBox";
             this.hourlyWageResultBox.ReadOnly = true;
-            this.hourlyWageResultBox.Size = new System.Drawing.Size(96, 33);
+            this.hourlyWageResultBox.Size = new System.Drawing.Size(142, 33);
             this.hourlyWageResultBox.TabIndex = 22;
             // 
             // hourlyWageResultButton
@@ -1087,10 +1127,10 @@
             this.hourlyWageResultButton.FlatAppearance.BorderSize = 0;
             this.hourlyWageResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hourlyWageResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourlyWageResultButton.Location = new System.Drawing.Point(85, 126);
-            this.hourlyWageResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.hourlyWageResultButton.Location = new System.Drawing.Point(128, 217);
+            this.hourlyWageResultButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.hourlyWageResultButton.Name = "hourlyWageResultButton";
-            this.hourlyWageResultButton.Size = new System.Drawing.Size(53, 46);
+            this.hourlyWageResultButton.Size = new System.Drawing.Size(80, 79);
             this.hourlyWageResultButton.TabIndex = 21;
             this.hourlyWageResultButton.TabStop = false;
             this.hourlyWageResultButton.Text = "▼";
@@ -1101,7 +1141,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(170, 91);
+            this.label2.Location = new System.Drawing.Point(255, 157);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 31);
             this.label2.TabIndex = 19;
@@ -1112,8 +1153,8 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(-7, 8);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Location = new System.Drawing.Point(-10, 14);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 31);
             this.label3.TabIndex = 18;
@@ -1124,10 +1165,10 @@
             // 
             this.annualIncomeCalButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.annualIncomeCalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.annualIncomeCalButton.Location = new System.Drawing.Point(20, 84);
-            this.annualIncomeCalButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.annualIncomeCalButton.Location = new System.Drawing.Point(30, 145);
+            this.annualIncomeCalButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.annualIncomeCalButton.Name = "annualIncomeCalButton";
-            this.annualIncomeCalButton.Size = new System.Drawing.Size(68, 38);
+            this.annualIncomeCalButton.Size = new System.Drawing.Size(102, 65);
             this.annualIncomeCalButton.TabIndex = 17;
             this.annualIncomeCalButton.TabStop = false;
             this.annualIncomeCalButton.Text = "in";
@@ -1138,8 +1179,8 @@
             // 
             this.annualIncomeLabel.AutoSize = true;
             this.annualIncomeLabel.Font = new System.Drawing.Font("MV Boli", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.annualIncomeLabel.Location = new System.Drawing.Point(2, 44);
-            this.annualIncomeLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.annualIncomeLabel.Location = new System.Drawing.Point(3, 76);
+            this.annualIncomeLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.annualIncomeLabel.Name = "annualIncomeLabel";
             this.annualIncomeLabel.Size = new System.Drawing.Size(220, 26);
             this.annualIncomeLabel.TabIndex = 16;
@@ -1166,10 +1207,10 @@
             this.dateTime.Controls.Add(this.ageCalculatingFromBirthdateLabel);
             this.dateTime.Controls.Add(this.label4);
             this.dateTime.Location = new System.Drawing.Point(4, 4);
-            this.dateTime.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.dateTime.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.dateTime.Name = "dateTime";
-            this.dateTime.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dateTime.Size = new System.Drawing.Size(312, 460);
+            this.dateTime.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.dateTime.Size = new System.Drawing.Size(472, 818);
             this.dateTime.TabIndex = 3;
             this.dateTime.Text = "DateTime";
             // 
@@ -1177,10 +1218,10 @@
             // 
             this.yearsOldCaiBoxButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.yearsOldCaiBoxButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yearsOldCaiBoxButton.Location = new System.Drawing.Point(7, 75);
-            this.yearsOldCaiBoxButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.yearsOldCaiBoxButton.Location = new System.Drawing.Point(10, 129);
+            this.yearsOldCaiBoxButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.yearsOldCaiBoxButton.Name = "yearsOldCaiBoxButton";
-            this.yearsOldCaiBoxButton.Size = new System.Drawing.Size(68, 38);
+            this.yearsOldCaiBoxButton.Size = new System.Drawing.Size(102, 65);
             this.yearsOldCaiBoxButton.TabIndex = 28;
             this.yearsOldCaiBoxButton.TabStop = false;
             this.yearsOldCaiBoxButton.Text = "in";
@@ -1191,8 +1232,8 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("MV Boli", 9.5F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label9.Location = new System.Drawing.Point(73, 61);
-            this.label9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label9.Location = new System.Drawing.Point(110, 105);
+            this.label9.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(234, 25);
             this.label9.TabIndex = 41;
@@ -1201,24 +1242,26 @@
             // yearsOldBox
             // 
             this.yearsOldBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.yearsOldBox.Location = new System.Drawing.Point(111, 173);
+            this.yearsOldBox.Location = new System.Drawing.Point(166, 298);
+            this.yearsOldBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.yearsOldBox.Name = "yearsOldBox";
-            this.yearsOldBox.Size = new System.Drawing.Size(48, 33);
+            this.yearsOldBox.Size = new System.Drawing.Size(70, 33);
             this.yearsOldBox.TabIndex = 38;
             // 
             // dayBox
             // 
             this.dayBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dayBox.Location = new System.Drawing.Point(193, 120);
+            this.dayBox.Location = new System.Drawing.Point(290, 207);
+            this.dayBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dayBox.Name = "dayBox";
-            this.dayBox.Size = new System.Drawing.Size(44, 33);
+            this.dayBox.Size = new System.Drawing.Size(64, 33);
             this.dayBox.TabIndex = 34;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(160, 156);
-            this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label14.Location = new System.Drawing.Point(240, 269);
+            this.label14.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(83, 23);
             this.label14.TabIndex = 40;
@@ -1228,7 +1271,8 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(158, 175);
+            this.label15.Location = new System.Drawing.Point(237, 301);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 31);
             this.label15.TabIndex = 39;
@@ -1240,10 +1284,10 @@
             this.yearsOldResultButton.FlatAppearance.BorderSize = 0;
             this.yearsOldResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.yearsOldResultButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.yearsOldResultButton.Location = new System.Drawing.Point(61, 163);
-            this.yearsOldResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.yearsOldResultButton.Location = new System.Drawing.Point(92, 281);
+            this.yearsOldResultButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.yearsOldResultButton.Name = "yearsOldResultButton";
-            this.yearsOldResultButton.Size = new System.Drawing.Size(53, 46);
+            this.yearsOldResultButton.Size = new System.Drawing.Size(80, 79);
             this.yearsOldResultButton.TabIndex = 37;
             this.yearsOldResultButton.TabStop = false;
             this.yearsOldResultButton.Text = "▶";
@@ -1253,8 +1297,8 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(232, 99);
-            this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label12.Location = new System.Drawing.Point(348, 170);
+            this.label12.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(42, 23);
             this.label12.TabIndex = 36;
@@ -1264,7 +1308,8 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(229, 120);
+            this.label13.Location = new System.Drawing.Point(344, 207);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(41, 31);
             this.label13.TabIndex = 35;
@@ -1273,16 +1318,17 @@
             // manthBox
             // 
             this.manthBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.manthBox.Location = new System.Drawing.Point(110, 120);
+            this.manthBox.Location = new System.Drawing.Point(165, 207);
+            this.manthBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.manthBox.Name = "manthBox";
-            this.manthBox.Size = new System.Drawing.Size(44, 33);
+            this.manthBox.Size = new System.Drawing.Size(64, 33);
             this.manthBox.TabIndex = 31;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(143, 98);
-            this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label10.Location = new System.Drawing.Point(214, 169);
+            this.label10.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 23);
             this.label10.TabIndex = 33;
@@ -1292,7 +1338,8 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(146, 121);
+            this.label11.Location = new System.Drawing.Point(219, 208);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 31);
             this.label11.TabIndex = 32;
@@ -1301,16 +1348,17 @@
             // yearBox
             // 
             this.yearBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.yearBox.Location = new System.Drawing.Point(8, 118);
+            this.yearBox.Location = new System.Drawing.Point(12, 203);
+            this.yearBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.yearBox.Name = "yearBox";
-            this.yearBox.Size = new System.Drawing.Size(68, 33);
+            this.yearBox.Size = new System.Drawing.Size(100, 33);
             this.yearBox.TabIndex = 26;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(75, 99);
-            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label5.Location = new System.Drawing.Point(112, 170);
+            this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 23);
             this.label5.TabIndex = 30;
@@ -1320,7 +1368,8 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(73, 120);
+            this.label8.Location = new System.Drawing.Point(110, 207);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 31);
             this.label8.TabIndex = 29;
@@ -1330,8 +1379,8 @@
             // 
             this.ageCalculatingFromBirthdateLabel.AutoSize = true;
             this.ageCalculatingFromBirthdateLabel.Font = new System.Drawing.Font("MV Boli", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ageCalculatingFromBirthdateLabel.Location = new System.Drawing.Point(-1, 35);
-            this.ageCalculatingFromBirthdateLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.ageCalculatingFromBirthdateLabel.Location = new System.Drawing.Point(-2, 60);
+            this.ageCalculatingFromBirthdateLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.ageCalculatingFromBirthdateLabel.Name = "ageCalculatingFromBirthdateLabel";
             this.ageCalculatingFromBirthdateLabel.Size = new System.Drawing.Size(308, 26);
             this.ageCalculatingFromBirthdateLabel.TabIndex = 27;
@@ -1342,8 +1391,8 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(-7, 4);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Location = new System.Drawing.Point(-10, 7);
+            this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 31);
             this.label4.TabIndex = 19;
@@ -1355,10 +1404,10 @@
             this.clearTextButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.clearTextButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearTextButton.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearTextButton.Location = new System.Drawing.Point(403, 0);
-            this.clearTextButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.clearTextButton.Location = new System.Drawing.Point(604, 0);
+            this.clearTextButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.clearTextButton.Name = "clearTextButton";
-            this.clearTextButton.Size = new System.Drawing.Size(155, 34);
+            this.clearTextButton.Size = new System.Drawing.Size(232, 59);
             this.clearTextButton.TabIndex = 26;
             this.clearTextButton.TabStop = false;
             this.clearTextButton.Text = "Clear Text";
@@ -1367,15 +1416,18 @@
             // 
             // Calculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(653, 530);
+            this.ClientSize = new System.Drawing.Size(980, 913);
             this.Controls.Add(this.clearTextButton);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.allCalBox);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
