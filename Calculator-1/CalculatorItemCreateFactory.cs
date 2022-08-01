@@ -44,5 +44,23 @@ namespace Calculator_1
                 allCalBox.Text += formulaBox.Text + "\r\n";
             }
         }
+
+        internal static void DecimalPointButton(TextBox calBox, TextBox formulaBox, TextBox allCalBox, object sender)
+        {
+            if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
+            {
+                calBox.Text += ".";
+                formulaBox.Text = calBox.Text;
+            }
+            else if (formulaBox.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                calBox.Text += ".";
+                formulaBox.Text += ".";
+            }
+        }
     }
 }

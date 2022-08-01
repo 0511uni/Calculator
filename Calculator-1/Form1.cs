@@ -246,20 +246,16 @@ namespace Calculator_1
 
         private void DecimalPointButtonClicked(object sender, EventArgs e)
         {
-            if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
-            {
-                calBox.Text += ".";
-                formulaBox.Text = calBox.Text;
-            }
-            else if (formulaBox.Text == "")
-            {
-                return;
-            }
-            else
-            {
-                calBox.Text += ".";
-                formulaBox.Text += ".";
-            }
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton);
+        }
+        private void TaxButtonClicked(object sender, EventArgs e)
+        {
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton);
+        }
+
+        private void NoTaxButtonClicked(object sender, EventArgs e)
+        {
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton);
         }
 
         private void ExitButton_Clicked(object sender, EventArgs e)
@@ -291,18 +287,6 @@ namespace Calculator_1
             {
                 formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length - 1).Trim();
             }
-        }
-
-        private void TaxButtonClicked(object sender, EventArgs e)
-        {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
-        }
-
-        private void NoTaxButtonClicked(object sender, EventArgs e)
-        {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
-
-           
         }
 
         private void LoadMenuClicked(object sender, EventArgs e)

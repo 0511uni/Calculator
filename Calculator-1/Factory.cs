@@ -105,9 +105,20 @@ namespace Calculator_1
             }
         }
 
-        internal static void CalculatorItemCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, Button taxButton, Button noTaxButton, object sender)
+        internal static void CalculatorItemCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, Button taxButton, Button noTaxButton, object sender, Button decimalPointButton)
         {
-            CalculatorItemCreateFactory.TaxCalCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
+            if (sender.Equals(noTaxButton))
+            {
+                CalculatorItemCreateFactory.TaxCalCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
+            }
+            else if (sender.Equals(taxButton))
+            {
+                CalculatorItemCreateFactory.TaxCalCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
+            }
+            else if (sender.Equals(decimalPointButton))
+            {
+                CalculatorItemCreateFactory.DecimalPointButton(calBox, formulaBox, allCalBox, sender);
+            }
         }
     }
 }
