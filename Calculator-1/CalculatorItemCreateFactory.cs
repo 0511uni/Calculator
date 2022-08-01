@@ -62,5 +62,51 @@ namespace Calculator_1
                 formulaBox.Text += ".";
             }
         }
+
+        internal static void AnswerButton(TextBox calBox, TextBox formulaBox, TextBox allCalBox, object sender)
+        {
+            if (formulaBox.Text.Contains("="))
+            {
+                return;
+            }
+
+            allCalBox.Text += formulaBox.Text + " = ";
+            string a = formulaBox.Text
+                .Replace("＋", "+")
+                .Replace("－", "-")
+                .Replace("×", "*")
+                .Replace("÷", "/");
+
+            string exp = a;//"(1+6)*5/(7-4)"
+
+            DataTable dt = new DataTable();
+            var result = dt.Compute(exp, "");//decimalなのでキャストいらず
+
+            formulaBox.Text += " = " + result.ToString();
+            calBox.Text = result.ToString();
+            allCalBox.Text += result.ToString() + "\r\n";
+            #region
+
+            //FormulaBoxClear(sender, formulaBox, calBox, answerButton);
+            //var add = Eval(allCalBox.Text);
+            //allCalBox.Text = add.ToString();
+
+
+
+            //calBox.ToString =
+            ////var addButton = "=";
+            ////while (true)
+            ////{
+            ////    if (addButton == "=")
+            ////    {
+            ////        break;
+            ////    }
+            //int a =0;
+            //    Cal(a);
+            ////}
+            ////var addButton = "=";
+            //calBox.Text = a.ToString();//addButton.Text
+            #endregion
+        }
     }
 }

@@ -200,62 +200,64 @@ namespace Calculator_1
 
         private void AnswerButton_Clicked(object sender, EventArgs e)
         {
-            if (formulaBox.Text.Contains("="))
-            {
-                return;
-            }
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
 
-            allCalBox.Text += formulaBox.Text + " = ";
-            string a = formulaBox.Text
-                .Replace("＋", "+")
-                .Replace("－", "-")
-                .Replace("×", "*")
-                .Replace("÷", "/");
+            //if (formulaBox.Text.Contains("="))
+            //{
+            //    return;
+            //}
 
-            string exp = a;//"(1+6)*5/(7-4)"
+            //allCalBox.Text += formulaBox.Text + " = ";
+            //string a = formulaBox.Text
+            //    .Replace("＋", "+")
+            //    .Replace("－", "-")
+            //    .Replace("×", "*")
+            //    .Replace("÷", "/");
 
-            DataTable dt = new DataTable();
-            var result = dt.Compute(exp, "");//decimalなのでキャストいらず
+            //string exp = a;//"(1+6)*5/(7-4)"
 
-            formulaBox.Text += " = " + result.ToString();
-            calBox.Text = result.ToString();
-            allCalBox.Text += result.ToString() + "\r\n";
-            #region
+            //DataTable dt = new DataTable();
+            //var result = dt.Compute(exp, "");//decimalなのでキャストいらず
 
-            //FormulaBoxClear(sender, formulaBox, calBox, answerButton);
-            //var add = Eval(allCalBox.Text);
-            //allCalBox.Text = add.ToString();
+            //formulaBox.Text += " = " + result.ToString();
+            //calBox.Text = result.ToString();
+            //allCalBox.Text += result.ToString() + "\r\n";
+            //#region
+
+            ////FormulaBoxClear(sender, formulaBox, calBox, answerButton);
+            ////var add = Eval(allCalBox.Text);
+            ////allCalBox.Text = add.ToString();
 
 
 
-            //calBox.ToString =
-            ////var addButton = "=";
-            ////while (true)
-            ////{
-            ////    if (addButton == "=")
-            ////    {
-            ////        break;
-            ////    }
-            //int a =0;
-            //    Cal(a);
-            ////}
-            ////var addButton = "=";
-            //calBox.Text = a.ToString();//addButton.Text
-            #endregion
+            ////calBox.ToString =
+            //////var addButton = "=";
+            //////while (true)
+            //////{
+            //////    if (addButton == "=")
+            //////    {
+            //////        break;
+            //////    }
+            ////int a =0;
+            ////    Cal(a);
+            //////}
+            //////var addButton = "=";
+            ////calBox.Text = a.ToString();//addButton.Text
+            //#endregion
         }
 
         private void DecimalPointButtonClicked(object sender, EventArgs e)
         {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton);
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
         }
         private void TaxButtonClicked(object sender, EventArgs e)
         {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton);
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
         }
 
         private void NoTaxButtonClicked(object sender, EventArgs e)
         {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton);
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
         }
 
         private void ExitButton_Clicked(object sender, EventArgs e)

@@ -105,7 +105,7 @@ namespace Calculator_1
             }
         }
 
-        internal static void CalculatorItemCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, Button taxButton, Button noTaxButton, object sender, Button decimalPointButton)
+        internal static void CalculatorItemCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, Button taxButton, Button noTaxButton, object sender, Button decimalPointButton, Button answerButton)
         {
             if (sender.Equals(noTaxButton))
             {
@@ -118,6 +118,10 @@ namespace Calculator_1
             else if (sender.Equals(decimalPointButton))
             {
                 CalculatorItemCreateFactory.DecimalPointButton(calBox, formulaBox, allCalBox, sender);
+            }
+            else if (sender.Equals(answerButton))
+            {
+                CalculatorItemCreateFactory.AnswerButton(calBox, formulaBox, allCalBox, sender);
             }
         }
     }
