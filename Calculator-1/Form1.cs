@@ -104,6 +104,8 @@ namespace Calculator_1
 
         private void ArithmeticOperationSymbolClicked(object sender, EventArgs e)
         {
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton, addButton, subtractButton, multiplyButton, divideButton);
+
             if (formulaBox.Text == "")
             {
                 return;
@@ -195,21 +197,21 @@ namespace Calculator_1
 
         private void AnswerButton_Clicked(object sender, EventArgs e)
         {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton, addButton, subtractButton, multiplyButton, divideButton);
         }
 
         private void DecimalPointButtonClicked(object sender, EventArgs e)
         {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton, addButton, subtractButton, multiplyButton, divideButton);
         }
         private void TaxButtonClicked(object sender, EventArgs e)
         {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton, addButton, subtractButton, multiplyButton, divideButton);
         }
 
         private void NoTaxButtonClicked(object sender, EventArgs e)
         {
-            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton, addButton, subtractButton, multiplyButton, divideButton);
         }
 
         private void ExitButton_Clicked(object sender, EventArgs e)
