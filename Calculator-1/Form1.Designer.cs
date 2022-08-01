@@ -471,10 +471,11 @@
             // 
             // formulaBox
             // 
+            this.formulaBox.BackColor = System.Drawing.SystemColors.Control;
             this.formulaBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.formulaBox.Location = new System.Drawing.Point(2, 6);
+            this.formulaBox.Location = new System.Drawing.Point(2, 12);
             this.formulaBox.Name = "formulaBox";
-            this.formulaBox.Size = new System.Drawing.Size(300, 33);
+            this.formulaBox.Size = new System.Drawing.Size(301, 33);
             this.formulaBox.TabIndex = 19;
             // 
             // allCalBox
@@ -1178,10 +1179,10 @@
             // 
             this.yearsOldCaiBoxButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.yearsOldCaiBoxButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yearsOldCaiBoxButton.Location = new System.Drawing.Point(7, 75);
+            this.yearsOldCaiBoxButton.Location = new System.Drawing.Point(8, 75);
             this.yearsOldCaiBoxButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.yearsOldCaiBoxButton.Name = "yearsOldCaiBoxButton";
-            this.yearsOldCaiBoxButton.Size = new System.Drawing.Size(68, 38);
+            this.yearsOldCaiBoxButton.Size = new System.Drawing.Size(67, 38);
             this.yearsOldCaiBoxButton.TabIndex = 28;
             this.yearsOldCaiBoxButton.TabStop = false;
             this.yearsOldCaiBoxButton.Text = "in";
