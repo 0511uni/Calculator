@@ -26,9 +26,9 @@ namespace Calculator_1
 
         internal static void AnswerButtonCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, object sender)
         {
-            if (formulaBox.Text.Contains("="))
+            if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
             {
-                return;
+                formulaBox.Text = calBox.Text;
             }
 
             allCalBox.Text += formulaBox.Text + " = ";
@@ -68,6 +68,7 @@ namespace Calculator_1
             ////var addButton = "=";
             //calBox.Text = a.ToString();//addButton.Text
             #endregion
+
         }
 
         internal static void TaxCalCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, Button taxButton, Button noTaxButton, object sender)
@@ -76,7 +77,11 @@ namespace Calculator_1
             {
                 if (calBox.Text == "")
                 {
-                    return;
+                    formulaBox.Text = calBox.Text;
+                }
+                else if (formulaBox.Text.Contains("税"))
+                {
+                    formulaBox.Text = calBox.Text;
                 }
 
                 string a = calBox.Text;
