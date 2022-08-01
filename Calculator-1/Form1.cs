@@ -60,13 +60,10 @@ namespace Calculator_1
             string number = (sender as Button).Text;
             calBox.Text += number;
             formulaBox.Text += number;
-
-            #region Enabledで制御
             //addButton.Enabled = true;
             //subtractButton.Enabled = true;
             //multiplyButton.Enabled = true;
             //divideButton.Enabled = true;
-            #endregion
         }
 
         private void AnswerButton_Clicked(object sender, EventArgs e)
@@ -91,6 +88,7 @@ namespace Calculator_1
             formulaBox.Text += " = " + result.ToString();
             calBox.Text = result.ToString();
             allCalBox.Text += result.ToString() + "\r\n";
+
 
             #region
 
@@ -156,6 +154,13 @@ namespace Calculator_1
 
         private void ArithmeticOperationSymbolClicked(object sender, EventArgs e)
         {
+            //// 計算式表示ウィンドウの文字
+            //string formuraData = formulaBox.Text;
+
+            //// inputDataに記号が含まれているか
+            //// 含まれていなければ -1
+            //int contain = formuraData.IndexOf(basicArithmeticOperations);
+
             if (formulaBox.Text == "")
             {
                 return;
@@ -175,8 +180,12 @@ namespace Calculator_1
                 oncek = true;
                 once = false;
             }
+            
+                
+            
+            
 
-            #region Enabledで制御
+            
             //once = false;
             //addButton.Enabled = false;
             //addButton.BackColor = Color.WhiteSmoke;
@@ -199,7 +208,6 @@ namespace Calculator_1
             //{
             //    return;
             //}
-            #endregion
         }
         #region
         //private void AddButton_Clicked(object sender, EventArgs e)
@@ -523,6 +531,10 @@ namespace Calculator_1
                 dayBox.Clear();
                 yearsOldBox.Clear();
             }
+
+            //yearBox.Text = calBox.Text;
+            //calBox.Clear();
+            //formulaBox.Clear();
         }
     }
 }
