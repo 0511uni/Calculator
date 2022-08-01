@@ -201,49 +201,6 @@ namespace Calculator_1
         private void AnswerButton_Clicked(object sender, EventArgs e)
         {
             Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender, decimalPointButton, answerButton);
-
-            //if (formulaBox.Text.Contains("="))
-            //{
-            //    return;
-            //}
-
-            //allCalBox.Text += formulaBox.Text + " = ";
-            //string a = formulaBox.Text
-            //    .Replace("＋", "+")
-            //    .Replace("－", "-")
-            //    .Replace("×", "*")
-            //    .Replace("÷", "/");
-
-            //string exp = a;//"(1+6)*5/(7-4)"
-
-            //DataTable dt = new DataTable();
-            //var result = dt.Compute(exp, "");//decimalなのでキャストいらず
-
-            //formulaBox.Text += " = " + result.ToString();
-            //calBox.Text = result.ToString();
-            //allCalBox.Text += result.ToString() + "\r\n";
-            //#region
-
-            ////FormulaBoxClear(sender, formulaBox, calBox, answerButton);
-            ////var add = Eval(allCalBox.Text);
-            ////allCalBox.Text = add.ToString();
-
-
-
-            ////calBox.ToString =
-            //////var addButton = "=";
-            //////while (true)
-            //////{
-            //////    if (addButton == "=")
-            //////    {
-            //////        break;
-            //////    }
-            ////int a =0;
-            ////    Cal(a);
-            //////}
-            //////var addButton = "=";
-            ////calBox.Text = a.ToString();//addButton.Text
-            //#endregion
         }
 
         private void DecimalPointButtonClicked(object sender, EventArgs e)
