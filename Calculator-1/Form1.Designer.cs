@@ -632,7 +632,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(312, 460);
+            this.tabPage2.Size = new System.Drawing.Size(312, 462);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Weight";
             // 
@@ -867,7 +867,7 @@
             this.toolTag.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.toolTag.Name = "toolTag";
             this.toolTag.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.toolTag.Size = new System.Drawing.Size(312, 460);
+            this.toolTag.Size = new System.Drawing.Size(312, 462);
             this.toolTag.TabIndex = 2;
             this.toolTag.Text = "Tool";
             // 
@@ -1368,7 +1368,7 @@
             // 
             this.clearTextButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.clearTextButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.clearTextButton.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearTextButton.Font = new System.Drawing.Font("MV Boli", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearTextButton.Location = new System.Drawing.Point(403, 0);
             this.clearTextButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.clearTextButton.Name = "clearTextButton";
