@@ -9,11 +9,7 @@ namespace Calculator_1
     {
         internal static void DataCreate(TextBox allCalBox)
         {
-            ShowMessage(allCalBox);
-        }
-
-        private static void ShowMessage(TextBox allCalBox)
-        {//, bool saveMenu , MenuStrip saveMenu, MenuStrip lordMenu
+            //, bool saveMenu , MenuStrip saveMenu, MenuStrip lordMenu
             var result = MessageBox.Show("ファイル作りますか？！", "ファイル生成", MessageBoxButtons.YesNoCancel);
             if (result == DialogResult.Yes)
             {
@@ -41,14 +37,11 @@ namespace Calculator_1
                 //htmlFileButton.Enabled = false;
                 #endregion
             }
+
+
         }
 
         internal static void DataCreateLoad(TextBox allCalBox)
-        {
-            ShowMessageLoad(allCalBox);
-        }
-
-        private static void ShowMessageLoad(TextBox allCalBox)
         {
             var result = MessageBox.Show("ファイル読み込みますか？！", "ファイル読込", MessageBoxButtons.YesNoCancel);
             if (result == DialogResult.Yes)
