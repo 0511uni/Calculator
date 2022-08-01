@@ -139,10 +139,10 @@
             // calBox
             // 
             this.calBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.calBox.Location = new System.Drawing.Point(2, 51);
+            this.calBox.Location = new System.Drawing.Point(6, 45);
             this.calBox.Name = "calBox";
             this.calBox.ReadOnly = true;
-            this.calBox.Size = new System.Drawing.Size(227, 33);
+            this.calBox.Size = new System.Drawing.Size(221, 33);
             this.calBox.TabIndex = 0;
             // 
             // button1
@@ -150,7 +150,7 @@
             this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(3, 93);
+            this.button1.Location = new System.Drawing.Point(6, 87);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 68);
             this.button1.TabIndex = 1;
@@ -164,7 +164,7 @@
             this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(78, 93);
+            this.button2.Location = new System.Drawing.Point(81, 87);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 68);
             this.button2.TabIndex = 2;
@@ -178,7 +178,7 @@
             this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(157, 93);
+            this.button3.Location = new System.Drawing.Point(157, 87);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 68);
             this.button3.TabIndex = 3;
@@ -192,7 +192,7 @@
             this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(3, 166);
+            this.button4.Location = new System.Drawing.Point(6, 160);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(70, 68);
             this.button4.TabIndex = 4;
@@ -206,7 +206,7 @@
             this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5.Location = new System.Drawing.Point(78, 166);
+            this.button5.Location = new System.Drawing.Point(81, 160);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(70, 68);
             this.button5.TabIndex = 5;
@@ -220,7 +220,7 @@
             this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button6.Location = new System.Drawing.Point(157, 166);
+            this.button6.Location = new System.Drawing.Point(157, 160);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(70, 68);
             this.button6.TabIndex = 6;
@@ -234,7 +234,7 @@
             this.button7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button7.Location = new System.Drawing.Point(3, 240);
+            this.button7.Location = new System.Drawing.Point(6, 234);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(70, 68);
             this.button7.TabIndex = 7;
@@ -248,7 +248,7 @@
             this.button8.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button8.Location = new System.Drawing.Point(78, 240);
+            this.button8.Location = new System.Drawing.Point(81, 234);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(70, 68);
             this.button8.TabIndex = 8;
@@ -262,7 +262,7 @@
             this.button9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button9.Location = new System.Drawing.Point(157, 240);
+            this.button9.Location = new System.Drawing.Point(157, 234);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(70, 68);
             this.button9.TabIndex = 9;
@@ -276,7 +276,7 @@
             this.button0.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button0.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button0.Location = new System.Drawing.Point(3, 315);
+            this.button0.Location = new System.Drawing.Point(6, 309);
             this.button0.Name = "button0";
             this.button0.Size = new System.Drawing.Size(70, 68);
             this.button0.TabIndex = 10;
@@ -290,7 +290,7 @@
             this.button00.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button00.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button00.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button00.Location = new System.Drawing.Point(78, 315);
+            this.button00.Location = new System.Drawing.Point(81, 309);
             this.button00.Name = "button00";
             this.button00.Size = new System.Drawing.Size(70, 68);
             this.button00.TabIndex = 11;
@@ -304,7 +304,7 @@
             this.answerButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.answerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.answerButton.Font = new System.Drawing.Font("MS UI Gothic", 15F);
-            this.answerButton.Location = new System.Drawing.Point(157, 315);
+            this.answerButton.Location = new System.Drawing.Point(157, 309);
             this.answerButton.Name = "answerButton";
             this.answerButton.Size = new System.Drawing.Size(70, 68);
             this.answerButton.TabIndex = 12;
@@ -319,7 +319,7 @@
             this.addButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.addButton.Location = new System.Drawing.Point(232, 93);
+            this.addButton.Location = new System.Drawing.Point(232, 87);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(71, 68);
             this.addButton.TabIndex = 14;
@@ -332,7 +332,7 @@
             this.subtractButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.subtractButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.subtractButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.subtractButton.Location = new System.Drawing.Point(233, 166);
+            this.subtractButton.Location = new System.Drawing.Point(233, 160);
             this.subtractButton.Name = "subtractButton";
             this.subtractButton.Size = new System.Drawing.Size(70, 68);
             this.subtractButton.TabIndex = 14;
@@ -345,7 +345,7 @@
             this.divideButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.divideButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.divideButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.divideButton.Location = new System.Drawing.Point(233, 315);
+            this.divideButton.Location = new System.Drawing.Point(233, 309);
             this.divideButton.Name = "divideButton";
             this.divideButton.Size = new System.Drawing.Size(70, 68);
             this.divideButton.TabIndex = 15;
@@ -359,7 +359,7 @@
             this.multiplyButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.multiplyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.multiplyButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.multiplyButton.Location = new System.Drawing.Point(233, 240);
+            this.multiplyButton.Location = new System.Drawing.Point(233, 234);
             this.multiplyButton.Name = "multiplyButton";
             this.multiplyButton.Size = new System.Drawing.Size(70, 68);
             this.multiplyButton.TabIndex = 16;
@@ -399,7 +399,7 @@
             this.endItem.BackColor = System.Drawing.Color.RoyalBlue;
             this.endItem.ImageTransparentColor = System.Drawing.Color.CornflowerBlue;
             this.endItem.Name = "endItem";
-            this.endItem.Size = new System.Drawing.Size(261, 34);
+            this.endItem.Size = new System.Drawing.Size(270, 34);
             this.endItem.Text = "END";
             this.endItem.Click += new System.EventHandler(this.ExitButton_Clicked);
             // 
@@ -410,14 +410,14 @@
             this.loadMenu,
             this.saveMenu});
             this.fileLoadToolStripMenuItem.Name = "fileLoadToolStripMenuItem";
-            this.fileLoadToolStripMenuItem.Size = new System.Drawing.Size(261, 34);
+            this.fileLoadToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.fileLoadToolStripMenuItem.Text = "File Save and Load";
             // 
             // loadMenu
             // 
             this.loadMenu.BackColor = System.Drawing.Color.RoyalBlue;
             this.loadMenu.Name = "loadMenu";
-            this.loadMenu.Size = new System.Drawing.Size(226, 34);
+            this.loadMenu.Size = new System.Drawing.Size(270, 34);
             this.loadMenu.Text = "Open Load";
             this.loadMenu.Click += new System.EventHandler(this.LoadMenuClicked);
             // 
@@ -425,7 +425,7 @@
             // 
             this.saveMenu.BackColor = System.Drawing.Color.RoyalBlue;
             this.saveMenu.Name = "saveMenu";
-            this.saveMenu.Size = new System.Drawing.Size(226, 34);
+            this.saveMenu.Size = new System.Drawing.Size(270, 34);
             this.saveMenu.Text = "Save To Name";
             this.saveMenu.Click += new System.EventHandler(this.SaveMenuClicked);
             // 
@@ -436,14 +436,14 @@
             this.loadItem,
             this.saveItem});
             this.saveAndLoadToolStripMenuItem.Name = "saveAndLoadToolStripMenuItem";
-            this.saveAndLoadToolStripMenuItem.Size = new System.Drawing.Size(261, 34);
+            this.saveAndLoadToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.saveAndLoadToolStripMenuItem.Text = "Save and Load";
             // 
             // loadItem
             // 
             this.loadItem.BackColor = System.Drawing.Color.RoyalBlue;
             this.loadItem.Name = "loadItem";
-            this.loadItem.Size = new System.Drawing.Size(153, 34);
+            this.loadItem.Size = new System.Drawing.Size(270, 34);
             this.loadItem.Text = "Load";
             this.loadItem.Click += new System.EventHandler(this.LoadItemClicked);
             // 
@@ -451,7 +451,7 @@
             // 
             this.saveItem.BackColor = System.Drawing.Color.RoyalBlue;
             this.saveItem.Name = "saveItem";
-            this.saveItem.Size = new System.Drawing.Size(153, 34);
+            this.saveItem.Size = new System.Drawing.Size(270, 34);
             this.saveItem.Text = "Save";
             this.saveItem.Click += new System.EventHandler(this.SaveItemClicked);
             // 
@@ -460,9 +460,9 @@
             this.clearButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearButton.Font = new System.Drawing.Font("MS UI Gothic", 13F);
-            this.clearButton.Location = new System.Drawing.Point(233, 51);
+            this.clearButton.Location = new System.Drawing.Point(232, 45);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(70, 33);
+            this.clearButton.Size = new System.Drawing.Size(71, 33);
             this.clearButton.TabIndex = 18;
             this.clearButton.TabStop = false;
             this.clearButton.Text = "AC";
@@ -473,9 +473,9 @@
             // 
             this.formulaBox.BackColor = System.Drawing.SystemColors.Control;
             this.formulaBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.formulaBox.Location = new System.Drawing.Point(2, 12);
+            this.formulaBox.Location = new System.Drawing.Point(6, 6);
             this.formulaBox.Name = "formulaBox";
-            this.formulaBox.Size = new System.Drawing.Size(301, 33);
+            this.formulaBox.Size = new System.Drawing.Size(297, 33);
             this.formulaBox.TabIndex = 19;
             // 
             // allCalBox
@@ -486,7 +486,7 @@
             this.allCalBox.Name = "allCalBox";
             this.allCalBox.ReadOnly = true;
             this.allCalBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.allCalBox.Size = new System.Drawing.Size(337, 496);
+            this.allCalBox.Size = new System.Drawing.Size(337, 504);
             this.allCalBox.TabIndex = 20;
             // 
             // backSpaceButton
@@ -494,7 +494,7 @@
             this.backSpaceButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.backSpaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.backSpaceButton.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backSpaceButton.Location = new System.Drawing.Point(233, 388);
+            this.backSpaceButton.Location = new System.Drawing.Point(233, 382);
             this.backSpaceButton.Name = "backSpaceButton";
             this.backSpaceButton.Size = new System.Drawing.Size(70, 68);
             this.backSpaceButton.TabIndex = 24;
@@ -508,7 +508,7 @@
             this.decimalPointButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.decimalPointButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.decimalPointButton.Font = new System.Drawing.Font("MS UI Gothic", 15F);
-            this.decimalPointButton.Location = new System.Drawing.Point(157, 388);
+            this.decimalPointButton.Location = new System.Drawing.Point(157, 382);
             this.decimalPointButton.Name = "decimalPointButton";
             this.decimalPointButton.Size = new System.Drawing.Size(70, 68);
             this.decimalPointButton.TabIndex = 23;
@@ -522,7 +522,7 @@
             this.noTaxButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.noTaxButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.noTaxButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.noTaxButton.Location = new System.Drawing.Point(78, 388);
+            this.noTaxButton.Location = new System.Drawing.Point(81, 382);
             this.noTaxButton.Name = "noTaxButton";
             this.noTaxButton.Size = new System.Drawing.Size(70, 68);
             this.noTaxButton.TabIndex = 22;
@@ -536,7 +536,7 @@
             this.taxButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.taxButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.taxButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.taxButton.Location = new System.Drawing.Point(3, 388);
+            this.taxButton.Location = new System.Drawing.Point(6, 382);
             this.taxButton.Name = "taxButton";
             this.taxButton.Size = new System.Drawing.Size(70, 68);
             this.taxButton.TabIndex = 21;
@@ -609,6 +609,9 @@
             this.tabPage2.BackColor = System.Drawing.Color.RoyalBlue;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage2.Controls.Add(this.baseWeightBox);
+            this.tabPage2.Controls.Add(this.weightBox);
+            this.tabPage2.Controls.Add(this.heightBox);
             this.tabPage2.Controls.Add(this.bmiAndBaseWeightResultButton);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.kgLabel);
@@ -618,14 +621,11 @@
             this.tabPage2.Controls.Add(this.calHeigthtButton);
             this.tabPage2.Controls.Add(this.baseWeightButton);
             this.tabPage2.Controls.Add(this.baseWeightLabel);
-            this.tabPage2.Controls.Add(this.baseWeightBox);
             this.tabPage2.Controls.Add(this.bmiLabel);
             this.tabPage2.Controls.Add(this.bmiBox);
             this.tabPage2.Controls.Add(this.bmiResultButton);
             this.tabPage2.Controls.Add(this.weightLabel);
             this.tabPage2.Controls.Add(this.heightLabel);
-            this.tabPage2.Controls.Add(this.weightBox);
-            this.tabPage2.Controls.Add(this.heightBox);
             this.tabPage2.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(0);
@@ -654,7 +654,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(228, 387);
+            this.label1.Location = new System.Drawing.Point(214, 385);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 37);
             this.label1.TabIndex = 16;
@@ -664,7 +664,7 @@
             // 
             this.kgLabel.AutoSize = true;
             this.kgLabel.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kgLabel.Location = new System.Drawing.Point(228, 172);
+            this.kgLabel.Location = new System.Drawing.Point(215, 178);
             this.kgLabel.Name = "kgLabel";
             this.kgLabel.Size = new System.Drawing.Size(44, 37);
             this.kgLabel.TabIndex = 15;
@@ -674,7 +674,7 @@
             // 
             this.cmLabel.AutoSize = true;
             this.cmLabel.Font = new System.Drawing.Font("MV Boli", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmLabel.Location = new System.Drawing.Point(227, 88);
+            this.cmLabel.Location = new System.Drawing.Point(214, 92);
             this.cmLabel.Name = "cmLabel";
             this.cmLabel.Size = new System.Drawing.Size(53, 37);
             this.cmLabel.TabIndex = 14;
@@ -683,12 +683,12 @@
             // bmiBWLabel
             // 
             this.bmiBWLabel.AutoSize = true;
-            this.bmiBWLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bmiBWLabel.Font = new System.Drawing.Font("MV Boli", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bmiBWLabel.ForeColor = System.Drawing.Color.White;
-            this.bmiBWLabel.Location = new System.Drawing.Point(-7, 10);
+            this.bmiBWLabel.Location = new System.Drawing.Point(-1, 9);
             this.bmiBWLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.bmiBWLabel.Name = "bmiBWLabel";
-            this.bmiBWLabel.Size = new System.Drawing.Size(264, 31);
+            this.bmiBWLabel.Size = new System.Drawing.Size(305, 37);
             this.bmiBWLabel.TabIndex = 13;
             this.bmiBWLabel.Text = "BMI and BaseWeight";
             this.bmiBWLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -697,7 +697,7 @@
             // 
             this.calWeigthtButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.calWeigthtButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calWeigthtButton.Location = new System.Drawing.Point(28, 171);
+            this.calWeigthtButton.Location = new System.Drawing.Point(45, 176);
             this.calWeigthtButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.calWeigthtButton.Name = "calWeigthtButton";
             this.calWeigthtButton.Size = new System.Drawing.Size(68, 39);
@@ -711,7 +711,7 @@
             // 
             this.calHeigthtButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.calHeigthtButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.calHeigthtButton.Location = new System.Drawing.Point(28, 87);
+            this.calHeigthtButton.Location = new System.Drawing.Point(45, 90);
             this.calHeigthtButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.calHeigthtButton.Name = "calHeigthtButton";
             this.calHeigthtButton.Size = new System.Drawing.Size(68, 39);
@@ -725,7 +725,7 @@
             // 
             this.baseWeightButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.baseWeightButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.baseWeightButton.Location = new System.Drawing.Point(28, 387);
+            this.baseWeightButton.Location = new System.Drawing.Point(45, 384);
             this.baseWeightButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.baseWeightButton.Name = "baseWeightButton";
             this.baseWeightButton.Size = new System.Drawing.Size(68, 38);
@@ -739,7 +739,7 @@
             // 
             this.baseWeightLabel.AutoSize = true;
             this.baseWeightLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.baseWeightLabel.Location = new System.Drawing.Point(2, 350);
+            this.baseWeightLabel.Location = new System.Drawing.Point(3, 350);
             this.baseWeightLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.baseWeightLabel.Name = "baseWeightLabel";
             this.baseWeightLabel.Size = new System.Drawing.Size(150, 31);
@@ -748,11 +748,12 @@
             // 
             // baseWeightBox
             // 
-            this.baseWeightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.baseWeightBox.Location = new System.Drawing.Point(105, 387);
+            this.baseWeightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.baseWeightBox.Location = new System.Drawing.Point(122, 384);
+            this.baseWeightBox.Multiline = true;
             this.baseWeightBox.Name = "baseWeightBox";
             this.baseWeightBox.ReadOnly = true;
-            this.baseWeightBox.Size = new System.Drawing.Size(114, 33);
+            this.baseWeightBox.Size = new System.Drawing.Size(99, 38);
             this.baseWeightBox.TabIndex = 8;
             // 
             // bmiLabel
@@ -768,18 +769,19 @@
             // 
             // bmiBox
             // 
-            this.bmiBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.bmiBox.Location = new System.Drawing.Point(105, 292);
+            this.bmiBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.bmiBox.Location = new System.Drawing.Point(122, 298);
+            this.bmiBox.Multiline = true;
             this.bmiBox.Name = "bmiBox";
             this.bmiBox.ReadOnly = true;
-            this.bmiBox.Size = new System.Drawing.Size(114, 33);
+            this.bmiBox.Size = new System.Drawing.Size(99, 38);
             this.bmiBox.TabIndex = 6;
             // 
             // bmiResultButton
             // 
             this.bmiResultButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.bmiResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bmiResultButton.Location = new System.Drawing.Point(28, 292);
+            this.bmiResultButton.Location = new System.Drawing.Point(45, 298);
             this.bmiResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.bmiResultButton.Name = "bmiResultButton";
             this.bmiResultButton.Size = new System.Drawing.Size(68, 38);
@@ -793,7 +795,7 @@
             // 
             this.weightLabel.AutoSize = true;
             this.weightLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightLabel.Location = new System.Drawing.Point(3, 135);
+            this.weightLabel.Location = new System.Drawing.Point(3, 141);
             this.weightLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.weightLabel.Name = "weightLabel";
             this.weightLabel.Size = new System.Drawing.Size(97, 31);
@@ -804,7 +806,7 @@
             // 
             this.heightLabel.AutoSize = true;
             this.heightLabel.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.heightLabel.Location = new System.Drawing.Point(2, 51);
+            this.heightLabel.Location = new System.Drawing.Point(3, 55);
             this.heightLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.heightLabel.Name = "heightLabel";
             this.heightLabel.Size = new System.Drawing.Size(92, 31);
@@ -813,34 +815,37 @@
             // 
             // weightBox
             // 
-            this.weightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.weightBox.Location = new System.Drawing.Point(105, 172);
+            this.weightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.weightBox.Location = new System.Drawing.Point(122, 176);
+            this.weightBox.Multiline = true;
             this.weightBox.Name = "weightBox";
             this.weightBox.ReadOnly = true;
-            this.weightBox.Size = new System.Drawing.Size(114, 33);
+            this.weightBox.Size = new System.Drawing.Size(99, 39);
             this.weightBox.TabIndex = 2;
             // 
             // heightBox
             // 
-            this.heightBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.heightBox.Location = new System.Drawing.Point(105, 87);
+            this.heightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.heightBox.Location = new System.Drawing.Point(122, 90);
+            this.heightBox.Multiline = true;
             this.heightBox.Name = "heightBox";
             this.heightBox.ReadOnly = true;
-            this.heightBox.Size = new System.Drawing.Size(114, 33);
+            this.heightBox.Size = new System.Drawing.Size(99, 39);
             this.heightBox.TabIndex = 1;
             // 
             // toolTag
             // 
             this.toolTag.BackColor = System.Drawing.Color.RoyalBlue;
-            this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseResultButton);
+            this.toolTag.Controls.Add(this.walkWhatPartFromStationResultBox);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationCalBox);
+            this.toolTag.Controls.Add(this.hourlyWageResultBox);
             this.toolTag.Controls.Add(this.annualIncomeBox);
+            this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseResultButton);
             this.toolTag.Controls.Add(this.hourlyWageCalButton);
             this.toolTag.Controls.Add(this.hourlyWageReverseResultButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLnverseCalButton);
             this.toolTag.Controls.Add(this.minutesLabel1);
             this.toolTag.Controls.Add(this.minutesLabel2);
-            this.toolTag.Controls.Add(this.walkWhatPartFromStationResultBox);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationResultButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationCalButton);
             this.toolTag.Controls.Add(this.walkWhatPartFromStationLabel2);
@@ -850,7 +855,6 @@
             this.toolTag.Controls.Add(this.thousandYenLabel);
             this.toolTag.Controls.Add(this.label6);
             this.toolTag.Controls.Add(this.hourlyWageLabel);
-            this.toolTag.Controls.Add(this.hourlyWageResultBox);
             this.toolTag.Controls.Add(this.hourlyWageResultButton);
             this.toolTag.Controls.Add(this.label2);
             this.toolTag.Controls.Add(this.label3);
@@ -870,10 +874,10 @@
             this.walkWhatPartFromStationLnverseResultButton.FlatAppearance.BorderSize = 0;
             this.walkWhatPartFromStationLnverseResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.walkWhatPartFromStationLnverseResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walkWhatPartFromStationLnverseResultButton.Location = new System.Drawing.Point(148, 358);
+            this.walkWhatPartFromStationLnverseResultButton.Location = new System.Drawing.Point(148, 366);
             this.walkWhatPartFromStationLnverseResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.walkWhatPartFromStationLnverseResultButton.Name = "walkWhatPartFromStationLnverseResultButton";
-            this.walkWhatPartFromStationLnverseResultButton.Size = new System.Drawing.Size(57, 46);
+            this.walkWhatPartFromStationLnverseResultButton.Size = new System.Drawing.Size(45, 46);
             this.walkWhatPartFromStationLnverseResultButton.TabIndex = 38;
             this.walkWhatPartFromStationLnverseResultButton.TabStop = false;
             this.walkWhatPartFromStationLnverseResultButton.Text = "▲";
@@ -882,20 +886,22 @@
             // 
             // walkWhatPartFromStationCalBox
             // 
-            this.walkWhatPartFromStationCalBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(103, 320);
+            this.walkWhatPartFromStationCalBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(97, 321);
+            this.walkWhatPartFromStationCalBox.Multiline = true;
             this.walkWhatPartFromStationCalBox.Name = "walkWhatPartFromStationCalBox";
             this.walkWhatPartFromStationCalBox.ReadOnly = true;
-            this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(96, 33);
+            this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(96, 38);
             this.walkWhatPartFromStationCalBox.TabIndex = 28;
             // 
             // annualIncomeBox
             // 
-            this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.annualIncomeBox.Location = new System.Drawing.Point(103, 84);
+            this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.annualIncomeBox.Location = new System.Drawing.Point(96, 84);
+            this.annualIncomeBox.Multiline = true;
             this.annualIncomeBox.Name = "annualIncomeBox";
             this.annualIncomeBox.ReadOnly = true;
-            this.annualIncomeBox.Size = new System.Drawing.Size(71, 33);
+            this.annualIncomeBox.Size = new System.Drawing.Size(71, 38);
             this.annualIncomeBox.TabIndex = 15;
             // 
             // hourlyWageCalButton
@@ -921,7 +927,7 @@
             this.hourlyWageReverseResultButton.Location = new System.Drawing.Point(136, 126);
             this.hourlyWageReverseResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.hourlyWageReverseResultButton.Name = "hourlyWageReverseResultButton";
-            this.hourlyWageReverseResultButton.Size = new System.Drawing.Size(57, 46);
+            this.hourlyWageReverseResultButton.Size = new System.Drawing.Size(45, 46);
             this.hourlyWageReverseResultButton.TabIndex = 40;
             this.hourlyWageReverseResultButton.TabStop = false;
             this.hourlyWageReverseResultButton.Text = "▲";
@@ -945,7 +951,7 @@
             // minutesLabel1
             // 
             this.minutesLabel1.AutoSize = true;
-            this.minutesLabel1.Location = new System.Drawing.Point(202, 398);
+            this.minutesLabel1.Location = new System.Drawing.Point(193, 398);
             this.minutesLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.minutesLabel1.Name = "minutesLabel1";
             this.minutesLabel1.Size = new System.Drawing.Size(78, 23);
@@ -956,7 +962,7 @@
             // 
             this.minutesLabel2.AutoSize = true;
             this.minutesLabel2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minutesLabel2.Location = new System.Drawing.Point(202, 416);
+            this.minutesLabel2.Location = new System.Drawing.Point(191, 421);
             this.minutesLabel2.Name = "minutesLabel2";
             this.minutesLabel2.Size = new System.Drawing.Size(41, 31);
             this.minutesLabel2.TabIndex = 36;
@@ -964,11 +970,12 @@
             // 
             // walkWhatPartFromStationResultBox
             // 
-            this.walkWhatPartFromStationResultBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.walkWhatPartFromStationResultBox.Location = new System.Drawing.Point(103, 412);
+            this.walkWhatPartFromStationResultBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.walkWhatPartFromStationResultBox.Location = new System.Drawing.Point(96, 413);
+            this.walkWhatPartFromStationResultBox.Multiline = true;
             this.walkWhatPartFromStationResultBox.Name = "walkWhatPartFromStationResultBox";
             this.walkWhatPartFromStationResultBox.ReadOnly = true;
-            this.walkWhatPartFromStationResultBox.Size = new System.Drawing.Size(96, 33);
+            this.walkWhatPartFromStationResultBox.Size = new System.Drawing.Size(96, 39);
             this.walkWhatPartFromStationResultBox.TabIndex = 35;
             // 
             // walkWhatPartFromStationResultButton
@@ -977,10 +984,10 @@
             this.walkWhatPartFromStationResultButton.FlatAppearance.BorderSize = 0;
             this.walkWhatPartFromStationResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.walkWhatPartFromStationResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walkWhatPartFromStationResultButton.Location = new System.Drawing.Point(97, 358);
+            this.walkWhatPartFromStationResultButton.Location = new System.Drawing.Point(96, 366);
             this.walkWhatPartFromStationResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.walkWhatPartFromStationResultButton.Name = "walkWhatPartFromStationResultButton";
-            this.walkWhatPartFromStationResultButton.Size = new System.Drawing.Size(53, 46);
+            this.walkWhatPartFromStationResultButton.Size = new System.Drawing.Size(42, 46);
             this.walkWhatPartFromStationResultButton.TabIndex = 34;
             this.walkWhatPartFromStationResultButton.TabStop = false;
             this.walkWhatPartFromStationResultButton.Text = "▼";
@@ -1016,7 +1023,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(197, 322);
+            this.label7.Location = new System.Drawing.Point(191, 328);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 31);
             this.label7.TabIndex = 30;
@@ -1036,7 +1043,7 @@
             // yenLabel
             // 
             this.yenLabel.AutoSize = true;
-            this.yenLabel.Location = new System.Drawing.Point(202, 204);
+            this.yenLabel.Location = new System.Drawing.Point(196, 204);
             this.yenLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.yenLabel.Name = "yenLabel";
             this.yenLabel.Size = new System.Drawing.Size(41, 23);
@@ -1046,7 +1053,7 @@
             // thousandYenLabel
             // 
             this.thousandYenLabel.AutoSize = true;
-            this.thousandYenLabel.Location = new System.Drawing.Point(176, 70);
+            this.thousandYenLabel.Location = new System.Drawing.Point(170, 70);
             this.thousandYenLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.thousandYenLabel.Name = "thousandYenLabel";
             this.thousandYenLabel.Size = new System.Drawing.Size(119, 23);
@@ -1057,7 +1064,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(197, 221);
+            this.label6.Location = new System.Drawing.Point(191, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 31);
             this.label6.TabIndex = 24;
@@ -1076,11 +1083,12 @@
             // 
             // hourlyWageResultBox
             // 
-            this.hourlyWageResultBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.hourlyWageResultBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.hourlyWageResultBox.Location = new System.Drawing.Point(97, 214);
+            this.hourlyWageResultBox.Multiline = true;
             this.hourlyWageResultBox.Name = "hourlyWageResultBox";
             this.hourlyWageResultBox.ReadOnly = true;
-            this.hourlyWageResultBox.Size = new System.Drawing.Size(96, 33);
+            this.hourlyWageResultBox.Size = new System.Drawing.Size(96, 38);
             this.hourlyWageResultBox.TabIndex = 22;
             // 
             // hourlyWageResultButton
@@ -1089,10 +1097,10 @@
             this.hourlyWageResultButton.FlatAppearance.BorderSize = 0;
             this.hourlyWageResultButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hourlyWageResultButton.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hourlyWageResultButton.Location = new System.Drawing.Point(85, 126);
+            this.hourlyWageResultButton.Location = new System.Drawing.Point(84, 126);
             this.hourlyWageResultButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.hourlyWageResultButton.Name = "hourlyWageResultButton";
-            this.hourlyWageResultButton.Size = new System.Drawing.Size(53, 46);
+            this.hourlyWageResultButton.Size = new System.Drawing.Size(42, 46);
             this.hourlyWageResultButton.TabIndex = 21;
             this.hourlyWageResultButton.TabStop = false;
             this.hourlyWageResultButton.Text = "▼";
@@ -1103,7 +1111,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(170, 91);
+            this.label2.Location = new System.Drawing.Point(164, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 31);
             this.label2.TabIndex = 19;
@@ -1112,12 +1120,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("MV Boli", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(-7, 8);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 31);
+            this.label3.Size = new System.Drawing.Size(76, 37);
             this.label3.TabIndex = 18;
             this.label3.Text = "Tool";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1342,12 +1350,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("MV Boli", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(-7, 4);
+            this.label4.Location = new System.Drawing.Point(5, 4);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 31);
+            this.label4.Size = new System.Drawing.Size(150, 37);
             this.label4.TabIndex = 19;
             this.label4.Text = "DateTime";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1373,9 +1381,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(653, 530);
+            this.Controls.Add(this.allCalBox);
             this.Controls.Add(this.clearTextButton);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.allCalBox);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
