@@ -138,11 +138,12 @@
             // calBox
             // 
             this.calBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.calBox.Location = new System.Drawing.Point(7, 3);
+            this.calBox.Location = new System.Drawing.Point(2, 51);
             this.calBox.Name = "calBox";
             this.calBox.ReadOnly = true;
-            this.calBox.Size = new System.Drawing.Size(222, 33);
+            this.calBox.Size = new System.Drawing.Size(227, 33);
             this.calBox.TabIndex = 0;
+            this.calBox.TextChanged += new System.EventHandler(this.calBox_TextChanged);
             // 
             // button1
             // 
@@ -318,7 +319,7 @@
             this.addButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addButton.Font = new System.Drawing.Font("MS UI Gothic", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.addButton.Location = new System.Drawing.Point(233, 93);
+            this.addButton.Location = new System.Drawing.Point(232, 93);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(71, 68);
             this.addButton.TabIndex = 14;
@@ -377,7 +378,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(653, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(653, 33);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -459,9 +460,9 @@
             this.clearButton.BackColor = System.Drawing.Color.WhiteSmoke;
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clearButton.Font = new System.Drawing.Font("MS UI Gothic", 13F);
-            this.clearButton.Location = new System.Drawing.Point(233, 3);
+            this.clearButton.Location = new System.Drawing.Point(233, 51);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(70, 39);
+            this.clearButton.Size = new System.Drawing.Size(70, 33);
             this.clearButton.TabIndex = 18;
             this.clearButton.TabStop = false;
             this.clearButton.Text = "AC";
@@ -471,9 +472,9 @@
             // formulaBox
             // 
             this.formulaBox.Font = new System.Drawing.Font("MS UI Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.formulaBox.Location = new System.Drawing.Point(7, 48);
+            this.formulaBox.Location = new System.Drawing.Point(2, 6);
             this.formulaBox.Name = "formulaBox";
-            this.formulaBox.Size = new System.Drawing.Size(292, 33);
+            this.formulaBox.Size = new System.Drawing.Size(300, 33);
             this.formulaBox.TabIndex = 19;
             // 
             // allCalBox

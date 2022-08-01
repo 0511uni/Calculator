@@ -536,5 +536,10 @@ namespace Calculator_1
             //calBox.Clear();
             //formulaBox.Clear();
         }
+
+        private void calBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
