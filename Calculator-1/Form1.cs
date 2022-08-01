@@ -526,10 +526,5 @@ namespace Calculator_1
                 yearsOldBox.Clear();
             }
         }
-
-        private void calBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

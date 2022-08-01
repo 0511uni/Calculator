@@ -143,7 +143,6 @@
             this.calBox.ReadOnly = true;
             this.calBox.Size = new System.Drawing.Size(227, 33);
             this.calBox.TabIndex = 0;
-            this.calBox.TextChanged += new System.EventHandler(this.calBox_TextChanged);
             // 
             // button1
             // 
