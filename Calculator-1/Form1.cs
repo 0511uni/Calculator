@@ -70,55 +70,6 @@ namespace Calculator_1
             #endregion
         }
 
-        private void AnswerButton_Clicked(object sender, EventArgs e)
-        {
-            if (formulaBox.Text.Contains("="))
-            {
-                return;
-            }
-            //formulaBox.Text += calBox.Text;
-            allCalBox.Text += formulaBox.Text + " = ";
-            string a = formulaBox.Text
-                .Replace("＋", "+")
-                .Replace("－", "-")
-                .Replace("×", "*")
-                .Replace("÷", "/");
-
-            string exp = a;//"(1+6)*5/(7-4)"
-
-            DataTable dt = new DataTable();
-            var result = dt.Compute(exp, "");//decimalなのでキャストいらず
-
-            formulaBox.Text += " = " + result.ToString();
-            calBox.Text = result.ToString();
-            allCalBox.Text += result.ToString() + "\r\n";
-
-
-            #region
-
-            //FormulaBoxClear(sender, formulaBox, calBox, answerButton);
-            //var add = Eval(allCalBox.Text);
-            //allCalBox.Text = add.ToString();
-
-
-
-            //calBox.ToString =
-            ////var addButton = "=";
-            ////while (true)
-            ////{
-            ////    if (addButton == "=")
-            ////    {
-            ////        break;
-            ////    }
-            //int a =0;
-            //    Cal(a);
-            ////}
-            ////var addButton = "=";
-            //calBox.Text = a.ToString();//addButton.Text
-            #endregion
-        }
-
-
         #region
 
 
@@ -171,7 +122,7 @@ namespace Calculator_1
                 once = false;
             }
             else if (!oncek)
-            {              
+            {
                 basicArithmeticOperations = (sender as Button).Text;
                 formulaBox.Text += basicArithmeticOperations;
                 oncek = true;
@@ -247,6 +198,70 @@ namespace Calculator_1
         //}
         #endregion
 
+        private void AnswerButton_Clicked(object sender, EventArgs e)
+        {
+            if (formulaBox.Text.Contains("="))
+            {
+                return;
+            }
+
+            allCalBox.Text += formulaBox.Text + " = ";
+            string a = formulaBox.Text
+                .Replace("＋", "+")
+                .Replace("－", "-")
+                .Replace("×", "*")
+                .Replace("÷", "/");
+
+            string exp = a;//"(1+6)*5/(7-4)"
+
+            DataTable dt = new DataTable();
+            var result = dt.Compute(exp, "");//decimalなのでキャストいらず
+
+            formulaBox.Text += " = " + result.ToString();
+            calBox.Text = result.ToString();
+            allCalBox.Text += result.ToString() + "\r\n";
+            #region
+
+            //FormulaBoxClear(sender, formulaBox, calBox, answerButton);
+            //var add = Eval(allCalBox.Text);
+            //allCalBox.Text = add.ToString();
+
+
+
+            //calBox.ToString =
+            ////var addButton = "=";
+            ////while (true)
+            ////{
+            ////    if (addButton == "=")
+            ////    {
+            ////        break;
+            ////    }
+            //int a =0;
+            //    Cal(a);
+            ////}
+            ////var addButton = "=";
+            //calBox.Text = a.ToString();//addButton.Text
+            #endregion
+        }
+
+        private void DecimalPointButtonClicked(object sender, EventArgs e)
+        {
+            if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
+            {
+                calBox.Text += ".";
+                formulaBox.Text = calBox.Text;
+            }
+            else if (formulaBox.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                calBox.Text += ".";
+                formulaBox.Text += ".";
+            }
+        }
+
         private void ExitButton_Clicked(object sender, EventArgs e)
         {
             var result = MessageBox.Show("終了しますか？！", "アプリケーション終了", MessageBoxButtons.YesNoCancel);
@@ -288,24 +303,6 @@ namespace Calculator_1
             Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
 
            
-        }
-
-        private void DecimalPointButtonClicked(object sender, EventArgs e)
-        {
-            if (formulaBox.Text.Contains("=") || formulaBox.Text.Contains("税"))
-            {
-                calBox.Text += ".";
-                formulaBox.Text = calBox.Text;
-            }
-            else if (formulaBox.Text == "")
-            {
-                return;
-            }
-            else
-            {
-                calBox.Text += ".";
-                formulaBox.Text += ".";
-            }
         }
 
         private void LoadMenuClicked(object sender, EventArgs e)
