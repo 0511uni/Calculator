@@ -115,10 +115,6 @@ namespace Calculator_1
             {
                 CalculatorItemCreateFactory.AnswerButtonCreate(calBox, formulaBox, allCalBox, sender);
             }
-            //else if()
-            //{
-            //    CalculatorItemCreateFactory.TaxCalCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
-            //}
             else if (sender.Equals(taxButton)|| sender.Equals(noTaxButton))
             {
                 CalculatorItemCreateFactory.TaxCalCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
