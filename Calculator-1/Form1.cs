@@ -246,6 +246,7 @@ namespace Calculator_1
         //    calBox.Text = "";
         //}
         #endregion
+
         private void ExitButton_Clicked(object sender, EventArgs e)
         {
             var result = MessageBox.Show("終了しますか？！", "アプリケーション終了", MessageBoxButtons.YesNoCancel);
@@ -263,39 +264,14 @@ namespace Calculator_1
 
         private void TaxButtonClicked(object sender, EventArgs e)
         {
-            if (calBox.Text == "")
-            {
-                return;
-            }
-
-            string a = calBox.Text;
-
-            string tax = a + "* 1.1";
-
-            DataTable dt = new DataTable();
-            var result = dt.Compute(tax, "");
-
-            calBox.Text = Math.Floor((decimal)result).ToString();
-            formulaBox.Text = $"{a}円 ⇒ 税込 : " + Math.Floor((decimal)result) + "円";
-            allCalBox.Text += formulaBox.Text + "\r\n";
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
         }
 
         private void NoTaxButtonClicked(object sender, EventArgs e)
         {
-            if (calBox.Text == "")
-            {
-                return;
-            }
-            string a = calBox.Text;
+            Factory.CalculatorItemCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
 
-            string tax = a + "/ 1.1 + 0.1";
-
-            DataTable dt = new DataTable();
-            var result = dt.Compute(tax, "");
-
-            calBox.Text = Math.Floor((decimal)result).ToString();
-            formulaBox.Text = $"{a}円 ⇒ 税抜 : " + Math.Floor((decimal)result) + "円";
-            allCalBox.Text += formulaBox.Text + "\r\n";
+           
         }
 
         private void DecimalPointButtonClicked(object sender, EventArgs e)
@@ -454,13 +430,11 @@ namespace Calculator_1
                 formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length - 1).Trim();
             }
         }
-
-        private void YearsOldResultButtonClicked(object sender, EventArgs e)
+        private void YearsOldCaiBoxButtonClieked(object sender, EventArgs e)
         {
             Factory.YesrsOldCreata(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox, sender, yearsOldResultButton, yearsOldCaiBoxButton, calBox, formulaBox);
         }
-
-        private void YearsOldCaiBoxButtonClieked(object sender, EventArgs e)
+        private void YearsOldResultButtonClicked(object sender, EventArgs e)
         {
             Factory.YesrsOldCreata(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox, sender, yearsOldResultButton, yearsOldCaiBoxButton, calBox, formulaBox);
         }

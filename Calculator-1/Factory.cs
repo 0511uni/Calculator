@@ -104,5 +104,10 @@ namespace Calculator_1
                 DateTimeCreateFactory.YearsOldCreatar(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox);
             }
         }
+
+        internal static void CalculatorItemCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, Button taxButton, Button noTaxButton, object sender)
+        {
+            CalculatorItemCreateFactory.TaxCalCreate(calBox, formulaBox, allCalBox, taxButton, noTaxButton, sender);
+        }
     }
 }
