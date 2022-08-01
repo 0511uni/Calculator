@@ -457,45 +457,12 @@ namespace Calculator_1
 
         private void YearsOldResultButtonClicked(object sender, EventArgs e)
         {
-            Factory.YesrsOldCreata(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox);
+            Factory.YesrsOldCreata(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox, sender, yearsOldResultButton, yearsOldCaiBoxButton, calBox, formulaBox);
         }
 
         private void YearsOldCaiBoxButtonClieked(object sender, EventArgs e)
         {
-            if (calBox.Text == "")
-            {
-                tabControl1.SelectedIndex = 0;
-            }
-            else if (yearBox.Text == "")
-            {
-                yearBox.Text = calBox.Text;
-                calBox.Clear();
-                formulaBox.Clear();
-            }
-            else if (manthBox.Text == "")
-            {
-                manthBox.Text = calBox.Text;
-                calBox.Clear();
-                formulaBox.Clear();
-            }
-            else if (dayBox.Text == "")
-            {
-                dayBox.Text = calBox.Text;
-                formulaBox.Clear();
-            }
-            else if (yearsOldBox.Text == "")
-            {
-                return;
-            }
-            else
-            {
-                tabControl1.SelectedIndex = 0;
-                calBox.Clear();
-                yearBox.Clear();
-                manthBox.Clear();
-                dayBox.Clear();
-                yearsOldBox.Clear();
-            }
+            Factory.YesrsOldCreata(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox, sender, yearsOldResultButton, yearsOldCaiBoxButton, calBox, formulaBox);
         }
     }
 }

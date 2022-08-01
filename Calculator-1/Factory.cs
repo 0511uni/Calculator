@@ -93,9 +93,16 @@ namespace Calculator_1
             ToolCreateCalFactory.WalkWhatPartFromStationCal(tabControl1, walkWhatPartFromStationResultButton, walkWhatPartFromStationLnverseResultButton, walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
         }
 
-        internal static void YesrsOldCreata(TabControl tabControl1, TextBox yearBox, TextBox manthBox, TextBox dayBox, TextBox yearsOldBox, TextBox allCalBox)
+        internal static void YesrsOldCreata(TabControl tabControl1, TextBox yearBox, TextBox manthBox, TextBox dayBox, TextBox yearsOldBox, TextBox allCalBox, object sender, object yearsOldResultButton, object yearsOldCaiBoxButton, TextBox calBox, TextBox formulaBox)
         {
-            DateTimeCreateFactory.YearsOldCreatar(tabControl1,yearBox,manthBox,dayBox, yearsOldBox, allCalBox);
+            if (sender.Equals(yearsOldCaiBoxButton))
+            {
+                DateTimeCreateFactory.YearsOldCalCreatar(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox, calBox, formulaBox);
+            }
+            else if (sender.Equals(yearsOldResultButton))
+            {
+                DateTimeCreateFactory.YearsOldCreatar(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox);
+            }
         }
     }
 }

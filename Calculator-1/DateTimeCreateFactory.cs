@@ -37,5 +37,43 @@ namespace Calculator_1
             }
             return age;
         }
+
+        internal static void YearsOldCalCreatar(TabControl tabControl1, TextBox yearBox, TextBox manthBox, TextBox dayBox, TextBox yearsOldBox, TextBox allCalBox, TextBox calBox, TextBox formulaBox)
+        {
+            if (calBox.Text == "")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
+            else if (yearBox.Text == "")
+            {
+                yearBox.Text = calBox.Text;
+                calBox.Clear();
+                formulaBox.Clear();
+            }
+            else if (manthBox.Text == "")
+            {
+                manthBox.Text = calBox.Text;
+                calBox.Clear();
+                formulaBox.Clear();
+            }
+            else if (dayBox.Text == "")
+            {
+                dayBox.Text = calBox.Text;
+                formulaBox.Clear();
+            }
+            else if (yearsOldBox.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                tabControl1.SelectedIndex = 0;
+                calBox.Clear();
+                yearBox.Clear();
+                manthBox.Clear();
+                dayBox.Clear();
+                yearsOldBox.Clear();
+            }
+        }
     }
 }
