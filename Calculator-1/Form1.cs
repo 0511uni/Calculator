@@ -318,13 +318,22 @@ namespace Calculator_1
 
         private void LoadMenuClicked(object sender, EventArgs e)
         {
-            //Factory.DataCreateLoad(allCalBox);
             Factory.DataCreate(allCalBox, saveMenu, loadMenu, sender);
         }
 
         private void SaveMenuClicked(object sender, EventArgs e)
         {
             Factory.DataCreate(allCalBox, saveMenu, loadMenu, sender);
+        }
+
+        private void SaveItemClicked(object sender, EventArgs e)
+        {
+            Factory.DataSaveAndLoad(allCalBox,saveItem,loadItem,sender);
+        }
+
+        private void LoadItemClicked(object sender, EventArgs e)
+        {
+            Factory.DataSaveAndLoad(allCalBox, saveItem, loadItem, sender);
         }
 
         private void BmiResultButtonClicked(object sender, EventArgs e)
@@ -365,17 +374,6 @@ namespace Calculator_1
         {
             Factory.BmiAndBaseWeightCreata(tabControl1, allCalBox, heightBox, weightBox, baseWeightBox, bmiBox);
         }
-
-        private void SaveItemClicked(object sender, EventArgs e)
-        {
-            Factory.DataSave(allCalBox);
-        }
-
-        private void LoadItemClicked(object sender, EventArgs e)
-        {
-            Factory.DataLoad(allCalBox);
-        }
-
         private void AnnualIncomeCalButtonClicked(object sender, EventArgs e)
         {
             if (calBox.Text == "")

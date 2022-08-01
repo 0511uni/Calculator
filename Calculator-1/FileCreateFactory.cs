@@ -9,20 +9,25 @@ namespace Calculator_1
     {
         internal static void FileSaveDialog(TextBox temps)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
-
-            sfd.FileName = "新しい計算ファイル.txt";
-
-            sfd.Filter = "テキスト文書(*.txt)|*.txt|リッチテキスト形式文書(*.rtf)|*.rtf|すべてのファイル(*.*)|*.*";
-            
-            sfd.FilterIndex = 1;
-
-
-            if (sfd.ShowDialog() == DialogResult.OK)
+            //, bool saveMenu , MenuStrip saveMenu, MenuStrip lordMenu
+            var result = MessageBox.Show("ファイル作りますか？！", "ファイル生成", MessageBoxButtons.YesNoCancel);
+            if (result == DialogResult.Yes)
             {
-                File.WriteAllText(sfd.FileName, temps.Text, Encoding.UTF8);//"https://dobon.net"
-            }
+                SaveFileDialog sfd = new SaveFileDialog
+                {
+                    FileName = "新しい計算ファイル.txt",
 
+                    Filter = "テキスト文書(*.txt)|*.txt|リッチテキスト形式文書(*.rtf)|*.rtf|すべてのファイル(*.*)|*.*",
+
+                    FilterIndex = 1
+                };
+
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllText(sfd.FileName, temps.Text, Encoding.UTF8);//"https://dobon.net"
+                }
+            }
             #region 既存のFileに保存の場合
             /*
             
@@ -39,7 +44,7 @@ namespace Calculator_1
             #endregion
         }
 
-
+        #region デスクトップ指定保存の場合
         internal static void FileSave(TextBox temps)
         {
             //デスクトップに保存
@@ -52,33 +57,38 @@ namespace Calculator_1
             string temp = temps.Text;
             File.WriteAllText($@"{directoryName}\{fileName}", temp, Encoding.UTF8);
         }
+        #endregion
 
         internal static void FileLoad(TextBox temps)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
 
-
-            //ダイアログを表示する
-            if (ofd.ShowDialog() == DialogResult.OK)
+            var result = MessageBox.Show("ファイル読み込みますか？！", "ファイル読込", MessageBoxButtons.YesNoCancel);
+            if (result == DialogResult.Yes)
             {
-                //OKボタンがクリックされたとき、選択されたファイルを読み取り専用で開く
-                Stream stream = ofd.OpenFile();
+                OpenFileDialog ofd = new OpenFileDialog();
 
-                if (stream != null)
+
+                //ダイアログを表示する
+                if (ofd.ShowDialog() == DialogResult.OK)
                 {
-                    ////内容を読み込み、表示する
-                    using (var sr = new StreamReader(stream))
+                    //OKボタンがクリックされたとき、選択されたファイルを読み取り専用で開く
+                    Stream stream = ofd.OpenFile();
+
+                    if (stream != null)
                     {
-                        temps.Text = sr.ReadToEnd();
+                        ////内容を読み込み、表示する
+                        using (var sr = new StreamReader(stream))
+                        {
+                            temps.Text = sr.ReadToEnd();
 
-                        //閉じる
-                        sr.Close();
+                            //閉じる
+                            sr.Close();
+                        }
+
+                        stream.Close();
                     }
-
-                    stream.Close();
                 }
             }
-
             #region デスクトップ指定で読み込みの場合
             //string directoryName = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
             //string fileName = "計算式";
