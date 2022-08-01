@@ -7,47 +7,48 @@ namespace Calculator_1
 {
     internal class Factory
     {
-        internal static void DataCreate(TextBox allCalBox)
+        internal static void DataCreate(TextBox allCalBox, ToolStripMenuItem saveMenu, ToolStripMenuItem loadMenu, object sender)
         {
-            //, bool saveMenu , MenuStrip saveMenu, MenuStrip lordMenu
-            var result = MessageBox.Show("ファイル作りますか？！", "ファイル生成", MessageBoxButtons.YesNoCancel);
-            if (result == DialogResult.Yes)
+            if (sender.Equals(saveMenu))
             {
-                FileCreateFactory.FileSaveDialog(allCalBox);
-                #region
-                //if (saveMenu.Enabled)
-                //{
+                //, bool saveMenu , MenuStrip saveMenu, MenuStrip lordMenu
+                var result = MessageBox.Show("ファイル作りますか？！", "ファイル生成", MessageBoxButtons.YesNoCancel);
+                if (result == DialogResult.Yes)
+                {
+                    FileCreateFactory.FileSaveDialog(allCalBox);
+                    #region
+                    //if (saveMenu.Enabled)
+                    //{
 
-                //}
-                //else if (lordMenu.Enabled)
-                //{
+                    //}
+                    //else if (lordMenu.Enabled)
+                    //{
 
-                //}
+                    //}
 
-                //if (inputBox.Text == "4")
-                //{
-                //    BulkyGarbage.BulkyGarbageReservationFileData();
-                //    BulkyGarbage.BulkyGarbageReservationResult(fileCreatingResultDisplay);
-                //}
-                //else if (inputBox.Text == "5")
-                //{
-                //    ListTable.GarbageCollectionTableResult(fileCreatingResultDisplay);
-                //    ListTable.GarbageCollectionTableFileData();
-                //}
-                //htmlFileButton.Enabled = false;
-                #endregion
+                    //if (inputBox.Text == "4")
+                    //{
+                    //    BulkyGarbage.BulkyGarbageReservationFileData();
+                    //    BulkyGarbage.BulkyGarbageReservationResult(fileCreatingResultDisplay);
+                    //}
+                    //else if (inputBox.Text == "5")
+                    //{
+                    //    ListTable.GarbageCollectionTableResult(fileCreatingResultDisplay);
+                    //    ListTable.GarbageCollectionTableFileData();
+                    //}
+                    //htmlFileButton.Enabled = false;
+                    #endregion
+                }
+            }
+            else if (sender.Equals(loadMenu))
+            {
+                var result = MessageBox.Show("ファイル読み込みますか？！", "ファイル読込", MessageBoxButtons.YesNoCancel);
+                if (result == DialogResult.Yes)
+                {
+                    FileCreateFactory.FileLoad(allCalBox);
+                }
             }
 
-
-        }
-
-        internal static void DataCreateLoad(TextBox allCalBox)
-        {
-            var result = MessageBox.Show("ファイル読み込みますか？！", "ファイル読込", MessageBoxButtons.YesNoCancel);
-            if (result == DialogResult.Yes)
-            {
-                FileCreateFactory.FileLoad(allCalBox);
-            }
         }
 
         internal static void BmiCreate(TabControl tabControl1, TextBox allCalBox, TextBox heightBox, TextBox weightBox, TextBox bmiBox)

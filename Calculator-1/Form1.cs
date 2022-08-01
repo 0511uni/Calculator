@@ -318,12 +318,13 @@ namespace Calculator_1
 
         private void LoadMenuClicked(object sender, EventArgs e)
         {
-            Factory.DataCreateLoad(allCalBox);
+            //Factory.DataCreateLoad(allCalBox);
+            Factory.DataCreate(allCalBox, saveMenu, loadMenu, sender);
         }
 
         private void SaveMenuClicked(object sender, EventArgs e)
         {
-            Factory.DataCreate(allCalBox);
+            Factory.DataCreate(allCalBox, saveMenu, loadMenu, sender);
         }
 
         private void BmiResultButtonClicked(object sender, EventArgs e)
