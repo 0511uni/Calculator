@@ -378,7 +378,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(653, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(653, 37);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -389,17 +389,18 @@
             this.endItem,
             this.fileLoadToolStripMenuItem,
             this.saveAndLoadToolStripMenuItem});
+            this.ファイルToolStripMenuItem.Font = new System.Drawing.Font("MV Boli", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ファイルToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.CornflowerBlue;
             this.ファイルToolStripMenuItem.Name = "ファイルToolStripMenuItem";
-            this.ファイルToolStripMenuItem.Size = new System.Drawing.Size(79, 29);
-            this.ファイルToolStripMenuItem.Text = "ファイル";
+            this.ファイルToolStripMenuItem.Size = new System.Drawing.Size(68, 33);
+            this.ファイルToolStripMenuItem.Text = "File";
             // 
             // endItem
             // 
             this.endItem.BackColor = System.Drawing.Color.RoyalBlue;
             this.endItem.ImageTransparentColor = System.Drawing.Color.CornflowerBlue;
             this.endItem.Name = "endItem";
-            this.endItem.Size = new System.Drawing.Size(270, 34);
+            this.endItem.Size = new System.Drawing.Size(331, 38);
             this.endItem.Text = "END";
             this.endItem.Click += new System.EventHandler(this.ExitButton_Clicked);
             // 
@@ -410,14 +411,14 @@
             this.loadMenu,
             this.saveMenu});
             this.fileLoadToolStripMenuItem.Name = "fileLoadToolStripMenuItem";
-            this.fileLoadToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.fileLoadToolStripMenuItem.Size = new System.Drawing.Size(331, 38);
             this.fileLoadToolStripMenuItem.Text = "File Save and Load";
             // 
             // loadMenu
             // 
             this.loadMenu.BackColor = System.Drawing.Color.RoyalBlue;
             this.loadMenu.Name = "loadMenu";
-            this.loadMenu.Size = new System.Drawing.Size(270, 34);
+            this.loadMenu.Size = new System.Drawing.Size(280, 38);
             this.loadMenu.Text = "Open Load";
             this.loadMenu.Click += new System.EventHandler(this.LoadMenuClicked);
             // 
@@ -425,7 +426,7 @@
             // 
             this.saveMenu.BackColor = System.Drawing.Color.RoyalBlue;
             this.saveMenu.Name = "saveMenu";
-            this.saveMenu.Size = new System.Drawing.Size(270, 34);
+            this.saveMenu.Size = new System.Drawing.Size(280, 38);
             this.saveMenu.Text = "Save To Name";
             this.saveMenu.Click += new System.EventHandler(this.SaveMenuClicked);
             // 
@@ -436,14 +437,14 @@
             this.loadItem,
             this.saveItem});
             this.saveAndLoadToolStripMenuItem.Name = "saveAndLoadToolStripMenuItem";
-            this.saveAndLoadToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.saveAndLoadToolStripMenuItem.Size = new System.Drawing.Size(331, 38);
             this.saveAndLoadToolStripMenuItem.Text = "Save and Load";
             // 
             // loadItem
             // 
             this.loadItem.BackColor = System.Drawing.Color.RoyalBlue;
             this.loadItem.Name = "loadItem";
-            this.loadItem.Size = new System.Drawing.Size(270, 34);
+            this.loadItem.Size = new System.Drawing.Size(270, 38);
             this.loadItem.Text = "Load";
             this.loadItem.Click += new System.EventHandler(this.LoadItemClicked);
             // 
@@ -451,7 +452,7 @@
             // 
             this.saveItem.BackColor = System.Drawing.Color.RoyalBlue;
             this.saveItem.Name = "saveItem";
-            this.saveItem.Size = new System.Drawing.Size(270, 34);
+            this.saveItem.Size = new System.Drawing.Size(270, 38);
             this.saveItem.Text = "Save";
             this.saveItem.Click += new System.EventHandler(this.SaveItemClicked);
             // 
@@ -556,7 +557,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.toolTag);
             this.tabControl1.Controls.Add(this.dateTime);
-            this.tabControl1.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("MV Boli", 8.24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.tabControl1.Location = new System.Drawing.Point(0, 33);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(0);
             this.tabControl1.Name = "tabControl1";
@@ -595,12 +596,13 @@
             this.tabPage1.Controls.Add(this.addButton);
             this.tabPage1.Controls.Add(this.button00);
             this.tabPage1.Controls.Add(this.answerButton);
+            this.tabPage1.Font = new System.Drawing.Font("MV Boli", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(312, 460);
+            this.tabPage1.Size = new System.Drawing.Size(312, 462);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Default";
             // 
@@ -626,7 +628,7 @@
             this.tabPage2.Controls.Add(this.bmiResultButton);
             this.tabPage2.Controls.Add(this.weightLabel);
             this.tabPage2.Controls.Add(this.heightLabel);
-            this.tabPage2.Font = new System.Drawing.Font("MV Boli", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Font = new System.Drawing.Font("MV Boli", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 4);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage2.Name = "tabPage2";
@@ -860,6 +862,7 @@
             this.toolTag.Controls.Add(this.label3);
             this.toolTag.Controls.Add(this.annualIncomeCalButton);
             this.toolTag.Controls.Add(this.annualIncomeLabel);
+            this.toolTag.Font = new System.Drawing.Font("MV Boli", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolTag.Location = new System.Drawing.Point(4, 4);
             this.toolTag.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.toolTag.Name = "toolTag";
@@ -954,7 +957,7 @@
             this.minutesLabel1.Location = new System.Drawing.Point(193, 398);
             this.minutesLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.minutesLabel1.Name = "minutesLabel1";
-            this.minutesLabel1.Size = new System.Drawing.Size(78, 23);
+            this.minutesLabel1.Size = new System.Drawing.Size(85, 23);
             this.minutesLabel1.TabIndex = 37;
             this.minutesLabel1.Text = "Minutes";
             // 
@@ -1046,7 +1049,7 @@
             this.yenLabel.Location = new System.Drawing.Point(196, 204);
             this.yenLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.yenLabel.Name = "yenLabel";
-            this.yenLabel.Size = new System.Drawing.Size(41, 23);
+            this.yenLabel.Size = new System.Drawing.Size(44, 23);
             this.yenLabel.TabIndex = 26;
             this.yenLabel.Text = "Yen";
             // 
@@ -1056,7 +1059,7 @@
             this.thousandYenLabel.Location = new System.Drawing.Point(170, 70);
             this.thousandYenLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.thousandYenLabel.Name = "thousandYenLabel";
-            this.thousandYenLabel.Size = new System.Drawing.Size(119, 23);
+            this.thousandYenLabel.Size = new System.Drawing.Size(130, 23);
             this.thousandYenLabel.TabIndex = 25;
             this.thousandYenLabel.Text = "ThousandYen";
             // 
@@ -1175,11 +1178,12 @@
             this.dateTime.Controls.Add(this.label8);
             this.dateTime.Controls.Add(this.ageCalculatingFromBirthdateLabel);
             this.dateTime.Controls.Add(this.label4);
+            this.dateTime.Font = new System.Drawing.Font("MV Boli", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTime.Location = new System.Drawing.Point(4, 4);
             this.dateTime.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dateTime.Name = "dateTime";
             this.dateTime.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.dateTime.Size = new System.Drawing.Size(312, 460);
+            this.dateTime.Size = new System.Drawing.Size(312, 462);
             this.dateTime.TabIndex = 3;
             this.dateTime.Text = "DateTime";
             // 
@@ -1230,7 +1234,7 @@
             this.label14.Location = new System.Drawing.Point(160, 156);
             this.label14.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(83, 23);
+            this.label14.Size = new System.Drawing.Size(91, 23);
             this.label14.TabIndex = 40;
             this.label14.Text = "YearsOld";
             // 
@@ -1266,7 +1270,7 @@
             this.label12.Location = new System.Drawing.Point(232, 99);
             this.label12.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 23);
+            this.label12.Size = new System.Drawing.Size(45, 23);
             this.label12.TabIndex = 36;
             this.label12.Text = "Day";
             // 
@@ -1294,7 +1298,7 @@
             this.label10.Location = new System.Drawing.Point(143, 98);
             this.label10.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 23);
+            this.label10.Size = new System.Drawing.Size(72, 23);
             this.label10.TabIndex = 33;
             this.label10.Text = "Month";
             // 
@@ -1322,7 +1326,7 @@
             this.label5.Location = new System.Drawing.Point(75, 99);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 23);
+            this.label5.Size = new System.Drawing.Size(52, 23);
             this.label5.TabIndex = 30;
             this.label5.Text = "Year";
             // 
@@ -1352,7 +1356,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MV Boli", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(5, 4);
+            this.label4.Location = new System.Drawing.Point(-3, 4);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 37);
