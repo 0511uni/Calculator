@@ -20,11 +20,6 @@ namespace Calculator_1
             InitializeComponent();
         }
 
-        private void Calculator_Load(object sender, EventArgs e)
-        {
-
-        }
-
         bool once;
         bool oncek;
 

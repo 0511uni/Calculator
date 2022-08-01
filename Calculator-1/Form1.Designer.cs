@@ -67,6 +67,9 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.baseWeightBox = new System.Windows.Forms.TextBox();
+            this.weightBox = new System.Windows.Forms.TextBox();
+            this.heightBox = new System.Windows.Forms.TextBox();
             this.bmiAndBaseWeightResultButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.kgLabel = new System.Windows.Forms.Label();
@@ -76,24 +79,22 @@
             this.calHeigthtButton = new System.Windows.Forms.Button();
             this.baseWeightButton = new System.Windows.Forms.Button();
             this.baseWeightLabel = new System.Windows.Forms.Label();
-            this.baseWeightBox = new System.Windows.Forms.TextBox();
             this.bmiLabel = new System.Windows.Forms.Label();
             this.bmiBox = new System.Windows.Forms.TextBox();
             this.bmiResultButton = new System.Windows.Forms.Button();
             this.weightLabel = new System.Windows.Forms.Label();
             this.heightLabel = new System.Windows.Forms.Label();
-            this.weightBox = new System.Windows.Forms.TextBox();
-            this.heightBox = new System.Windows.Forms.TextBox();
             this.toolTag = new System.Windows.Forms.TabPage();
-            this.walkWhatPartFromStationLnverseResultButton = new System.Windows.Forms.Button();
+            this.walkWhatPartFromStationResultBox = new System.Windows.Forms.TextBox();
             this.walkWhatPartFromStationCalBox = new System.Windows.Forms.TextBox();
+            this.hourlyWageResultBox = new System.Windows.Forms.TextBox();
             this.annualIncomeBox = new System.Windows.Forms.TextBox();
+            this.walkWhatPartFromStationLnverseResultButton = new System.Windows.Forms.Button();
             this.hourlyWageCalButton = new System.Windows.Forms.Button();
             this.hourlyWageReverseResultButton = new System.Windows.Forms.Button();
             this.walkWhatPartFromStationLnverseCalButton = new System.Windows.Forms.Button();
             this.minutesLabel1 = new System.Windows.Forms.Label();
             this.minutesLabel2 = new System.Windows.Forms.Label();
-            this.walkWhatPartFromStationResultBox = new System.Windows.Forms.TextBox();
             this.walkWhatPartFromStationResultButton = new System.Windows.Forms.Button();
             this.walkWhatPartFromStationCalButton = new System.Windows.Forms.Button();
             this.walkWhatPartFromStationLabel2 = new System.Windows.Forms.Label();
@@ -103,7 +104,6 @@
             this.thousandYenLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.hourlyWageLabel = new System.Windows.Forms.Label();
-            this.hourlyWageResultBox = new System.Windows.Forms.TextBox();
             this.hourlyWageResultButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -444,7 +444,7 @@
             // 
             this.loadItem.BackColor = System.Drawing.Color.RoyalBlue;
             this.loadItem.Name = "loadItem";
-            this.loadItem.Size = new System.Drawing.Size(270, 38);
+            this.loadItem.Size = new System.Drawing.Size(168, 38);
             this.loadItem.Text = "Load";
             this.loadItem.Click += new System.EventHandler(this.LoadItemClicked);
             // 
@@ -452,7 +452,7 @@
             // 
             this.saveItem.BackColor = System.Drawing.Color.RoyalBlue;
             this.saveItem.Name = "saveItem";
-            this.saveItem.Size = new System.Drawing.Size(270, 38);
+            this.saveItem.Size = new System.Drawing.Size(168, 38);
             this.saveItem.Text = "Save";
             this.saveItem.Click += new System.EventHandler(this.SaveItemClicked);
             // 
@@ -636,6 +636,36 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Weight";
             // 
+            // baseWeightBox
+            // 
+            this.baseWeightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.baseWeightBox.Location = new System.Drawing.Point(122, 384);
+            this.baseWeightBox.Multiline = true;
+            this.baseWeightBox.Name = "baseWeightBox";
+            this.baseWeightBox.ReadOnly = true;
+            this.baseWeightBox.Size = new System.Drawing.Size(99, 38);
+            this.baseWeightBox.TabIndex = 8;
+            // 
+            // weightBox
+            // 
+            this.weightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.weightBox.Location = new System.Drawing.Point(122, 176);
+            this.weightBox.Multiline = true;
+            this.weightBox.Name = "weightBox";
+            this.weightBox.ReadOnly = true;
+            this.weightBox.Size = new System.Drawing.Size(99, 39);
+            this.weightBox.TabIndex = 2;
+            // 
+            // heightBox
+            // 
+            this.heightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.heightBox.Location = new System.Drawing.Point(122, 90);
+            this.heightBox.Multiline = true;
+            this.heightBox.Name = "heightBox";
+            this.heightBox.ReadOnly = true;
+            this.heightBox.Size = new System.Drawing.Size(99, 39);
+            this.heightBox.TabIndex = 1;
+            // 
             // bmiAndBaseWeightResultButton
             // 
             this.bmiAndBaseWeightResultButton.BackColor = System.Drawing.Color.RoyalBlue;
@@ -748,16 +778,6 @@
             this.baseWeightLabel.TabIndex = 9;
             this.baseWeightLabel.Text = "BaseWeight";
             // 
-            // baseWeightBox
-            // 
-            this.baseWeightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.baseWeightBox.Location = new System.Drawing.Point(122, 384);
-            this.baseWeightBox.Multiline = true;
-            this.baseWeightBox.Name = "baseWeightBox";
-            this.baseWeightBox.ReadOnly = true;
-            this.baseWeightBox.Size = new System.Drawing.Size(99, 38);
-            this.baseWeightBox.TabIndex = 8;
-            // 
             // bmiLabel
             // 
             this.bmiLabel.AutoSize = true;
@@ -815,26 +835,6 @@
             this.heightLabel.TabIndex = 3;
             this.heightLabel.Text = "Height";
             // 
-            // weightBox
-            // 
-            this.weightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.weightBox.Location = new System.Drawing.Point(122, 176);
-            this.weightBox.Multiline = true;
-            this.weightBox.Name = "weightBox";
-            this.weightBox.ReadOnly = true;
-            this.weightBox.Size = new System.Drawing.Size(99, 39);
-            this.weightBox.TabIndex = 2;
-            // 
-            // heightBox
-            // 
-            this.heightBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.heightBox.Location = new System.Drawing.Point(122, 90);
-            this.heightBox.Multiline = true;
-            this.heightBox.Name = "heightBox";
-            this.heightBox.ReadOnly = true;
-            this.heightBox.Size = new System.Drawing.Size(99, 39);
-            this.heightBox.TabIndex = 1;
-            // 
             // toolTag
             // 
             this.toolTag.BackColor = System.Drawing.Color.RoyalBlue;
@@ -871,6 +871,46 @@
             this.toolTag.TabIndex = 2;
             this.toolTag.Text = "Tool";
             // 
+            // walkWhatPartFromStationResultBox
+            // 
+            this.walkWhatPartFromStationResultBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.walkWhatPartFromStationResultBox.Location = new System.Drawing.Point(96, 413);
+            this.walkWhatPartFromStationResultBox.Multiline = true;
+            this.walkWhatPartFromStationResultBox.Name = "walkWhatPartFromStationResultBox";
+            this.walkWhatPartFromStationResultBox.ReadOnly = true;
+            this.walkWhatPartFromStationResultBox.Size = new System.Drawing.Size(96, 39);
+            this.walkWhatPartFromStationResultBox.TabIndex = 35;
+            // 
+            // walkWhatPartFromStationCalBox
+            // 
+            this.walkWhatPartFromStationCalBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(97, 321);
+            this.walkWhatPartFromStationCalBox.Multiline = true;
+            this.walkWhatPartFromStationCalBox.Name = "walkWhatPartFromStationCalBox";
+            this.walkWhatPartFromStationCalBox.ReadOnly = true;
+            this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(96, 38);
+            this.walkWhatPartFromStationCalBox.TabIndex = 28;
+            // 
+            // hourlyWageResultBox
+            // 
+            this.hourlyWageResultBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.hourlyWageResultBox.Location = new System.Drawing.Point(97, 214);
+            this.hourlyWageResultBox.Multiline = true;
+            this.hourlyWageResultBox.Name = "hourlyWageResultBox";
+            this.hourlyWageResultBox.ReadOnly = true;
+            this.hourlyWageResultBox.Size = new System.Drawing.Size(96, 38);
+            this.hourlyWageResultBox.TabIndex = 22;
+            // 
+            // annualIncomeBox
+            // 
+            this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.annualIncomeBox.Location = new System.Drawing.Point(96, 84);
+            this.annualIncomeBox.Multiline = true;
+            this.annualIncomeBox.Name = "annualIncomeBox";
+            this.annualIncomeBox.ReadOnly = true;
+            this.annualIncomeBox.Size = new System.Drawing.Size(71, 38);
+            this.annualIncomeBox.TabIndex = 15;
+            // 
             // walkWhatPartFromStationLnverseResultButton
             // 
             this.walkWhatPartFromStationLnverseResultButton.BackColor = System.Drawing.Color.RoyalBlue;
@@ -886,26 +926,6 @@
             this.walkWhatPartFromStationLnverseResultButton.Text = "▲";
             this.walkWhatPartFromStationLnverseResultButton.UseVisualStyleBackColor = false;
             this.walkWhatPartFromStationLnverseResultButton.Click += new System.EventHandler(this.WalkWhatPartFromStationReverseResultButtonClicked);
-            // 
-            // walkWhatPartFromStationCalBox
-            // 
-            this.walkWhatPartFromStationCalBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.walkWhatPartFromStationCalBox.Location = new System.Drawing.Point(97, 321);
-            this.walkWhatPartFromStationCalBox.Multiline = true;
-            this.walkWhatPartFromStationCalBox.Name = "walkWhatPartFromStationCalBox";
-            this.walkWhatPartFromStationCalBox.ReadOnly = true;
-            this.walkWhatPartFromStationCalBox.Size = new System.Drawing.Size(96, 38);
-            this.walkWhatPartFromStationCalBox.TabIndex = 28;
-            // 
-            // annualIncomeBox
-            // 
-            this.annualIncomeBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.annualIncomeBox.Location = new System.Drawing.Point(96, 84);
-            this.annualIncomeBox.Multiline = true;
-            this.annualIncomeBox.Name = "annualIncomeBox";
-            this.annualIncomeBox.ReadOnly = true;
-            this.annualIncomeBox.Size = new System.Drawing.Size(71, 38);
-            this.annualIncomeBox.TabIndex = 15;
             // 
             // hourlyWageCalButton
             // 
@@ -970,16 +990,6 @@
             this.minutesLabel2.Size = new System.Drawing.Size(41, 31);
             this.minutesLabel2.TabIndex = 36;
             this.minutesLabel2.Text = "分";
-            // 
-            // walkWhatPartFromStationResultBox
-            // 
-            this.walkWhatPartFromStationResultBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.walkWhatPartFromStationResultBox.Location = new System.Drawing.Point(96, 413);
-            this.walkWhatPartFromStationResultBox.Multiline = true;
-            this.walkWhatPartFromStationResultBox.Name = "walkWhatPartFromStationResultBox";
-            this.walkWhatPartFromStationResultBox.ReadOnly = true;
-            this.walkWhatPartFromStationResultBox.Size = new System.Drawing.Size(96, 39);
-            this.walkWhatPartFromStationResultBox.TabIndex = 35;
             // 
             // walkWhatPartFromStationResultButton
             // 
@@ -1083,16 +1093,6 @@
             this.hourlyWageLabel.Size = new System.Drawing.Size(202, 26);
             this.hourlyWageLabel.TabIndex = 23;
             this.hourlyWageLabel.Text = "HourlyWage(時給)";
-            // 
-            // hourlyWageResultBox
-            // 
-            this.hourlyWageResultBox.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.hourlyWageResultBox.Location = new System.Drawing.Point(97, 214);
-            this.hourlyWageResultBox.Multiline = true;
-            this.hourlyWageResultBox.Name = "hourlyWageResultBox";
-            this.hourlyWageResultBox.ReadOnly = true;
-            this.hourlyWageResultBox.Size = new System.Drawing.Size(96, 38);
-            this.hourlyWageResultBox.TabIndex = 22;
             // 
             // hourlyWageResultButton
             // 
@@ -1394,7 +1394,6 @@
             this.Name = "Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.Calculator_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
