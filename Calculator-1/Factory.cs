@@ -92,5 +92,10 @@ namespace Calculator_1
         {
             ToolCreateCalFactory.WalkWhatPartFromStationCal(tabControl1, walkWhatPartFromStationResultButton, walkWhatPartFromStationLnverseResultButton, walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
         }
+
+        internal static void YesrsOldCreata(TabControl tabControl1, TextBox yearBox, TextBox manthBox, TextBox dayBox, TextBox yearsOldBox, TextBox allCalBox)
+        {
+            DateTimeCreateFactory.YearsOldCreatar(tabControl1,yearBox,manthBox,dayBox, yearsOldBox, allCalBox);
+        }
     }
 }

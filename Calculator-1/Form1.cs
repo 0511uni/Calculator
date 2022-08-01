@@ -457,35 +457,7 @@ namespace Calculator_1
 
         private void YearsOldResultButtonClicked(object sender, EventArgs e)
         {
-            if (yearBox.Text == "" || manthBox.Text == "" || dayBox.Text == "")
-            {
-                tabControl1.SelectedIndex = 0;
-            }
-            else
-            {
-                var year = int.Parse(yearBox.Text);
-                var manth = int.Parse(manthBox.Text);
-                var day = int.Parse(dayBox.Text);
-                var birthday = new DateTime(year, manth, day);
-                var today = DateTime.Today;
-                var age = GetAge(birthday, today);
-                yearsOldBox.Text = age.ToString();
-                allCalBox.Text += $"-------------------\r\n" +
-                    $"{yearBox.Text}年{manthBox.Text}月{dayBox.Text}日" +
-                    $" 生まれ\r\n" +
-                    $"　　↓\r\n" +
-                    $"　　{yearsOldBox.Text}歳\r\n";
-            }
-        }
-
-        static int GetAge(DateTime birthday, DateTime targetDay)
-        {
-            var age = targetDay.Year - birthday.Year;
-            if (targetDay < birthday.AddYears(age))
-            {
-                age--;
-            }
-            return age;
+            Factory.YesrsOldCreata(tabControl1, yearBox, manthBox, dayBox, yearsOldBox, allCalBox);
         }
 
         private void YearsOldCaiBoxButtonClieked(object sender, EventArgs e)

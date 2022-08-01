@@ -36,8 +36,10 @@ namespace Calculator_1
                     $"Weight: {weightBox.Text}kg\r\n" +
                     $"　↓\r\n" +
                     $"BMI : {(decimal)result:0.00}\r\n";
+                #region 計算式一覧
                 //　(heightBox /heightBox)/weightBox
                 //double bmiCreate = Math.Floor(Math.Round(weightBox / Math.Pow(heightBox /100,2) * 100));
+                #endregion
             }
         }
 
