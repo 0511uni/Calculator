@@ -105,13 +105,9 @@ namespace Calculator_1
             }
         }
 
-        internal static void CalculatorItemCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, Button taxButton, Button noTaxButton, object sender, Button decimalPointButton, Button answerButton, Button addButton, Button subtractButton, Button multiplyButton, Button divideButton)
+        internal static void CalculatorItemCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, Button taxButton, Button noTaxButton, object sender, Button decimalPointButton, Button answerButton)
         {
-            if (sender.Equals(addButton) || sender.Equals(subtractButton) || sender.Equals(multiplyButton) || sender.Equals(divideButton))
-            {
-                CalculatorItemCreateFactory.ArithmeticOperationSymbol(calBox, formulaBox, allCalBox, sender);
-            }
-            else if (sender.Equals(decimalPointButton))
+            if (sender.Equals(decimalPointButton))
             {
                 CalculatorItemCreateFactory.DecimalPointButton(calBox, formulaBox, allCalBox, sender);
             }
