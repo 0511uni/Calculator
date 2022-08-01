@@ -261,6 +261,22 @@ namespace Calculator_1
             calBox.Clear();
             formulaBox.Clear();
         }
+        private void ClearTextButtonChecked(object sender, EventArgs e)
+        {
+            allCalBox.Clear();
+        }
+
+        private void BackSpaceButtonClicked(object sender, EventArgs e)
+        {
+            if (formulaBox.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length - 1).Trim();
+            }
+        }
 
         private void TaxButtonClicked(object sender, EventArgs e)
         {
@@ -412,23 +428,6 @@ namespace Calculator_1
         private void WalkWhatPartFromStationReverseResultButtonClicked(object sender, EventArgs e)
         {
             Factory.WalkWhatPartFromStationCal(tabControl1, walkWhatPartFromStationResultButton, walkWhatPartFromStationLnverseResultButton, walkWhatPartFromStationCalBox, walkWhatPartFromStationResultBox, allCalBox, sender);
-        }
-
-        private void ClearTextButtonChecked(object sender, EventArgs e)
-        {
-            allCalBox.Clear();
-        }
-
-        private void BackSpaceButtonClicked(object sender, EventArgs e)
-        {
-            if (formulaBox.Text == "")
-            {
-                return;
-            }
-            else
-            {
-                formulaBox.Text = formulaBox.Text.Substring(0, formulaBox.Text.Length - 1).Trim();
-            }
         }
         private void YearsOldCaiBoxButtonClieked(object sender, EventArgs e)
         {
