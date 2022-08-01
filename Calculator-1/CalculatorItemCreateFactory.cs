@@ -63,7 +63,7 @@ namespace Calculator_1
             }
         }
 
-        internal static void AnswerButton(TextBox calBox, TextBox formulaBox, TextBox allCalBox, object sender)
+        internal static void AnswerButtonCreate(TextBox calBox, TextBox formulaBox, TextBox allCalBox, object sender)
         {
             if (formulaBox.Text.Contains("="))
             {

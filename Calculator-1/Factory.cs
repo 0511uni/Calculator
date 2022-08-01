@@ -121,7 +121,7 @@ namespace Calculator_1
             }
             else if (sender.Equals(answerButton))
             {
-                CalculatorItemCreateFactory.AnswerButton(calBox, formulaBox, allCalBox, sender);
+                CalculatorItemCreateFactory.AnswerButtonCreate(calBox, formulaBox, allCalBox, sender);
             }
         }
     }
