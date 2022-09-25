@@ -76,7 +76,7 @@ namespace Calculator_1
 
                     if (stream != null)
                     {
-                        ////内容を読み込み、表示する
+                        // 内容を読み込み、表示する
                         using (var sr = new StreamReader(stream))
                         {
                             temps.Text = sr.ReadToEnd();
